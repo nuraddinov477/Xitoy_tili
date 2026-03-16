@@ -1,0 +1,913 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "zh": "问候语",
+      "uz": "Salomlashish",
+      "emoji": "👋",
+      "hsk": 1,
+      "color": "from-violet-600 to-purple-800",
+      "glow": "rgba(139,92,246,0.6)",
+      "vocabulary": [
+        {"zh": "你好", "pinyin": "nǐ hǎo", "uz": "Salom", "en": "Hello"},
+        {"zh": "您好", "pinyin": "nín hǎo", "uz": "Salom (hurmatli)", "en": "Hello (polite)"},
+        {"zh": "你", "pinyin": "nǐ", "uz": "Sen / Siz (oddiy)", "en": "you (singular)"},
+        {"zh": "好", "pinyin": "hǎo", "uz": "Yaxshi", "en": "good, fine"},
+        {"zh": "您", "pinyin": "nín", "uz": "Siz (hurmatli)", "en": "(polite) you"},
+        {"zh": "你们", "pinyin": "nǐmen", "uz": "Sizlar / Siz (ko'plik)", "en": "(plural) you"},
+        {"zh": "对不起", "pinyin": "duì bu qǐ", "uz": "Kechirasiz / Uzr", "en": "I'm sorry"},
+        {"zh": "没关系", "pinyin": "méi guān xi", "uz": "Hech gap emas / Arzimaydi", "en": "That's OK, it doesn't matter"},
+        {"zh": "再见", "pinyin": "zài jiàn", "uz": "Xayr / Ko'rishguncha", "en": "Goodbye"},
+        {"zh": "谢谢", "pinyin": "xiè xie", "uz": "Rahmat", "en": "Thank you"},
+        {"zh": "不客气", "pinyin": "bú kè qi", "uz": "Arzimaydi / Marhamat", "en": "You're welcome, don't mention it"},
+        {"zh": "叫", "pinyin": "jiào", "uz": "Deyilmoq / Atalmoq", "en": "to be called"},
+        {"zh": "名字", "pinyin": "míng zi", "uz": "Ism", "en": "name"},
+        {"zh": "是", "pinyin": "shì", "uz": "Bo'lmoq (tenglik fe'li)", "en": "to be"},
+        {"zh": "我", "pinyin": "wǒ", "uz": "Men", "en": "I, me"},
+        {"zh": "老师", "pinyin": "lǎo shī", "uz": "O'qituvchi", "en": "teacher"},
+        {"zh": "学生", "pinyin": "xué sheng", "uz": "Talaba / O'quvchi", "en": "student"},
+        {"zh": "吗", "pinyin": "ma", "uz": "Savol yuklamasi", "en": "a question particle at the end of a sentence"}
+      ],
+      "grammar": [
+        {
+          "pattern": "Subject + 是 + Noun",
+          "explanation": "Xitoy tilining asosiy grammatik qoidasi. 是 (shì) - 'bo'lmoq' fe'li bo'lib, ot gaplarida ishlatiladi. O'zbek tilidagi '-man/-san/-dir' qo'shimchalariga o'xshaydi. Masalan: 我是老师 (Men o'qituvchiman).",
+          "example_zh": "我是老师。",
+          "example_pinyin": "Wǒ shì lǎoshī.",
+          "example_uz": "Men o'qituvchiman."
+        },
+        {
+          "pattern": "疑问代词 \"吗\" — So'roq yuklamasi \"吗\"",
+          "explanation": "Darak gapni so'roq gapga aylantirish uchun gap oxiriga 吗 (ma) qo'shiladi. Bu O'zbek tilidagi '-mi?' qo'shimchasiga o'xshaydi. Masalan: 你是老师。→ 你是老师吗？",
+          "example_zh": "你是老师吗？",
+          "example_pinyin": "Nǐ shì lǎoshī ma?",
+          "example_uz": "Siz o'qituvchimisiz?"
+        },
+        {
+          "pattern": "你叫什么名字？ — Ismingiz nima?",
+          "explanation": "Ismni so'rash iborasi. 叫 (jiào) - 'atalmoq/deyilmoq'. Javobda: 我叫... (Men ... deb atalaman). 什么 (shénme) - 'nima?' so'rog'i.",
+          "example_zh": "你叫什么名字？我叫李月。",
+          "example_pinyin": "Nǐ jiào shénme míngzi? Wǒ jiào Lǐ Yuè.",
+          "example_uz": "Ismingiz nima? Mening ismim Li Yue."
+        }
+      ],
+      "dialogue": {
+        "title": "Salomlashish",
+        "lines": [
+          {"speaker": "A", "zh": "你好！", "pinyin": "Nǐ hǎo!", "uz": "Salom!"},
+          {"speaker": "B", "zh": "你好！", "pinyin": "Nǐ hǎo!", "uz": "Salom!"},
+          {"speaker": "A", "zh": "谢谢！", "pinyin": "Xiè xie!", "uz": "Rahmat!"},
+          {"speaker": "B", "zh": "不客气！", "pinyin": "Bú kè qi!", "uz": "Arzimaydi!"},
+          {"speaker": "A", "zh": "对不起！", "pinyin": "Duì bu qǐ!", "uz": "Kechirasiz!"},
+          {"speaker": "B", "zh": "没关系！", "pinyin": "Méi guān xi!", "uz": "Hech gap emas!"},
+          {"speaker": "A", "zh": "再见！", "pinyin": "Zài jiàn!", "uz": "Xayr!"},
+          {"speaker": "B", "zh": "再见！", "pinyin": "Zài jiàn!", "uz": "Xayr!"}
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "zh": "家庭",
+      "uz": "Oila",
+      "emoji": "👨‍👩‍👧‍👦",
+      "hsk": 1,
+      "color": "from-pink-600 to-rose-800",
+      "glow": "rgba(236,72,153,0.6)",
+      "vocabulary": [
+        {"zh": "家", "pinyin": "jiā", "uz": "Uy / Oila", "en": "family, home"},
+        {"zh": "口", "pinyin": "kǒu", "uz": "Og'iz / Oila a'zolarini sanash o'lchovi", "en": "a measure word for family members"},
+        {"zh": "人", "pinyin": "rén", "uz": "Odam / Kishi", "en": "person, people"},
+        {"zh": "有", "pinyin": "yǒu", "uz": "Bor / Ega bo'lmoq", "en": "to have, there is/are"},
+        {"zh": "几", "pinyin": "jǐ", "uz": "Necha (10 dan kam so'ralganda)", "en": "how many"},
+        {"zh": "爸爸", "pinyin": "bà ba", "uz": "Ota / Dadam", "en": "father, dad"},
+        {"zh": "妈妈", "pinyin": "mā ma", "uz": "Ona / Onam", "en": "mother, mom"},
+        {"zh": "哥哥", "pinyin": "gē ge", "uz": "Katta aka", "en": "elder brother"},
+        {"zh": "姐姐", "pinyin": "jiě jie", "uz": "Katta opa", "en": "elder sister"},
+        {"zh": "弟弟", "pinyin": "dì di", "uz": "Kenja uka", "en": "younger brother"},
+        {"zh": "妹妹", "pinyin": "mèi mei", "uz": "Kenja singil", "en": "younger sister"},
+        {"zh": "女儿", "pinyin": "nǚ ér", "uz": "Qiz farzand", "en": "daughter"},
+        {"zh": "儿子", "pinyin": "ér zi", "uz": "O'g'il farzand", "en": "son"},
+        {"zh": "岁", "pinyin": "suì", "uz": "Yosh (inson yoshi)", "en": "year (of age)"},
+        {"zh": "多大", "pinyin": "duō dà", "uz": "Necha yosh?", "en": "how old"},
+        {"zh": "今年", "pinyin": "jīn nián", "uz": "Bu yil", "en": "this year"},
+        {"zh": "了", "pinyin": "le", "uz": "O'zgarishni bildiruvchi yuklamasi", "en": "used at the end of a sentence to indicate a change or new circumstance"},
+        {"zh": "多", "pinyin": "duō", "uz": "Ko'p / Qancha", "en": "indicating degree or extent"}
+      ],
+      "grammar": [
+        {
+          "pattern": "你家有几口人？ — Oilangizda necha kishi bor?",
+          "explanation": "Oila a'zolari sonini so'rash iborasi. 几 (jǐ) - 'necha' (10 dan kam sonlar uchun), 口 (kǒu) - oila a'zolarini sanash o'lchovi, 有 (yǒu) - 'bor/mavjud'. Javob: 我家有X口人 - oilamda X kishi bor.",
+          "example_zh": "你家有几口人？我家有三口人。",
+          "example_pinyin": "Nǐ jiā yǒu jǐ kǒu rén? Wǒ jiā yǒu sān kǒu rén.",
+          "example_uz": "Oilangizda necha kishi bor? Oilamda uch kishi bor."
+        },
+        {
+          "pattern": "疑问代词 \"多大\" — Yoshni so'rash: \"Necha yoshda?\"",
+          "explanation": "Yoshni so'rash uchun ishlatiladigan ibora. 多大了 (duō dà le) - 'necha yoshga to'ldi?'. Katta odamdan so'rashda: 您多大年纪了？ Boladan so'rashda: 几岁了？",
+          "example_zh": "你女儿多大了？她今年四岁了。",
+          "example_pinyin": "Nǐ nǚér duō dà le? Tā jīnnián sì suì le.",
+          "example_uz": "Qizingiz necha yoshda? U bu yil to'rt yoshga to'ldi."
+        },
+        {
+          "pattern": "她今年50岁了。她女儿呢？ — \"呢\" yuklama orqali savol",
+          "explanation": "呢 (ne) - oldingi mavzuni davom ettirib, qisqa savol berish uchun ishlatiladi. O'zbek tilidagi '-chi?' qo'shimchasiga o'xshaydi. Masalan: 你女儿呢？ = Qizingiz-chi?",
+          "example_zh": "李老师今年50岁了。她女儿呢？她女儿今年20岁。",
+          "example_pinyin": "Lǐ lǎoshī jīnnián wǔshí suì le. Tā nǚér ne? Tā nǚér jīnnián èrshí suì.",
+          "example_uz": "Li o'qituvchi bu yil 50 yoshda. Qizingiz-chi? Qizi bu yil 20 yoshda."
+        }
+      ],
+      "dialogue": {
+        "title": "Oila haqida",
+        "lines": [
+          {"speaker": "A", "zh": "你家有几口人？", "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?", "uz": "Oilangizda necha kishi bor?"},
+          {"speaker": "B", "zh": "我家有三口人。", "pinyin": "Wǒ jiā yǒu sān kǒu rén.", "uz": "Oilamda uch kishi bor."},
+          {"speaker": "A", "zh": "你有几个孩子？", "pinyin": "Nǐ yǒu jǐ gè háizi?", "uz": "Sizda necha nafar bola bor?"},
+          {"speaker": "B", "zh": "我有一个女儿。", "pinyin": "Wǒ yǒu yí gè nǚér.", "uz": "Menda bitta qiz bor."},
+          {"speaker": "A", "zh": "你女儿多大了？", "pinyin": "Nǐ nǚér duō dà le?", "uz": "Qizingiz necha yoshda?"},
+          {"speaker": "B", "zh": "她今年四岁了。", "pinyin": "Tā jīnnián sì suì le.", "uz": "U bu yil to'rt yoshga to'ldi."}
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "zh": "饮食",
+      "uz": "Ovqat va ichimlik",
+      "emoji": "🍜",
+      "hsk": 1,
+      "color": "from-orange-500 to-red-700",
+      "glow": "rgba(249,115,22,0.6)",
+      "vocabulary": [
+        {"zh": "想", "pinyin": "xiǎng", "uz": "Xohlamoq / O'ylamoq", "en": "to want, to think"},
+        {"zh": "喝", "pinyin": "hē", "uz": "Ichmoq", "en": "to drink"},
+        {"zh": "茶", "pinyin": "chá", "uz": "Choy", "en": "tea"},
+        {"zh": "吃", "pinyin": "chī", "uz": "Yemoq", "en": "to eat"},
+        {"zh": "饭", "pinyin": "fàn", "uz": "Ovqat / Guruch", "en": "meal, cooked rice"},
+        {"zh": "下午", "pinyin": "xià wǔ", "uz": "Tushdan keyin", "en": "afternoon"},
+        {"zh": "商店", "pinyin": "shāng diàn", "uz": "Do'kon", "en": "shop, store"},
+        {"zh": "买", "pinyin": "mǎi", "uz": "Sotib olmoq", "en": "to buy, to purchase"},
+        {"zh": "个", "pinyin": "gè", "uz": "Dona (umumiy o'lchov so'z)", "en": "a general measure word"},
+        {"zh": "杯子", "pinyin": "bēi zi", "uz": "Piyola / Stakan", "en": "cup, glass"},
+        {"zh": "这", "pinyin": "zhè", "uz": "Bu / Mana bu", "en": "this"},
+        {"zh": "多少", "pinyin": "duō shao", "uz": "Qancha / Nechta", "en": "how many, how much"},
+        {"zh": "钱", "pinyin": "qián", "uz": "Pul", "en": "money"},
+        {"zh": "块", "pinyin": "kuài", "uz": "Yuan (xitoy puli birligі)", "en": "a unit of money, same as yuan"},
+        {"zh": "那", "pinyin": "nà", "uz": "U / Ana u", "en": "that"},
+        {"zh": "苹果", "pinyin": "píng guǒ", "uz": "Olma", "en": "apple"},
+        {"zh": "水", "pinyin": "shuǐ", "uz": "Suv", "en": "water"},
+        {"zh": "好", "pinyin": "hǎo", "uz": "Yaxshi / Xop", "en": "good, fine"}
+      ],
+      "grammar": [
+        {
+          "pattern": "你想吃什么？ — Nima yemoqchisiz?",
+          "explanation": "想 (xiǎng) - modal fe'l, 'xohlamoq/istamoq' ma'nosini bildiradi. 什么 (shénme) - 'nima?' savol so'zi. Bu ibora restoranlar, do'konlarda va kundalik muloqotda ishlatiladi.",
+          "example_zh": "你想喝什么？我想喝茶。",
+          "example_pinyin": "Nǐ xiǎng hē shénme? Wǒ xiǎng hē chá.",
+          "example_uz": "Nima ichmoqchisiz? Men choy ichmoqchiman."
+        },
+        {
+          "pattern": "这个杯子多少钱？ — Bu stakan qancha turadi?",
+          "explanation": "Narx so'rash iborasi. 多少 (duōshao) - 'qancha'. 块 (kuài) - yuan (xitoy puli). Javobda son va 块 keladi. Rasmiy: 元 (yuán), og'zaki: 块 (kuài).",
+          "example_zh": "这个杯子多少钱？二十八块。",
+          "example_pinyin": "Zhège bēizi duōshao qián? Èrshíbā kuài.",
+          "example_uz": "Bu stakan qancha turadi? Yigirma sakkiz yuan."
+        },
+        {
+          "pattern": "人民币的表达 — Xitoy pulini ifodalash",
+          "explanation": "Xitoy pulining asosiy birligi 元 (yuán), og'zaki nutqda 块 (kuài) deyiladi. Masalan: 一块 = 1 yuan, 五块 = 5 yuan, 十块 = 10 yuan, 五十块 = 50 yuan, 一百块 = 100 yuan.",
+          "example_zh": "那个杯子十八块钱。",
+          "example_pinyin": "Nà gè bēizi shíbā kuài qián.",
+          "example_uz": "U stakan o'n sakkiz yuan turadi."
+        }
+      ],
+      "dialogue": {
+        "title": "Restoranda",
+        "lines": [
+          {"speaker": "A", "zh": "你好！你想喝什么？", "pinyin": "Nǐ hǎo! Nǐ xiǎng hē shénme?", "uz": "Salom! Nima ichmoqchisiz?"},
+          {"speaker": "B", "zh": "我想喝茶。", "pinyin": "Wǒ xiǎng hē chá.", "uz": "Men choy ichmoqchiman."},
+          {"speaker": "A", "zh": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shénme?", "uz": "Nima yemoqchisiz?"},
+          {"speaker": "B", "zh": "我想吃饭。", "pinyin": "Wǒ xiǎng chī fàn.", "uz": "Men ovqat yemoqchiman."},
+          {"speaker": "A", "zh": "好的。这个多少钱？", "pinyin": "Hǎo de. Zhège duōshao qián?", "uz": "Xop. Bu qancha turadi?"},
+          {"speaker": "B", "zh": "二十八块。", "pinyin": "Èrshíbā kuài.", "uz": "Yigirma sakkiz yuan."}
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "zh": "购物",
+      "uz": "Xarid qilish",
+      "emoji": "🛍️",
+      "hsk": 1,
+      "color": "from-emerald-500 to-teal-700",
+      "glow": "rgba(16,185,129,0.6)",
+      "vocabulary": [
+        {"zh": "东西", "pinyin": "dōng xi", "uz": "Narsa / Buyum", "en": "thing, stuff"},
+        {"zh": "苹果", "pinyin": "píng guǒ", "uz": "Olma", "en": "apple"},
+        {"zh": "衣服", "pinyin": "yī fu", "uz": "Kiyim", "en": "clothes"},
+        {"zh": "买", "pinyin": "mǎi", "uz": "Sotib olmoq", "en": "to buy"},
+        {"zh": "多少", "pinyin": "duō shao", "uz": "Qancha", "en": "how much, how many"},
+        {"zh": "钱", "pinyin": "qián", "uz": "Pul", "en": "money"},
+        {"zh": "块", "pinyin": "kuài", "uz": "Yuan (pul birligi)", "en": "a unit of money, same as yuan"},
+        {"zh": "这", "pinyin": "zhè", "uz": "Bu", "en": "this"},
+        {"zh": "那", "pinyin": "nà", "uz": "U (narsa)", "en": "that"},
+        {"zh": "个", "pinyin": "gè", "uz": "Dona (o'lchov so'z)", "en": "a general measure word"},
+        {"zh": "都", "pinyin": "dōu", "uz": "Hammasi / Barchasi", "en": "all, both"},
+        {"zh": "非常", "pinyin": "fēi cháng", "uz": "Juda / G'oyat", "en": "very, extremely"},
+        {"zh": "漂亮", "pinyin": "piào liang", "uz": "Chiroyli / Ko'rkam", "en": "beautiful, pretty"},
+        {"zh": "回来", "pinyin": "huí lái", "uz": "Qaytib kelmoq", "en": "to come back, to return"},
+        {"zh": "不少", "pinyin": "bù shǎo", "uz": "Kammas emas / Ancha", "en": "quite a few, a lot"},
+        {"zh": "了", "pinyin": "le", "uz": "Harakat tugallanganini bildiruvchi yuklamasi", "en": "a particle indicating a completed action"}
+      ],
+      "grammar": [
+        {
+          "pattern": "她买了不少衣服。— Harakat tugallanishi: \"了\"",
+          "explanation": "了 (le) fe'ldan keyin kelganda harakat tugallanganini bildiradi. O'zbek tilidagi o'tgan zamon qo'shimchalariga o'xshaydi. Masalan: 买了 (sotib oldi), 吃了 (yedi), 回来了 (qaytib keldi).",
+          "example_zh": "她买了不少衣服。",
+          "example_pinyin": "Tā mǎile bù shǎo yīfu.",
+          "example_uz": "U ancha kiyim sotib oldi."
+        },
+        {
+          "pattern": "副词 \"都\" — \"Hammasi\" ravishi",
+          "explanation": "都 (dōu) - 'hammasi/barchasi' ma'nosini bildiruvchi ravish. Fe'ldan oldin keladi. Masalan: 他们都来了 (ularning hammasi keldi). Inkorida: 都不... (hech biri ... emas).",
+          "example_zh": "她买的衣服都非常漂亮。",
+          "example_pinyin": "Tā mǎi de yīfu dōu fēicháng piàoliang.",
+          "example_uz": "U sotib olgan kiyimlarning hammasi juda chiroyli."
+        },
+        {
+          "pattern": "这个多少钱？那个呢？ — Bu qancha? U-chi?",
+          "explanation": "Narx so'rash va taqqoslash iborasi. 这个 (zhège) - bu narsa, 那个 (nàge) - u narsa. 呢 (ne) oldingi savolni davom ettiradi.",
+          "example_zh": "这个苹果多少钱？那个呢？",
+          "example_pinyin": "Zhège píngguǒ duōshao qián? Nà gè ne?",
+          "example_uz": "Bu olma qancha turadi? U-chi?"
+        }
+      ],
+      "dialogue": {
+        "title": "Xarid qilish",
+        "lines": [
+          {"speaker": "A", "zh": "你昨天去哪儿了？", "pinyin": "Nǐ zuótiān qù nǎr le?", "uz": "Siz kecha qayerga bordingiz?"},
+          {"speaker": "B", "zh": "我去商店了。我买了不少东西。", "pinyin": "Wǒ qù shāngdiàn le. Wǒ mǎile bù shǎo dōngxi.", "uz": "Men do'konga bordim. Men ancha narsa sotib oldim."},
+          {"speaker": "A", "zh": "你买了什么？", "pinyin": "Nǐ mǎile shénme?", "uz": "Siz nima sotib oldingiz?"},
+          {"speaker": "B", "zh": "我买了一些衣服和苹果。衣服都非常漂亮。", "pinyin": "Wǒ mǎile yìxiē yīfu hé píngguǒ. Yīfu dōu fēicháng piàoliang.", "uz": "Men bir nechta kiyim va olma sotib oldim. Kiyimlarning hammasi juda chiroyli."},
+          {"speaker": "A", "zh": "多少钱？", "pinyin": "Duōshao qián?", "uz": "Qancha turdi?"},
+          {"speaker": "B", "zh": "衣服一共一百块，苹果十块。", "pinyin": "Yīfu yīgòng yībǎi kuài, píngguǒ shí kuài.", "uz": "Kiyim jami yuz yuan, olma o'n yuan."}
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "zh": "交通",
+      "uz": "Transport",
+      "emoji": "🚌",
+      "hsk": 1,
+      "color": "from-blue-500 to-indigo-700",
+      "glow": "rgba(59,130,246,0.6)",
+      "vocabulary": [
+        {"zh": "飞机", "pinyin": "fēi jī", "uz": "Samolyot", "en": "airplane"},
+        {"zh": "坐", "pinyin": "zuò", "uz": "O'tirmoq / Minib bormoq", "en": "to sit, to take (a vehicle)"},
+        {"zh": "火车", "pinyin": "huǒ chē", "uz": "Poyezd", "en": "train"},
+        {"zh": "出租车", "pinyin": "chū zū chē", "uz": "Taksi", "en": "taxi, cab"},
+        {"zh": "送", "pinyin": "sòng", "uz": "Kuzatmoq / Olib bormoq", "en": "to send, to see off"},
+        {"zh": "一起", "pinyin": "yì qǐ", "uz": "Birga", "en": "together"},
+        {"zh": "在", "pinyin": "zài", "uz": "Da / Da bo'lmoq", "en": "in, on/at"},
+        {"zh": "哪儿", "pinyin": "nǎr", "uz": "Qayerda", "en": "where"},
+        {"zh": "工作", "pinyin": "gōng zuò", "uz": "Ish / Ishlash", "en": "to work; job"},
+        {"zh": "儿子", "pinyin": "ér zi", "uz": "O'g'il farzand", "en": "son"},
+        {"zh": "医院", "pinyin": "yī yuàn", "uz": "Kasalxona", "en": "hospital"},
+        {"zh": "医生", "pinyin": "yī shēng", "uz": "Shifokor / Doktor", "en": "doctor"},
+        {"zh": "爸爸", "pinyin": "bà ba", "uz": "Ota / Dadam", "en": "father"},
+        {"zh": "学校", "pinyin": "xué xiào", "uz": "Maktab / O'quv yurti", "en": "school"}
+      ],
+      "grammar": [
+        {
+          "pattern": "疑问代词 \"哪儿\" — \"Qayerda?\" so'rog'i",
+          "explanation": "哪儿 (nǎr) - joylashuvni so'rash uchun ishlatiladigan savol so'zi. 在哪儿 (zài nǎr) - 'qayerda?'. 在哪儿工作 - 'qayerda ishlaydi?'. So'roq bo'lmaganda 那儿/那里 (u yerda) ishlatiladi.",
+          "example_zh": "你儿子在哪儿工作？他在医院工作。",
+          "example_pinyin": "Nǐ érzi zài nǎr gōngzuò? Tā zài yīyuàn gōngzuò.",
+          "example_uz": "O'g'lingiz qayerda ishlaydi? U kasalxonada ishlaydi."
+        },
+        {
+          "pattern": "疑问代词 \"哪儿\" (2) — Joylashuvni so'rash",
+          "explanation": "哪儿 (nǎr) gap oxirida ham joylashuvni so'rash uchun ishlatiladi. Masalan: 你爸爸在家吗？他在哪儿？ - 'Otangiz uyda bormi? U qayerda?'",
+          "example_zh": "你爸爸在家吗？不在家。他在哪儿呢？他在医院。",
+          "example_pinyin": "Nǐ bàba zài jiā ma? Bú zài jiā. Tā zài nǎr ne? Tā zài yīyuàn.",
+          "example_uz": "Otangiz uyda bormi? Uyda yo'q. U qayerda? U kasalxonada."
+        },
+        {
+          "pattern": "我是坐飞机来的。— \"是...的\" qolipi",
+          "explanation": "是...的 (shì...de) qolipi o'tgan voqeaning vaqti, joyi yoki usulini ta'kidlash uchun ishlatiladi. Masalan: 我是坐飞机来的 (Men samolyotda keldim - samolyot faktini ta'kidlaydi).",
+          "example_zh": "我是坐飞机来的。",
+          "example_pinyin": "Wǒ shì zuò fēijī lái de.",
+          "example_uz": "Men samolyotda keldim."
+        }
+      ],
+      "dialogue": {
+        "title": "Transport haqida",
+        "lines": [
+          {"speaker": "A", "zh": "你是坐什么来北京的？", "pinyin": "Nǐ shì zuò shénme lái Běijīng de?", "uz": "Siz Pekinga nima bilan keldingiz?"},
+          {"speaker": "B", "zh": "我是坐飞机来的。", "pinyin": "Wǒ shì zuò fēijī lái de.", "uz": "Men samolyotda keldim."},
+          {"speaker": "A", "zh": "你儿子在哪儿工作？", "pinyin": "Nǐ érzi zài nǎr gōngzuò?", "uz": "O'g'lingiz qayerda ishlaydi?"},
+          {"speaker": "B", "zh": "我儿子在医院工作，他是医生。", "pinyin": "Wǒ érzi zài yīyuàn gōngzuò, tā shì yīshēng.", "uz": "O'g'lim kasalxonada ishlaydi, u shifokor."},
+          {"speaker": "A", "zh": "你爸爸在家吗？", "pinyin": "Nǐ bàba zài jiā ma?", "uz": "Otangiz uyda bormi?"},
+          {"speaker": "B", "zh": "不在家。他在医院。", "pinyin": "Bú zài jiā. Tā zài yīyuàn.", "uz": "Uyda yo'q. U kasalxonada."}
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "zh": "天气",
+      "uz": "Ob-havo",
+      "emoji": "⛅",
+      "hsk": 1,
+      "color": "from-cyan-500 to-blue-700",
+      "glow": "rgba(6,182,212,0.6)",
+      "vocabulary": [
+        {"zh": "天气", "pinyin": "tiān qì", "uz": "Ob-havo", "en": "weather"},
+        {"zh": "怎么样", "pinyin": "zěn me yàng", "uz": "Qanday / Qandoq", "en": "how about, what is it like"},
+        {"zh": "冷", "pinyin": "lěng", "uz": "Sovuq", "en": "cold"},
+        {"zh": "热", "pinyin": "rè", "uz": "Issiq", "en": "hot"},
+        {"zh": "不太好", "pinyin": "bù tài hǎo", "uz": "Unchalik yaxshi emas", "en": "not very good"},
+        {"zh": "今天", "pinyin": "jīn tiān", "uz": "Bugun", "en": "today"},
+        {"zh": "明天", "pinyin": "míng tiān", "uz": "Ertaga", "en": "tomorrow"},
+        {"zh": "会", "pinyin": "huì", "uz": "Bo'ladi / Mumkin (ehtimol)", "en": "indicating possibility"},
+        {"zh": "下雨", "pinyin": "xià yǔ", "uz": "Yomg'ir yog'moq", "en": "to rain"},
+        {"zh": "妈妈", "pinyin": "mā ma", "uz": "Ona", "en": "mother, mom"},
+        {"zh": "身体", "pinyin": "shēn tǐ", "uz": "Sog'liq / Tana", "en": "body, health"},
+        {"zh": "小姐", "pinyin": "xiǎo jiě", "uz": "Xonim (yosh ayol)", "en": "Miss, young lady"},
+        {"zh": "来", "pinyin": "lái", "uz": "Kelmoq", "en": "to come"},
+        {"zh": "北京", "pinyin": "Běi jīng", "uz": "Pekin (Xitoy poytaxti)", "en": "Beijing, capital of China"}
+      ],
+      "grammar": [
+        {
+          "pattern": "北京的天气怎么样？ — Pekinda ob-havo qanday?",
+          "explanation": "怎么样 (zěnme yàng) - 'qanday?' savol iborasi. Ob-havo, sog'liq, ahvol haqida so'rash uchun ishlatiladi. Javobda holat tavsifi keladi: 很好 (juda yaxshi), 不太好 (unchalik yaxshi emas).",
+          "example_zh": "昨天北京的天气怎么样？不太好，有点儿冷。",
+          "example_pinyin": "Zuótiān Běijīng de tiānqì zěnme yàng? Bú tài hǎo, yǒudiǎnr lěng.",
+          "example_uz": "Kecha Pekinda ob-havo qanday edi? Unchalik yaxshi emas, biroz sovuq edi."
+        },
+        {
+          "pattern": "能愿动词 \"会\" (2) — \"Bo'ladi\" modal fe'li (ehtimol)",
+          "explanation": "会 (huì) modal fe'li ikki ma'noda ishlatiladi: (1) mahorat - 'bilmoq/uddalay olmoq'; (2) ehtimol - 'bo'ladi/kerak'. Ob-havo prognozida: 明天会下雨 - 'ertaga yomg'ir yog'adi'.",
+          "example_zh": "明天会下雨吗？明天会下雨。",
+          "example_pinyin": "Míngtiān huì xià yǔ ma? Míngtiān huì xià yǔ.",
+          "example_uz": "Ertaga yomg'ir yog'armikan? Ertaga yomg'ir yog'adi."
+        },
+        {
+          "pattern": "今天天气很好，不会下雨。— Inkor: 不会",
+          "explanation": "不会 (bú huì) - 'bo'lmaydi/emas' ma'nosini bildiradi. Ehtimolni inkor qilishda ishlatiladi. Masalan: 今天不会下雨 (bugun yomg'ir yog'maydi). Ko'nikma inkorida ham: 我不会说汉语 (men xitoycha bilmayman).",
+          "example_zh": "今天天气很好，不会下雨。",
+          "example_pinyin": "Jīntiān tiānqì hěn hǎo, bú huì xià yǔ.",
+          "example_uz": "Bugun ob-havo yaxshi, yomg'ir yog'maydi."
+        }
+      ],
+      "dialogue": {
+        "title": "Ob-havo haqida",
+        "lines": [
+          {"speaker": "A", "zh": "昨天北京的天气怎么样？", "pinyin": "Zuótiān Běijīng de tiānqì zěnme yàng?", "uz": "Kecha Pekinda ob-havo qanday edi?"},
+          {"speaker": "B", "zh": "不太好，有点儿冷。", "pinyin": "Bú tài hǎo, yǒudiǎnr lěng.", "uz": "Unchalik yaxshi emas edi, biroz sovuq edi."},
+          {"speaker": "A", "zh": "明天天气怎么样？", "pinyin": "Míngtiān tiānqì zěnme yàng?", "uz": "Ertaga ob-havo qanday bo'ladi?"},
+          {"speaker": "B", "zh": "明天天气很好，不会下雨。", "pinyin": "Míngtiān tiānqì hěn hǎo, bú huì xià yǔ.", "uz": "Ertaga ob-havo yaxshi bo'ladi, yomg'ir yog'maydi."},
+          {"speaker": "A", "zh": "今天冷吗？", "pinyin": "Jīntiān lěng ma?", "uz": "Bugun sovuqmi?"},
+          {"speaker": "B", "zh": "不太冷，但是有点儿热。", "pinyin": "Bú tài lěng, dànshì yǒudiǎnr rè.", "uz": "Unchalik sovuq emas, lekin biroz issiq."}
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "zh": "时间",
+      "uz": "Vaqt",
+      "emoji": "⏰",
+      "hsk": 1,
+      "color": "from-yellow-500 to-amber-700",
+      "glow": "rgba(234,179,8,0.6)",
+      "vocabulary": [
+        {"zh": "今天", "pinyin": "jīn tiān", "uz": "Bugun", "en": "today"},
+        {"zh": "几号", "pinyin": "jǐ hào", "uz": "Nechanchi sana", "en": "what date"},
+        {"zh": "号", "pinyin": "hào", "uz": "Sana (oy kuni)", "en": "date, number"},
+        {"zh": "月", "pinyin": "yuè", "uz": "Oy", "en": "month"},
+        {"zh": "年", "pinyin": "nián", "uz": "Yil", "en": "year"},
+        {"zh": "星期", "pinyin": "xīng qī", "uz": "Hafta kuni", "en": "day of the week"},
+        {"zh": "明天", "pinyin": "míng tiān", "uz": "Ertaga", "en": "tomorrow"},
+        {"zh": "后天", "pinyin": "hòu tiān", "uz": "Indigacha (ertadan keyingi kun)", "en": "day after tomorrow"},
+        {"zh": "现在", "pinyin": "xiàn zài", "uz": "Hozir", "en": "now"},
+        {"zh": "点", "pinyin": "diǎn", "uz": "Soat (vaqt)", "en": "o'clock"},
+        {"zh": "分", "pinyin": "fēn", "uz": "Daqiqa", "en": "minute"},
+        {"zh": "中午", "pinyin": "zhōng wǔ", "uz": "Tush payti", "en": "noon"},
+        {"zh": "吃饭", "pinyin": "chī fàn", "uz": "Ovqat yemoq", "en": "to eat a meal"},
+        {"zh": "日历", "pinyin": "rì lì", "uz": "Taqvim", "en": "calendar"},
+        {"zh": "图书馆", "pinyin": "tú shū guǎn", "uz": "Kutubxona", "en": "library"}
+      ],
+      "grammar": [
+        {
+          "pattern": "时间的表达 — Vaqtni ifodalash",
+          "explanation": "Xitoycha vaqtni aytishda 点 (diǎn) - soat, 分 (fēn) - daqiqa ishlatiladi. Butun soat: 十点 (10 soat). Yarim: 十点半 (10:30). Daqiqa: 十点十分 (10:10). Oldin soat, keyin daqiqa aytiladi.",
+          "example_zh": "现在几点？现在是十点十分。",
+          "example_pinyin": "Xiànzài jǐ diǎn? Xiànzài shì shí diǎn shí fēn.",
+          "example_uz": "Hozir soat necha? Hozir o'n soat o'n daqiqa."
+        },
+        {
+          "pattern": "时间作状语 — Vaqtning ravish sifatida ishlatilishi",
+          "explanation": "Vaqt ifodalari gapda fe'ldan oldin yoki ega oldida kelishi mumkin. Masalan: 妈妈六点做饭 (ona olti soatda ovqat tayyorlaydi). 明天我去图书馆 (ertaga men kutubxonaga boraman).",
+          "example_zh": "明天我去图书馆学习。",
+          "example_pinyin": "Míngtiān wǒ qù túshūguǎn xuéxí.",
+          "example_uz": "Ertaga men kutubxonaga o'qishga boraman."
+        },
+        {
+          "pattern": "今天几月几号？星期几？— Sanani so'rash",
+          "explanation": "Sanani so'rash: 几月 (qaysi oy?), 几号 (nechanchi kun?), 星期几 (hafta kunining nechanchi?). Xitoycha sana tartibi: Yil → Oy → Kun. 星期一=Dushanba, 星期二=Seshanba, ... 星期日/天=Yakshanba.",
+          "example_zh": "今天是几月几号？今天是九月二十五号，星期二。",
+          "example_pinyin": "Jīntiān shì jǐ yuè jǐ hào? Jīntiān shì jiǔ yuè èrshíwǔ hào, xīngqīèr.",
+          "example_uz": "Bugun necha-nechida? Bugun sentyabrning yigirma beshida, seshanba."
+        }
+      ],
+      "dialogue": {
+        "title": "Kutubxonada",
+        "lines": [
+          {"speaker": "A", "zh": "现在几点？", "pinyin": "Xiànzài jǐ diǎn?", "uz": "Hozir soat necha?"},
+          {"speaker": "B", "zh": "现在十点十分。", "pinyin": "Xiànzài shí diǎn shí fēn.", "uz": "Hozir o'n soat o'n daqiqa."},
+          {"speaker": "A", "zh": "中午几点吃饭？", "pinyin": "Zhōngwǔ jǐ diǎn chī fàn?", "uz": "Tushda soat nechada ovqat yeymiz?"},
+          {"speaker": "B", "zh": "十二点吃饭。", "pinyin": "Shí'èr diǎn chī fàn.", "uz": "O'n ikki soatda ovqat yeymiz."},
+          {"speaker": "A", "zh": "今天是几月几号？", "pinyin": "Jīntiān shì jǐ yuè jǐ hào?", "uz": "Bugun necha-nechida?"},
+          {"speaker": "B", "zh": "今天是九月二十五号，星期二。", "pinyin": "Jīntiān shì jiǔ yuè èrshíwǔ hào, xīngqīèr.", "uz": "Bugun sentyabrning yigirma beshida, seshanba."},
+          {"speaker": "A", "zh": "明天你做什么？", "pinyin": "Míngtiān nǐ zuò shénme?", "uz": "Ertaga siz nima qilasiz?"},
+          {"speaker": "B", "zh": "明天我去图书馆。", "pinyin": "Míngtiān wǒ qù túshūguǎn.", "uz": "Ertaga men kutubxonaga boraman."}
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "zh": "颜色",
+      "uz": "Ranglar",
+      "emoji": "🎨",
+      "hsk": 1,
+      "color": "from-red-500 to-pink-700",
+      "glow": "rgba(239,68,68,0.6)",
+      "vocabulary": [
+        {"zh": "颜色", "pinyin": "yán sè", "uz": "Rang", "en": "color"},
+        {"zh": "红", "pinyin": "hóng", "uz": "Qizil", "en": "red"},
+        {"zh": "白", "pinyin": "bái", "uz": "Oq", "en": "white"},
+        {"zh": "黑", "pinyin": "hēi", "uz": "Qora", "en": "black"},
+        {"zh": "黄", "pinyin": "huáng", "uz": "Sariq", "en": "yellow"},
+        {"zh": "蓝", "pinyin": "lán", "uz": "Ko'k (moviy)", "en": "blue"},
+        {"zh": "绿", "pinyin": "lǜ", "uz": "Yashil", "en": "green"},
+        {"zh": "衣服", "pinyin": "yī fu", "uz": "Kiyim", "en": "clothes"},
+        {"zh": "漂亮", "pinyin": "piào liang", "uz": "Chiroyli", "en": "beautiful, pretty"},
+        {"zh": "非常", "pinyin": "fēi cháng", "uz": "Juda", "en": "very, extremely"},
+        {"zh": "都", "pinyin": "dōu", "uz": "Hammasi", "en": "all, both"},
+        {"zh": "买", "pinyin": "mǎi", "uz": "Sotib olmoq", "en": "to buy"}
+      ],
+      "grammar": [
+        {
+          "pattern": "这件衣服是什么颜色的？ — Bu kiyim qanaqa rangda?",
+          "explanation": "Rang so'rash iborasi. 什么颜色 (shénme yánsè) - 'qanaqa rang?'. Javobda: 是红色的 (qizil rangda), 是白色的 (oq rangda). 色 (sè) - 'rang' qo'shimchasi.",
+          "example_zh": "这件衣服是什么颜色的？是红色的。",
+          "example_pinyin": "Zhè jiàn yīfu shì shénme yánsè de? Shì hóngsè de.",
+          "example_uz": "Bu kiyim qanaqa rangda? Qizil rangda."
+        },
+        {
+          "pattern": "她买的衣服都非常漂亮。— \"都\" + \"非常\"",
+          "explanation": "都 (dōu) - 'hammasi' ravishi. 非常 (fēicháng) - 'juda/g'oyat' kuchaytiruvchi ravish. 都非常漂亮 - 'hammasi juda chiroyli'. Bu iboralar kiyim-kechak va ranglarni ta'riflashda keng ishlatiladi.",
+          "example_zh": "她买的衣服都非常漂亮，有红的、白的和蓝的。",
+          "example_pinyin": "Tā mǎi de yīfu dōu fēicháng piàoliang, yǒu hóng de, bái de hé lán de.",
+          "example_uz": "U sotib olgan kiyimlarning hammasi juda chiroyli, qizil, oq va ko'k ranglari bor."
+        },
+        {
+          "pattern": "颜色 + 的 — Rang sifati",
+          "explanation": "Ranglarni ot sifatida ishlatishda 的 (de) qo'shiladi: 红的 (qizil narsa), 白的 (oq narsa). Otdan oldin: 红色的衣服 (qizil kiyim), 白色的杯子 (oq stakan). 色 (sè) - ixtiyoriy qo'shimcha.",
+          "example_zh": "我喜欢红色的衣服。",
+          "example_pinyin": "Wǒ xǐhuan hóngsè de yīfu.",
+          "example_uz": "Men qizil kiyimni yaxshi ko'raman."
+        }
+      ],
+      "dialogue": {
+        "title": "Kiyim sotib olish",
+        "lines": [
+          {"speaker": "A", "zh": "你昨天买了什么衣服？", "pinyin": "Nǐ zuótiān mǎile shénme yīfu?", "uz": "Siz kecha qanaqa kiyim sotib oldingiz?"},
+          {"speaker": "B", "zh": "我买了一件红色的和一件白色的衣服。", "pinyin": "Wǒ mǎile yī jiàn hóngsè de hé yī jiàn báisè de yīfu.", "uz": "Men bitta qizil va bitta oq kiyim sotib oldim."},
+          {"speaker": "A", "zh": "漂亮吗？", "pinyin": "Piàoliang ma?", "uz": "Chiroylimi?"},
+          {"speaker": "B", "zh": "非常漂亮！都非常漂亮。", "pinyin": "Fēicháng piàoliang! Dōu fēicháng piàoliang.", "uz": "Juda chiroyli! Hammasi juda chiroyli."},
+          {"speaker": "A", "zh": "多少钱？", "pinyin": "Duōshao qián?", "uz": "Qancha turdi?"},
+          {"speaker": "B", "zh": "红色的一百块，白色的八十块。", "pinyin": "Hóngsè de yībǎi kuài, báisè de bāshí kuài.", "uz": "Qizil rengi yuz yuan, oq rangi sakson yuan."}
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "zh": "身体健康",
+      "uz": "Sog'liq",
+      "emoji": "🏥",
+      "hsk": 1,
+      "color": "from-green-500 to-emerald-700",
+      "glow": "rgba(34,197,94,0.6)",
+      "vocabulary": [
+        {"zh": "身体", "pinyin": "shēn tǐ", "uz": "Sog'liq / Tana", "en": "body, health"},
+        {"zh": "怎么样", "pinyin": "zěn me yàng", "uz": "Qanday", "en": "how about, what is it like"},
+        {"zh": "不太好", "pinyin": "bù tài hǎo", "uz": "Unchalik yaxshi emas", "en": "not very good"},
+        {"zh": "有点儿", "pinyin": "yǒu diǎnr", "uz": "Biroz / Sal", "en": "a little, somewhat"},
+        {"zh": "来", "pinyin": "lái", "uz": "Kelmoq", "en": "to come"},
+        {"zh": "看", "pinyin": "kàn", "uz": "Ko'rmoq / O'qimoq", "en": "to look at, to see"},
+        {"zh": "谢谢", "pinyin": "xiè xie", "uz": "Rahmat", "en": "thank you"},
+        {"zh": "医生", "pinyin": "yī shēng", "uz": "Shifokor", "en": "doctor"},
+        {"zh": "医院", "pinyin": "yī yuàn", "uz": "Kasalxona", "en": "hospital"},
+        {"zh": "很", "pinyin": "hěn", "uz": "Juda / Ko'p", "en": "very"},
+        {"zh": "吃", "pinyin": "chī", "uz": "Yemoq / (dori) ichmoq", "en": "to eat, to take (medicine)"},
+        {"zh": "水", "pinyin": "shuǐ", "uz": "Suv", "en": "water"},
+        {"zh": "多", "pinyin": "duō", "uz": "Ko'p", "en": "many, much"}
+      ],
+      "grammar": [
+        {
+          "pattern": "你身体怎么样？— Sog'ligingiz qanday?",
+          "explanation": "怎么样 (zěnme yàng) - ahvol, sog'liq haqida so'rash iborasi. Javob: 很好 (yaxshi), 不太好 (unchalik yaxshi emas), 有点儿冷 (biroz sovuq). 身体 (shēntǐ) - 'sog'liq/tana'.",
+          "example_zh": "你妈妈身体怎么样？她身体不太好，有点儿累。",
+          "example_pinyin": "Nǐ māma shēntǐ zěnme yàng? Tā shēntǐ bú tài hǎo, yǒudiǎnr lèi.",
+          "example_uz": "Onangizning sog'ligi qanday? Uning sog'ligi unchalik yaxshi emas, biroz charchagan."
+        },
+        {
+          "pattern": "能愿动词 \"会\" — \"Bilmoq\" modal fe'li (mahorat)",
+          "explanation": "会 (huì) - birinchi ma'nosi: ko'nikma/mahorat. 我会说汉语 (men xitoycha bilaman). 我不会写汉字 (men xitoy harflarini yoza olmayman). O'rganib bilib olgan narsalar uchun ishlatiladi.",
+          "example_zh": "她会说汉语，也会写汉字。",
+          "example_pinyin": "Tā huì shuō Hànyǔ, yě huì xiě Hànzì.",
+          "example_uz": "U xitoycha gapira oladi, xitoy harflarini ham yoza oladi."
+        },
+        {
+          "pattern": "你今天怎么样？ — Bugun ahvolingiz qanday?",
+          "explanation": "Kundalik so'rashishda ishlatiladigan ibora. 今天怎么样 - 'bugun qanday?' degan ma'noda. Sog'liq, kayfiyat va ahvol haqida so'rash mumkin. Javob: 很好 / 不太好 / 还好 (ham yaxshi).",
+          "example_zh": "你今天怎么样？我今天身体不太好。",
+          "example_pinyin": "Nǐ jīntiān zěnme yàng? Wǒ jīntiān shēntǐ bú tài hǎo.",
+          "example_uz": "Bugun ahvolingiz qanday? Bugun sog'ligim unchalik yaxshi emas."
+        }
+      ],
+      "dialogue": {
+        "title": "Sog'liq haqida",
+        "lines": [
+          {"speaker": "A", "zh": "你妈妈身体怎么样？", "pinyin": "Nǐ māma shēntǐ zěnme yàng?", "uz": "Onangizning sog'ligi qanday?"},
+          {"speaker": "B", "zh": "她身体不太好，有点儿累。", "pinyin": "Tā shēntǐ bú tài hǎo, yǒudiǎnr lèi.", "uz": "Uning sog'ligi unchalik yaxshi emas, biroz charchagan."},
+          {"speaker": "A", "zh": "她在哪儿？", "pinyin": "Tā zài nǎr?", "uz": "U qayerda?"},
+          {"speaker": "B", "zh": "她在医院。医生来看她了。", "pinyin": "Tā zài yīyuàn. Yīshēng lái kàn tā le.", "uz": "U kasalxonada. Shifokor uni ko'rgani keldi."},
+          {"speaker": "A", "zh": "谢谢你告诉我。", "pinyin": "Xièxie nǐ gàosu wǒ.", "uz": "Aytib berganing uchun rahmat."},
+          {"speaker": "B", "zh": "不客气。她喝了很多水，好多了。", "pinyin": "Bú kèqi. Tā hēle hěn duō shuǐ, hǎo duō le.", "uz": "Arzimaydi. U ko'p suv ichdi, ancha yaxshilandi."}
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "zh": "学习",
+      "uz": "O'qish va ta'lim",
+      "emoji": "📚",
+      "hsk": 1,
+      "color": "from-indigo-500 to-purple-700",
+      "glow": "rgba(99,102,241,0.6)",
+      "vocabulary": [
+        {"zh": "汉语", "pinyin": "Hàn yǔ", "uz": "Xitoy tili", "en": "Chinese language"},
+        {"zh": "老师", "pinyin": "lǎo shī", "uz": "O'qituvchi", "en": "teacher"},
+        {"zh": "朋友", "pinyin": "péng you", "uz": "Do'st", "en": "friend"},
+        {"zh": "她", "pinyin": "tā", "uz": "U (ayol)", "en": "she, her"},
+        {"zh": "他", "pinyin": "tā", "uz": "U (erkak)", "en": "he, him"},
+        {"zh": "的", "pinyin": "de", "uz": "Egalik belgisi (-ning)", "en": "a structural particle"},
+        {"zh": "哪", "pinyin": "nǎ", "uz": "Qaysi", "en": "which"},
+        {"zh": "国", "pinyin": "guó", "uz": "Mamlakat / Davlat", "en": "country, nation"},
+        {"zh": "学习", "pinyin": "xué xí", "uz": "O'qimoq / O'rganmoq", "en": "to study, to learn"},
+        {"zh": "会", "pinyin": "huì", "uz": "Bilmoq / Uddalay olmoq", "en": "can, to be able to"},
+        {"zh": "说", "pinyin": "shuō", "uz": "Gapirmoq / Aytmoq", "en": "to speak, to say"},
+        {"zh": "写", "pinyin": "xiě", "uz": "Yozmoq", "en": "to write"},
+        {"zh": "汉字", "pinyin": "Hàn zì", "uz": "Xitoy harflari", "en": "Chinese characters"},
+        {"zh": "做", "pinyin": "zuò", "uz": "Qilmoq / Bajarmoq", "en": "to do, to make"},
+        {"zh": "菜", "pinyin": "cài", "uz": "Taom / Ovqat", "en": "dish, vegetable"},
+        {"zh": "同学", "pinyin": "tóng xué", "uz": "Sinfdosh / Kurs do'sti", "en": "classmate"},
+        {"zh": "中国", "pinyin": "Zhōng guó", "uz": "Xitoy", "en": "China"}
+      ],
+      "grammar": [
+        {
+          "pattern": "她是我的汉语老师。— \"的\" egalik belgisi",
+          "explanation": "的 (de) - egalik belgisi. Ega + 的 + Ot = eganing narsasi. Masalan: 我的老师 (mening o'qituvchim), 她的朋友 (uning do'sti). Shaxs olmoshlari bilan 的 tushib qolishi mumkin: 我老师 = 我的老师.",
+          "example_zh": "她是我的汉语老师，也是我的好朋友。",
+          "example_pinyin": "Tā shì wǒ de Hànyǔ lǎoshī, yě shì wǒ de hǎo péngyou.",
+          "example_uz": "U mening xitoy tili o'qituvchim, shuningdek mening yaxshi do'stim."
+        },
+        {
+          "pattern": "疑问代词 \"哪\" — \"Qaysi?\" savol so'zi",
+          "explanation": "哪 (nǎ) - 'qaysi?' ma'nosini bildiruvchi savol so'zi. 哪国人 (qaysi mamlakatlik?), 哪个 (qaysi biri?). 哪儿 (nǎr) - 'qayerda?'. Javobda aniq mamlakat yoki joy aytiladi.",
+          "example_zh": "你是哪国人？我是中国人。",
+          "example_pinyin": "Nǐ shì nǎ guó rén? Wǒ shì Zhōngguó rén.",
+          "example_uz": "Siz qaysi mamlakatdansiz? Men Xitoylikman."
+        },
+        {
+          "pattern": "能愿动词 \"会\" — Ko'nikma bildirish",
+          "explanation": "会 (huì) - o'rganib egallab olingan ko'nikmani bildiradi. 你会说汉语吗？(Siz xitoycha gapira olasizmi?). 会 (ha, bilaman) yoki 不会 (yo'q, bilmayman) deb javob beriladi.",
+          "example_zh": "你会说汉语吗？我会说，但是说得不太好。",
+          "example_pinyin": "Nǐ huì shuō Hànyǔ ma? Wǒ huì shuō, dànshì shuō de bú tài hǎo.",
+          "example_uz": "Siz xitoycha gapira olasizmi? Gapira olaman, lekin unchalik yaxshi gapira olmayman."
+        }
+      ],
+      "dialogue": {
+        "title": "Maktabda",
+        "lines": [
+          {"speaker": "A", "zh": "她是谁？", "pinyin": "Tā shì shéi?", "uz": "U kim?"},
+          {"speaker": "B", "zh": "她是我的汉语老师。", "pinyin": "Tā shì wǒ de Hànyǔ lǎoshī.", "uz": "U mening xitoy tili o'qituvchim."},
+          {"speaker": "A", "zh": "她是哪国人？", "pinyin": "Tā shì nǎ guó rén?", "uz": "U qaysi mamlakatdan?"},
+          {"speaker": "B", "zh": "她是中国人。", "pinyin": "Tā shì Zhōngguó rén.", "uz": "U Xitoydan."},
+          {"speaker": "A", "zh": "你会说汉语吗？", "pinyin": "Nǐ huì shuō Hànyǔ ma?", "uz": "Siz xitoycha gapira olasizmi?"},
+          {"speaker": "B", "zh": "会，我会说，也会写汉字。", "pinyin": "Huì, wǒ huì shuō, yě huì xiě Hànzì.", "uz": "Ha, gapira olaman, xitoy harflarini ham yoza olaman."},
+          {"speaker": "A", "zh": "她也是你的朋友吗？", "pinyin": "Tā yě shì nǐ de péngyou ma?", "uz": "U ham sizning do'stingizmi?"},
+          {"speaker": "B", "zh": "是的，她是我的好朋友。", "pinyin": "Shì de, tā shì wǒ de hǎo péngyou.", "uz": "Ha, u mening yaxshi do'stim."}
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "zh": "工作",
+      "uz": "Ish va kasb",
+      "emoji": "💼",
+      "hsk": 1,
+      "color": "from-slate-500 to-gray-700",
+      "glow": "rgba(100,116,139,0.6)",
+      "vocabulary": [
+        {"zh": "工作", "pinyin": "gōng zuò", "uz": "Ish / Ishlash", "en": "to work; job"},
+        {"zh": "在", "pinyin": "zài", "uz": "Da (joy bildiradi)", "en": "in, on, at"},
+        {"zh": "哪儿", "pinyin": "nǎr", "uz": "Qayerda", "en": "where"},
+        {"zh": "学校", "pinyin": "xué xiào", "uz": "Maktab", "en": "school"},
+        {"zh": "医院", "pinyin": "yī yuàn", "uz": "Kasalxona", "en": "hospital"},
+        {"zh": "医生", "pinyin": "yī shēng", "uz": "Shifokor", "en": "doctor"},
+        {"zh": "老师", "pinyin": "lǎo shī", "uz": "O'qituvchi", "en": "teacher"},
+        {"zh": "儿子", "pinyin": "ér zi", "uz": "O'g'il", "en": "son"},
+        {"zh": "爸爸", "pinyin": "bà ba", "uz": "Ota", "en": "father"},
+        {"zh": "能", "pinyin": "néng", "uz": "Qodir / Qila olmoq", "en": "can, to be able to"},
+        {"zh": "坐", "pinyin": "zuò", "uz": "O'tirmoq", "en": "to sit"},
+        {"zh": "桌子", "pinyin": "zhuō zi", "uz": "Stol", "en": "table, desk"},
+        {"zh": "电脑", "pinyin": "diàn nǎo", "uz": "Kompyuter", "en": "computer"},
+        {"zh": "上面", "pinyin": "shàng miàn", "uz": "Ustida", "en": "on top, above"},
+        {"zh": "书", "pinyin": "shū", "uz": "Kitob", "en": "book"}
+      ],
+      "grammar": [
+        {
+          "pattern": "你在哪儿工作？ — Siz qayerda ishlaysiz?",
+          "explanation": "在 (zài) - joy prefiksi, 'da/da bo'lmoq'. 哪儿 (nǎr) - 'qayerda?'. 在哪儿工作 - 'qayerda ishlaydi?'. Javobda: 在学校工作 (maktabda ishlaydi), 在医院工作 (kasalxonada ishlaydi).",
+          "example_zh": "你在哪儿工作？我在学校工作，我是老师。",
+          "example_pinyin": "Nǐ zài nǎr gōngzuò? Wǒ zài xuéxiào gōngzuò, wǒ shì lǎoshī.",
+          "example_uz": "Siz qayerda ishlaysiz? Men maktabda ishlayman, men o'qituvchiman."
+        },
+        {
+          "pattern": "能愿动词 \"能\" — \"Qila olmoq\" modal fe'li",
+          "explanation": "能 (néng) - imkoniyat yoki ruxsat bildiradi. 我能坐这儿吗？(Men bu yerga o'tirsam bo'ladimi?). 不能 (mumkin emas). 会 (mahorat) vs 能 (imkoniyat/ruxsat) farqi: 我会游泳，但是今天不能游 (suzishni bilaman, lekin bugun suza olmayman).",
+          "example_zh": "我能坐这儿吗？",
+          "example_pinyin": "Wǒ néng zuò zhèr ma?",
+          "example_uz": "Men bu yerga o'tirsam bo'ladimi?"
+        },
+        {
+          "pattern": "祈使句 \"请\" — \"Iltimos\" bilan buyruq gap",
+          "explanation": "请 (qǐng) - fe'ldan oldin kelib, muallim taklif yoki iltimosni nazokat bilan bildiradi. Masalan: 请坐 (o'tiring), 请喝茶 (choy iching). O'zbek tilidagi 'iltimos ... qiling' ma'nosiga o'xshaydi.",
+          "example_zh": "请坐。请写你的名字。请喝茶。",
+          "example_pinyin": "Qǐng zuò. Qǐng xiě nǐ de míngzi. Qǐng hē chá.",
+          "example_uz": "O'tiring. Ismingizni yozing. Choy iching."
+        }
+      ],
+      "dialogue": {
+        "title": "Ishxonada",
+        "lines": [
+          {"speaker": "A", "zh": "桌子上面有什么？", "pinyin": "Zhuōzi shàngmiàn yǒu shénme?", "uz": "Stolning ustida nima bor?"},
+          {"speaker": "B", "zh": "桌子上面有一本书和一台电脑。", "pinyin": "Zhuōzi shàngmiàn yǒu yī běn shū hé yī tái diànnǎo.", "uz": "Stolning ustida bir kitob va bir kompyuter bor."},
+          {"speaker": "A", "zh": "我能坐这儿吗？", "pinyin": "Wǒ néng zuò zhèr ma?", "uz": "Men bu yerga o'tirsam bo'ladimi?"},
+          {"speaker": "B", "zh": "能，请坐。", "pinyin": "Néng, qǐng zuò.", "uz": "Bo'ladi, o'tiring."},
+          {"speaker": "A", "zh": "你在哪儿工作？", "pinyin": "Nǐ zài nǎr gōngzuò?", "uz": "Siz qayerda ishlaysiz?"},
+          {"speaker": "B", "zh": "我在学校工作，我是老师。", "pinyin": "Wǒ zài xuéxiào gōngzuò, wǒ shì lǎoshī.", "uz": "Men maktabda ishlayman, men o'qituvchiman."}
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "zh": "爱好",
+      "uz": "Qiziqishlar",
+      "emoji": "🎯",
+      "hsk": 1,
+      "color": "from-fuchsia-500 to-purple-700",
+      "glow": "rgba(217,70,239,0.6)",
+      "vocabulary": [
+        {"zh": "打电话", "pinyin": "dǎ diàn huà", "uz": "Telefon qilmoq", "en": "to make a phone call"},
+        {"zh": "睡觉", "pinyin": "shuì jiào", "uz": "Uxlamoq", "en": "to sleep"},
+        {"zh": "喜欢", "pinyin": "xǐ huān", "uz": "Yaxshi ko'rmoq / Yoqtirmoq", "en": "to like, to be fond of"},
+        {"zh": "做", "pinyin": "zuò", "uz": "Qilmoq / Bajarmoq", "en": "to do, to make"},
+        {"zh": "中国菜", "pinyin": "Zhōng guó cài", "uz": "Xitoy taomi", "en": "Chinese food"},
+        {"zh": "呢", "pinyin": "ne", "uz": "Harakat davom etayotganini bildiruvchi yuklamasi", "en": "a particle indicating an ongoing action"},
+        {"zh": "正在", "pinyin": "zhèng zài", "uz": "Hozir ... qilyapti", "en": "in the process of doing something"},
+        {"zh": "看电视", "pinyin": "kàn diàn shì", "uz": "Televizor ko'rmoq", "en": "to watch TV"},
+        {"zh": "买东西", "pinyin": "mǎi dōng xi", "uz": "Xarid qilmoq / Narsa sotib olmoq", "en": "to go shopping"},
+        {"zh": "吃饭", "pinyin": "chī fàn", "uz": "Ovqat yemoq", "en": "to eat a meal"},
+        {"zh": "学习", "pinyin": "xué xí", "uz": "O'qimoq / O'rganmoq", "en": "to study"},
+        {"zh": "看书", "pinyin": "kàn shū", "uz": "Kitob o'qimoq", "en": "to read a book"},
+        {"zh": "运动", "pinyin": "yùn dòng", "uz": "Sport / Jismoniy mashq", "en": "sports, physical exercise"},
+        {"zh": "他", "pinyin": "tā", "uz": "U (erkak)", "en": "he, him"}
+      ],
+      "grammar": [
+        {
+          "pattern": "他在学做中国菜呢。— Davom etayotgan harakat",
+          "explanation": "正在 (zhèngzài) + fe'l + 呢 (ne) - hozir bajarilayotgan harakatni bildiradi. 正在 gap boshida, 呢 gap oxirida keladi. Ikkalasi birga yoki alohida ishlatilishi mumkin: 他在学 (u o'rganmoqda), 他学呢 (u o'rganmoqda).",
+          "example_zh": "他在学做中国菜呢。",
+          "example_pinyin": "Tā zài xué zuò Zhōngguó cài ne.",
+          "example_uz": "U hozir Xitoy taomini pishirishni o'rganmoqda."
+        },
+        {
+          "pattern": "能愿动词 \"会\" (2) — Ehtimol bildirish",
+          "explanation": "会 (huì) - 'bo'lishi mumkin/kerak bo'ladi' ma'nosida ham ishlatiladi. Masalan: 爷爷八点就会回来吗？(Bobo sakkizda qaytib keladimi?). Bu ma'noda 可能 (kéyǐ) bilan o'xshash.",
+          "example_zh": "爷爷八点就会回来吗？会的。",
+          "example_pinyin": "Yéye bā diǎn jiù huì huí lái ma? Huì de.",
+          "example_uz": "Bobo sakkizda qaytib keladimi? Ha, keladi."
+        },
+        {
+          "pattern": "你在做什么呢？ — Hozir nima qilayapsiz?",
+          "explanation": "在...呢 (zài...ne) - davomiylik bildiradi. Bu ibora biroz boshqa ishni bajarib o'tirganligini bildirganda ham ishlatiladi. Masalan: 我在看电视呢 (men televisor ko'rmoqdaman), 我在吃饭呢 (men ovqatlanmoqdaman).",
+          "example_zh": "你在做什么呢？我在看电视呢。",
+          "example_pinyin": "Nǐ zài zuò shénme ne? Wǒ zài kàn diànshì ne.",
+          "example_uz": "Siz hozir nima qilayapsiz? Men televizor ko'rmoqdaman."
+        }
+      ],
+      "dialogue": {
+        "title": "Telefon suhbati",
+        "lines": [
+          {"speaker": "A", "zh": "喂，你好！你在做什么呢？", "pinyin": "Wèi, nǐ hǎo! Nǐ zài zuò shénme ne?", "uz": "Alo, salom! Siz hozir nima qilayapsiz?"},
+          {"speaker": "B", "zh": "我在学做中国菜呢。", "pinyin": "Wǒ zài xué zuò Zhōngguó cài ne.", "uz": "Men hozir Xitoy taomini pishirishni o'rganmoqdaman."},
+          {"speaker": "A", "zh": "大卫呢？他在做什么？", "pinyin": "Dàwèi ne? Tā zài zuò shénme?", "uz": "David-chi? U nima qilyapti?"},
+          {"speaker": "B", "zh": "他在睡觉呢。", "pinyin": "Tā zài shuìjiào ne.", "uz": "U hozir uxlayapti."},
+          {"speaker": "A", "zh": "爷爷八点会回来吗？", "pinyin": "Yéye bā diǎn huì huí lái ma?", "uz": "Bobo sakkizda qaytib keladimi?"},
+          {"speaker": "B", "zh": "会的。你打算来吗？", "pinyin": "Huì de. Nǐ dǎsuàn lái ma?", "uz": "Ha, keladi. Siz kelmoqchimisiz?"},
+          {"speaker": "A", "zh": "是的，我喜欢吃中国菜！", "pinyin": "Shì de, wǒ xǐhuan chī Zhōngguó cài!", "uz": "Ha, men Xitoy taomini yaxshi ko'raman!"}
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "zh": "旅行",
+      "uz": "Sayohat",
+      "emoji": "✈️",
+      "hsk": 1,
+      "color": "from-sky-500 to-blue-700",
+      "glow": "rgba(14,165,233,0.6)",
+      "vocabulary": [
+        {"zh": "飞机", "pinyin": "fēi jī", "uz": "Samolyot", "en": "airplane"},
+        {"zh": "坐", "pinyin": "zuò", "uz": "Minib bormoq (transport)", "en": "to take (a vehicle)"},
+        {"zh": "火车", "pinyin": "huǒ chē", "uz": "Poyezd", "en": "train"},
+        {"zh": "出租车", "pinyin": "chū zū chē", "uz": "Taksi", "en": "taxi, cab"},
+        {"zh": "来", "pinyin": "lái", "uz": "Kelmoq", "en": "to come"},
+        {"zh": "高兴", "pinyin": "gāo xìng", "uz": "Xursand / Shod", "en": "glad, happy"},
+        {"zh": "朋友", "pinyin": "péng you", "uz": "Do'st", "en": "friend"},
+        {"zh": "一起", "pinyin": "yì qǐ", "uz": "Birga", "en": "together"},
+        {"zh": "送", "pinyin": "sòng", "uz": "Kuzatmoq / Olib bormoq", "en": "to see off, to send"},
+        {"zh": "北京", "pinyin": "Běi jīng", "uz": "Pekin", "en": "Beijing"},
+        {"zh": "去", "pinyin": "qù", "uz": "Bormoq / Ketmoq", "en": "to go"},
+        {"zh": "什么时候", "pinyin": "shén me shí hou", "uz": "Qachon", "en": "when"},
+        {"zh": "是...的", "pinyin": "shì...de", "uz": "O'tgan voqeani ta'kidlovchi qolip", "en": "a construction for emphasizing time, place, or manner of a past action"}
+      ],
+      "grammar": [
+        {
+          "pattern": "我是坐飞机来的。— \"是...的\" qolipi",
+          "explanation": "是...的 (shì...de) - o'tgan voqeaning vaqti, joyi yoki usulini ta'kidlash uchun ishlatiladi. Masalan: 你是什么时候来北京的？(Siz Pekinga qachon keldingiz?). 我是昨天来的 (men kecha keldim - 'kecha' faktini ta'kidlaydi).",
+          "example_zh": "你是什么时候来北京的？我是昨天来的。",
+          "example_pinyin": "Nǐ shì shénme shíhou lái Běijīng de? Wǒ shì zuótiān lái de.",
+          "example_uz": "Siz Pekinga qachon keldingiz? Men kecha keldim."
+        },
+        {
+          "pattern": "你是怎么来的？ — Qanday kelgansiz?",
+          "explanation": "是...的 qolipida transport vositasini ta'kidlash: 我是坐飞机来的 (samolyotda keldim), 我是坐火车来的 (poyezdda keldim), 我是坐出租车来的 (taksida keldim).",
+          "example_zh": "你是坐飞机来的还是坐火车来的？我是坐飞机来的。",
+          "example_pinyin": "Nǐ shì zuò fēijī lái de háishi zuò huǒchē lái de? Wǒ shì zuò fēijī lái de.",
+          "example_uz": "Siz samolyotda keldingizmi yoki poyezdda? Men samolyotda keldim."
+        },
+        {
+          "pattern": "什么时候 — \"Qachon?\" savol so'zi",
+          "explanation": "什么时候 (shénme shíhou) - 'qachon?' savol so'zi. Gapda fe'ldan oldin yoki ega oldida kelishi mumkin. Masalan: 你什么时候去北京？(Siz qachon Pekinga borasiz?). 什么时候来？(Qachon kelasiz?).",
+          "example_zh": "你们什么时候去北京？我们后天去。",
+          "example_pinyin": "Nǐmen shénme shíhou qù Běijīng? Wǒmen hòutiān qù.",
+          "example_uz": "Siz Pekinga qachon borasiz? Biz indigacha boramiz."
+        }
+      ],
+      "dialogue": {
+        "title": "Sayohat rejalari",
+        "lines": [
+          {"speaker": "A", "zh": "你是什么时候来北京的？", "pinyin": "Nǐ shì shénme shíhou lái Běijīng de?", "uz": "Siz Pekinga qachon keldingiz?"},
+          {"speaker": "B", "zh": "我是昨天来的。", "pinyin": "Wǒ shì zuótiān lái de.", "uz": "Men kecha keldim."},
+          {"speaker": "A", "zh": "你是坐飞机来的吗？", "pinyin": "Nǐ shì zuò fēijī lái de ma?", "uz": "Siz samolyotda keldingizmi?"},
+          {"speaker": "B", "zh": "是的，我是坐飞机来的。", "pinyin": "Shì de, wǒ shì zuò fēijī lái de.", "uz": "Ha, men samolyotda keldim."},
+          {"speaker": "A", "zh": "很高兴你来了！我们一起去吃中国菜吧。", "pinyin": "Hěn gāoxìng nǐ lái le! Wǒmen yìqǐ qù chī Zhōngguó cài ba.", "uz": "Kelganingizdan xursandman! Keling, birga Xitoy taomi yeylik."},
+          {"speaker": "B", "zh": "好的！我很喜欢吃中国菜。", "pinyin": "Hǎo de! Wǒ hěn xǐhuan chī Zhōngguó cài.", "uz": "Xop! Men Xitoy taomini juda yaxshi ko'raman."}
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "zh": "动物",
+      "uz": "Hayvonlar",
+      "emoji": "🐾",
+      "hsk": 1,
+      "color": "from-amber-500 to-orange-700",
+      "glow": "rgba(245,158,11,0.6)",
+      "vocabulary": [
+        {"zh": "猫", "pinyin": "māo", "uz": "Mushuk", "en": "cat"},
+        {"zh": "狗", "pinyin": "gǒu", "uz": "It / Kuchuk", "en": "dog"},
+        {"zh": "小", "pinyin": "xiǎo", "uz": "Kichik / Kichkina", "en": "small, little"},
+        {"zh": "哪儿", "pinyin": "nǎr", "uz": "Qayerda", "en": "where"},
+        {"zh": "在", "pinyin": "zài", "uz": "Da (joylashmoq)", "en": "in, at, on"},
+        {"zh": "上面", "pinyin": "shàng miàn", "uz": "Ustida", "en": "on top, above"},
+        {"zh": "下面", "pinyin": "xià miàn", "uz": "Ostida", "en": "below, under"},
+        {"zh": "里面", "pinyin": "lǐ miàn", "uz": "Ichida", "en": "inside"},
+        {"zh": "前面", "pinyin": "qián miàn", "uz": "Oldinda", "en": "in front"},
+        {"zh": "后面", "pinyin": "hòu miàn", "uz": "Orqasida", "en": "behind"},
+        {"zh": "桌子", "pinyin": "zhuō zi", "uz": "Stol", "en": "table, desk"},
+        {"zh": "椅子", "pinyin": "yǐ zi", "uz": "Stul", "en": "chair"},
+        {"zh": "书", "pinyin": "shū", "uz": "Kitob", "en": "book"},
+        {"zh": "有", "pinyin": "yǒu", "uz": "Bor / Mavjud", "en": "to have, there is/are"}
+      ],
+      "grammar": [
+        {
+          "pattern": "小猫在哪儿？ — Hayvon qayerda?",
+          "explanation": "在 (zài) + joy bildiruvchi ibora - joylashuvni bildiradi. 哪儿 (nǎr) - 'qayerda?'. Joylashuvni ifodalash: 在桌子上面 (stolning ustida), 在椅子下面 (stulning ostida), 在书里面 (kitobning ichida).",
+          "example_zh": "小猫在哪儿？小猫在桌子上面。",
+          "example_pinyin": "Xiǎo māo zài nǎr? Xiǎo māo zài zhuōzi shàngmiàn.",
+          "example_uz": "Mushukcha qayerda? Mushukcha stolning ustida."
+        },
+        {
+          "pattern": "桌子上面有什么？ — Stolning ustida nima bor?",
+          "explanation": "有 (yǒu) - 'bor/mavjud' ma'nosida joylashuvni bildirish uchun ishlatiladi. 桌子上面有... (stolning ustida ... bor). 没有 (méiyǒu) - 'yo'q'. Bu joy + 有 + narsa qolipi.",
+          "example_zh": "桌子上面有什么？桌子上面有一本书和一台电脑。",
+          "example_pinyin": "Zhuōzi shàngmiàn yǒu shénme? Zhuōzi shàngmiàn yǒu yī běn shū hé yī tái diànnǎo.",
+          "example_uz": "Stolning ustida nima bor? Stolning ustida bir kitob va bir kompyuter bor."
+        },
+        {
+          "pattern": "我能坐这儿吗？ — \"能\" modal fe'li",
+          "explanation": "能 (néng) - imkoniyat yoki ruxsat bildiradi. 能...吗？ - 'mumkinmi?' so'rog'i. 能 (mumkin/bo'ladi) yoki 不能 (mumkin emas/bo'lmaydi) deb javob beriladi.",
+          "example_zh": "小狗在哪儿呢？它在椅子下面。",
+          "example_pinyin": "Xiǎo gǒu zài nǎr ne? Tā zài yǐzi xiàmiàn.",
+          "example_uz": "Kuchukcha qayerda ekan? U stulning ostida."
+        }
+      ],
+      "dialogue": {
+        "title": "Hayvonlar haqida",
+        "lines": [
+          {"speaker": "A", "zh": "你家有小猫吗？", "pinyin": "Nǐ jiā yǒu xiǎo māo ma?", "uz": "Uyingizda mushuk bormi?"},
+          {"speaker": "B", "zh": "有，我家有一只小猫。", "pinyin": "Yǒu, wǒ jiā yǒu yī zhī xiǎo māo.", "uz": "Bor, uyimizda bitta mushukcha bor."},
+          {"speaker": "A", "zh": "小猫在哪儿？", "pinyin": "Xiǎo māo zài nǎr?", "uz": "Mushukcha qayerda?"},
+          {"speaker": "B", "zh": "小猫在桌子上面。", "pinyin": "Xiǎo māo zài zhuōzi shàngmiàn.", "uz": "Mushukcha stolning ustida."},
+          {"speaker": "A", "zh": "你有小狗吗？", "pinyin": "Nǐ yǒu xiǎo gǒu ma?", "uz": "Sizda kuchukcha bormi?"},
+          {"speaker": "B", "zh": "没有，我只有一只猫。小狗在椅子下面。", "pinyin": "Méiyǒu, wǒ zhǐ yǒu yī zhī māo. Xiǎo gǒu zài yǐzi xiàmiàn.", "uz": "Yo'q, menda faqat bitta mushuk bor. Kuchukcha stulning ostida."}
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "zh": "自然",
+      "uz": "Tabiat",
+      "emoji": "🌿",
+      "hsk": 1,
+      "color": "from-green-600 to-teal-800",
+      "glow": "rgba(22,163,74,0.6)",
+      "vocabulary": [
+        {"zh": "天", "pinyin": "tiān", "uz": "Osmon / Kun", "en": "sky, day"},
+        {"zh": "气", "pinyin": "qì", "uz": "Havo / Gaz", "en": "air, gas"},
+        {"zh": "雨", "pinyin": "yǔ", "uz": "Yomg'ir", "en": "rain"},
+        {"zh": "水", "pinyin": "shuǐ", "uz": "Suv", "en": "water"},
+        {"zh": "山", "pinyin": "shān", "uz": "Tog'", "en": "mountain"},
+        {"zh": "月", "pinyin": "yuè", "uz": "Oy (osmon jismi) / Oy (vaqt)", "en": "moon, month"},
+        {"zh": "日", "pinyin": "rì", "uz": "Quyosh / Kun", "en": "sun, day"},
+        {"zh": "年", "pinyin": "nián", "uz": "Yil", "en": "year"},
+        {"zh": "大", "pinyin": "dà", "uz": "Katta / Ulkan", "en": "big, large"},
+        {"zh": "小", "pinyin": "xiǎo", "uz": "Kichik", "en": "small, little"},
+        {"zh": "好", "pinyin": "hǎo", "uz": "Yaxshi", "en": "good, fine"},
+        {"zh": "多", "pinyin": "duō", "uz": "Ko'p", "en": "many, much"},
+        {"zh": "少", "pinyin": "shǎo", "uz": "Oz / Kam", "en": "few, little"},
+        {"zh": "上", "pinyin": "shàng", "uz": "Yuqori / Ustida", "en": "up, above, on"},
+        {"zh": "下", "pinyin": "xià", "uz": "Past / Ostida", "en": "down, below, under"},
+        {"zh": "中", "pinyin": "zhōng", "uz": "O'rta / Ichida", "en": "middle, in"}
+      ],
+      "grammar": [
+        {
+          "pattern": "汉字的笔画 — Xitoy harflarining asosiy elementlari",
+          "explanation": "Xitoy harflarining asosiy chizgilari (笔画): 一 (heng - gorizontal), 丨 (shu - vertikal), 丿 (pie - chap qiya), 乀 (na - o'ng qiya), 、(dian - nuqta). Bu elementlar tabiat so'zlari yozishda ko'p uchraydi.",
+          "example_zh": "山、水、日、月、大、小",
+          "example_pinyin": "shān, shuǐ, rì, yuè, dà, xiǎo",
+          "example_uz": "Tog', suv, quyosh, oy, katta, kichik"
+        },
+        {
+          "pattern": "天气很好。今天下雨了。— Ob-havo ta'rifi",
+          "explanation": "Tabiat va ob-havo haqida gap tuzish: 下雨 (yomg'ir yog'moq), 下雪 (qor yog'moq). 天气 (tiānqì) - 'ob-havo': 天 (osmon/kun) + 气 (havo). 了 (le) - voqeaning ro'y berganini bildiradi.",
+          "example_zh": "今天天气很好。昨天下雨了。",
+          "example_pinyin": "Jīntiān tiānqì hěn hǎo. Zuótiān xià yǔ le.",
+          "example_uz": "Bugun ob-havo juda yaxshi. Kecha yomg'ir yog'di."
+        },
+        {
+          "pattern": "大、小、多、少 — Miqdor sifatlari",
+          "explanation": "Tabiatda miqdor va o'lchamni bildiruvchi sifatlar: 大 (katta) ↔ 小 (kichik), 多 (ko'p) ↔ 少 (oz). Bu so'zlar gapda 很 (juda) bilan kuchaytiriladi: 很大 (juda katta), 很多 (juda ko'p).",
+          "example_zh": "山很大，水很多，天很蓝。",
+          "example_pinyin": "Shān hěn dà, shuǐ hěn duō, tiān hěn lán.",
+          "example_uz": "Tog' juda katta, suv juda ko'p, osmon juda ko'k."
+        }
+      ],
+      "dialogue": {
+        "title": "Tabiat haqida",
+        "lines": [
+          {"speaker": "A", "zh": "今天天气怎么样？", "pinyin": "Jīntiān tiānqì zěnme yàng?", "uz": "Bugun ob-havo qanday?"},
+          {"speaker": "B", "zh": "今天天气很好，天很蓝。", "pinyin": "Jīntiān tiānqì hěn hǎo, tiān hěn lán.", "uz": "Bugun ob-havo juda yaxshi, osmon juda ko'k."},
+          {"speaker": "A", "zh": "昨天呢？", "pinyin": "Zuótiān ne?", "uz": "Kecha-chi?"},
+          {"speaker": "B", "zh": "昨天下雨了，天气不太好。", "pinyin": "Zuótiān xià yǔ le, tiānqì bú tài hǎo.", "uz": "Kecha yomg'ir yog'di, ob-havo unchalik yaxshi emas edi."},
+          {"speaker": "A", "zh": "中国的山很大吗？", "pinyin": "Zhōngguó de shān hěn dà ma?", "uz": "Xitoyning tog'lari juda kattami?"},
+          {"speaker": "B", "zh": "是的，中国的山很大，水也很多。", "pinyin": "Shì de, Zhōngguó de shān hěn dà, shuǐ yě hěn duō.", "uz": "Ha, Xitoyning tog'lari juda katta, suvi ham juda ko'p."}
+        ]
+      }
+    }
+  ]
+}
