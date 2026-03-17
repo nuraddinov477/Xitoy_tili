@@ -235,7 +235,7 @@ export default function Home() {
         style={{ zIndex: 0, opacity: 0.55 }}
       />
 
-      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 py-12">
+      <div className="relative z-10 max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-12">
         {/* Header */}
         <motion.div
           className="text-center mb-16"
