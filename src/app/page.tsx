@@ -292,6 +292,99 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
+        {/* ═══ ABOUT ME ═══ */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          {/* Section header */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-red-500"/>
+              <span className="chinese-font text-red-400 text-2xl font-black">关于我</span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-red-500"/>
+            </div>
+            <p className="text-gray-400 text-sm tracking-widest uppercase">Portfolio muallifi haqida</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-3xl overflow-hidden"
+              style={{
+                background: 'linear-gradient(135deg, rgba(20,20,30,0.95), rgba(10,10,20,0.98))',
+                border: '1px solid rgba(220,38,38,0.2)',
+                boxShadow: '0 0 60px rgba(220,38,38,0.08)',
+              }}>
+              <div className="h-1 w-full bg-gradient-to-r from-red-600 via-red-400 to-rose-600"/>
+              <div className="p-8 md:p-10">
+                <div className="flex flex-col md:flex-row gap-8 items-start">
+                  {/* Avatar */}
+                  <div className="flex-shrink-0 mx-auto md:mx-0">
+                    <div className="relative">
+                      <div className="w-32 h-32 rounded-2xl flex items-center justify-center text-6xl"
+                        style={{ background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.3))', border: '2px solid rgba(220,38,38,0.4)' }}>
+                        👨‍💻
+                      </div>
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-2 border-black flex items-center justify-center">
+                        <div className="w-3 h-3 bg-green-300 rounded-full animate-pulse"/>
+                      </div>
+                    </div>
+                    <div className="chinese-font text-center mt-3 text-red-500/40 text-xs font-black tracking-widest">学习者</div>
+                  </div>
+                  {/* Main info */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                      <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">Nuraddinov Sarvarbek</h2>
+                      <span className="text-xs px-3 py-1 rounded-full font-bold"
+                        style={{ background: 'rgba(220,38,38,0.2)', color: '#f87171', border: '1px solid rgba(220,38,38,0.3)' }}>
+                        Open to work
+                      </span>
+                    </div>
+                    <p className="text-red-400 font-bold text-sm mb-1">ML Engineer & Web Developer</p>
+                    <p className="text-gray-400 text-sm mb-4 flex items-center gap-1.5"><span>📍</span> Toshkent, O&apos;zbekiston</p>
+                    <div className="rounded-xl p-4 mb-5"
+                      style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">🎓</span>
+                        <div>
+                          <p className="text-white font-bold text-sm">Toshkent Davlat Sharqshunoslik Universiteti</p>
+                          <p className="text-gray-400 text-xs mt-0.5">Kompyuter Lingvistikasi · 2-kurs talabasi</p>
+                          <p className="text-red-400/70 text-xs mt-1 chinese-font">计算机语言学 · 东方学</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl font-bold text-sm transition-all hover:scale-105 hover:brightness-125"
+                      style={{ background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.2))', border: '1px solid rgba(220,38,38,0.5)', color: '#f87171' }}>
+                      <span className="text-lg">🌐</span>
+                      <div>
+                        <div className="text-white font-black">nuraddinov-uz.vercel.app</div>
+                        <div className="text-xs text-gray-400 font-normal">Shaxsiy portfolio saytim</div>
+                      </div>
+                      <span className="text-gray-500 ml-1">→</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-4 mt-8 pt-6"
+                  style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                  {[
+                    { value: '2+', label: 'Yillik tajriba', icon: '⚡' },
+                    { value: '15', label: 'HSK 1 mavzular', icon: '📚' },
+                    { value: '150+', label: "So'z boyligi", icon: '🀄' },
+                  ].map(stat => (
+                    <div key={stat.label} className="text-center">
+                      <div className="text-2xl mb-1">{stat.icon}</div>
+                      <div className="text-xl font-black text-white">{stat.value}</div>
+                      <div className="text-xs text-gray-500">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Topics Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {topics.map((topic, index) => (
@@ -426,123 +519,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-
-        {/* ═══ ABOUT ME ═══ */}
-        <motion.div
-          className="mt-24 mb-10"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-        >
-          {/* Section header */}
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-3 mb-3">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-red-500"/>
-              <span className="chinese-font text-red-400 text-2xl font-black">关于我</span>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-red-500"/>
-            </div>
-            <p className="text-gray-400 text-sm tracking-widest uppercase">Portfolio muallifi haqida</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="rounded-3xl overflow-hidden"
-              style={{
-                background: 'linear-gradient(135deg, rgba(20,20,30,0.95), rgba(10,10,20,0.98))',
-                border: '1px solid rgba(220,38,38,0.2)',
-                boxShadow: '0 0 60px rgba(220,38,38,0.08)',
-              }}>
-
-              {/* Top red accent bar */}
-              <div className="h-1 w-full bg-gradient-to-r from-red-600 via-red-400 to-rose-600"/>
-
-              <div className="p-8 md:p-10">
-                <div className="flex flex-col md:flex-row gap-8 items-start">
-
-                  {/* Avatar */}
-                  <div className="flex-shrink-0 mx-auto md:mx-0">
-                    <div className="relative">
-                      <div className="w-32 h-32 rounded-2xl flex items-center justify-center text-6xl"
-                        style={{
-                          background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.3))',
-                          border: '2px solid rgba(220,38,38,0.4)',
-                        }}>
-                        👨‍💻
-                      </div>
-                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-2 border-black flex items-center justify-center">
-                        <div className="w-3 h-3 bg-green-300 rounded-full animate-pulse"/>
-                      </div>
-                    </div>
-                    {/* Chinese decorative chars */}
-                    <div className="chinese-font text-center mt-3 text-red-500/40 text-xs font-black tracking-widest">
-                      学习者
-                    </div>
-                  </div>
-
-                  {/* Main info */}
-                  <div className="flex-1 min-w-0">
-                    {/* Name */}
-                    <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
-                        Nuraddinov Sarvarbek
-                      </h2>
-                      <span className="text-xs px-3 py-1 rounded-full font-bold"
-                        style={{ background: 'rgba(220,38,38,0.2)', color: '#f87171', border: '1px solid rgba(220,38,38,0.3)' }}>
-                        Open to work
-                      </span>
-                    </div>
-
-                    {/* Title */}
-                    <p className="text-red-400 font-bold text-sm mb-1">ML Engineer & Web Developer</p>
-                    <p className="text-gray-400 text-sm mb-4 flex items-center gap-1.5">
-                      <span>📍</span> Toshkent, O&apos;zbekiston
-                    </p>
-
-                    {/* University */}
-                    <div className="rounded-xl p-4 mb-5"
-                      style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                      <div className="flex items-start gap-3">
-                        <span className="text-2xl">🎓</span>
-                        <div>
-                          <p className="text-white font-bold text-sm">Toshkent Davlat Sharqshunoslik Universiteti</p>
-                          <p className="text-gray-400 text-xs mt-0.5">Kompyuter Lingvistikasi · 2-kurs talabasi</p>
-                          <p className="text-red-400/70 text-xs mt-1 chinese-font">计算机语言学 · 东方学</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Portfolio link */}
-                    <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl font-bold text-sm transition-all hover:scale-105 hover:brightness-125"
-                      style={{ background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.2))', border: '1px solid rgba(220,38,38,0.5)', color: '#f87171' }}>
-                      <span className="text-lg">🌐</span>
-                      <div>
-                        <div className="text-white font-black">nuraddinov-uz.vercel.app</div>
-                        <div className="text-xs text-gray-400 font-normal">Shaxsiy portfolio saytim</div>
-                      </div>
-                      <span className="text-gray-500 ml-1">→</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Stats row */}
-                <div className="grid grid-cols-3 gap-4 mt-8 pt-6"
-                  style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-                  {[
-                    { value: '2+', label: 'Yillik tajriba', icon: '⚡' },
-                    { value: '15', label: "HSK 1 mavzular", icon: '📚' },
-                    { value: '150+', label: "So'z boyligi", icon: '🀄' },
-                  ].map(stat => (
-                    <div key={stat.label} className="text-center">
-                      <div className="text-2xl mb-1">{stat.icon}</div>
-                      <div className="text-xl font-black text-white">{stat.value}</div>
-                      <div className="text-xs text-gray-500">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Footer */}
         <motion.div
