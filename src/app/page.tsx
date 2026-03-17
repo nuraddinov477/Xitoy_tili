@@ -294,7 +294,7 @@ export default function Home() {
 
         {/* ═══ ABOUT ME ═══ */}
         <motion.div
-          className="mb-16 flex justify-center"
+          className="mb-20 flex justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
