@@ -235,7 +235,7 @@ export default function Home() {
         style={{ zIndex: 0, opacity: 0.55 }}
       />
 
-      <div className="relative z-10 container mx-auto px-4 py-12">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 py-12">
         {/* Header */}
         <motion.div
           className="text-center mb-16"
@@ -294,7 +294,7 @@ export default function Home() {
 
         {/* ═══ ABOUT ME ═══ */}
         <motion.div
-          className="mb-16 flex justify-center"
+          className="mb-24 flex justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
