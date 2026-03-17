@@ -427,9 +427,150 @@ export default function Home() {
           ))}
         </div>
 
+        {/* ═══ ABOUT ME ═══ */}
+        <motion.div
+          className="mt-24 mb-10"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.8 }}
+        >
+          {/* Section header */}
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-3 mb-3">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-red-500"/>
+              <span className="chinese-font text-red-400 text-2xl font-black">关于我</span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-red-500"/>
+            </div>
+            <p className="text-gray-400 text-sm tracking-widest uppercase">Portfolio muallifi haqida</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-3xl overflow-hidden"
+              style={{
+                background: 'linear-gradient(135deg, rgba(20,20,30,0.95), rgba(10,10,20,0.98))',
+                border: '1px solid rgba(220,38,38,0.2)',
+                boxShadow: '0 0 60px rgba(220,38,38,0.08)',
+              }}>
+
+              {/* Top red accent bar */}
+              <div className="h-1 w-full bg-gradient-to-r from-red-600 via-red-400 to-rose-600"/>
+
+              <div className="p-8 md:p-10">
+                <div className="flex flex-col md:flex-row gap-8 items-start">
+
+                  {/* Avatar */}
+                  <div className="flex-shrink-0 mx-auto md:mx-0">
+                    <div className="relative">
+                      <div className="w-32 h-32 rounded-2xl flex items-center justify-center text-6xl"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.3))',
+                          border: '2px solid rgba(220,38,38,0.4)',
+                        }}>
+                        👨‍💻
+                      </div>
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-2 border-black flex items-center justify-center">
+                        <div className="w-3 h-3 bg-green-300 rounded-full animate-pulse"/>
+                      </div>
+                    </div>
+                    {/* Chinese decorative chars */}
+                    <div className="chinese-font text-center mt-3 text-red-500/40 text-xs font-black tracking-widest">
+                      学习者
+                    </div>
+                  </div>
+
+                  {/* Main info */}
+                  <div className="flex-1 min-w-0">
+                    {/* Name */}
+                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                      <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
+                        Nuraddinov Sarvarbek
+                      </h2>
+                      <span className="text-xs px-3 py-1 rounded-full font-bold"
+                        style={{ background: 'rgba(220,38,38,0.2)', color: '#f87171', border: '1px solid rgba(220,38,38,0.3)' }}>
+                        Open to work
+                      </span>
+                    </div>
+
+                    {/* Title */}
+                    <p className="text-red-400 font-bold text-sm mb-1">ML Engineer & Web Developer</p>
+                    <p className="text-gray-400 text-sm mb-4 flex items-center gap-1.5">
+                      <span>📍</span> Toshkent, O&apos;zbekiston
+                    </p>
+
+                    {/* University */}
+                    <div className="rounded-xl p-4 mb-5"
+                      style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">🎓</span>
+                        <div>
+                          <p className="text-white font-bold text-sm">Toshkent Davlat Sharqshunoslik Universiteti</p>
+                          <p className="text-gray-400 text-xs mt-0.5">Kompyuter Lingvistikasi · 2-kurs talabasi</p>
+                          <p className="text-red-400/70 text-xs mt-1 chinese-font">计算机语言学 · 东方学</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bio */}
+                    <p className="text-gray-300 text-sm leading-relaxed mb-5">
+                      Machine Learning modellari ishlab chiqish va zamonaviy veb ilovalar yaratish — asosiy yo&apos;nalishim.
+                      Sharq tillarini, ayniqsa <span className="text-red-400 font-bold">Xitoy tilini</span> chuqur o&apos;rganish maqsadida
+                      bu portfolioni yaratdim. 2+ yillik tajriba bilan ML va Full-stack rivojlanish sohasida ishlayapman.
+                    </p>
+
+                    {/* Skills */}
+                    <div className="mb-5">
+                      <p className="text-xs text-gray-500 uppercase tracking-widest mb-2">Texnologiyalar</p>
+                      <div className="flex flex-wrap gap-2">
+                        {['Python','PyTorch','Next.js','React','TypeScript','FastAPI','PostgreSQL','Docker','LangChain','Tailwind CSS'].map(s => (
+                          <span key={s} className="text-xs px-2.5 py-1 rounded-lg font-medium"
+                            style={{ background: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.7)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Social links */}
+                    <div className="flex flex-wrap gap-3">
+                      {[
+                        { label: '🌐 Portfolio', href: 'https://nuraddinov-uz.vercel.app', color: 'rgba(220,38,38,0.25)', border: 'rgba(220,38,38,0.4)', text: '#f87171' },
+                        { label: '✉️ Email', href: 'mailto:nuraddinovsarvarbek05@gmail.com', color: 'rgba(59,130,246,0.15)', border: 'rgba(59,130,246,0.3)', text: '#93c5fd' },
+                        { label: '💬 Telegram', href: 'https://t.me/nuraddinov_477', color: 'rgba(6,182,212,0.15)', border: 'rgba(6,182,212,0.3)', text: '#67e8f9' },
+                        { label: '🐙 GitHub', href: 'https://github.com/nuraddinov477', color: 'rgba(255,255,255,0.06)', border: 'rgba(255,255,255,0.15)', text: 'rgba(255,255,255,0.7)' },
+                      ].map(link => (
+                        <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
+                          className="text-xs px-4 py-2 rounded-xl font-bold transition-all hover:scale-105 hover:brightness-125"
+                          style={{ background: link.color, border: `1px solid ${link.border}`, color: link.text }}>
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stats row */}
+                <div className="grid grid-cols-3 gap-4 mt-8 pt-6"
+                  style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                  {[
+                    { value: '2+', label: 'Yillik tajriba', icon: '⚡' },
+                    { value: '15', label: "HSK 1 mavzular", icon: '📚' },
+                    { value: '150+', label: "So'z boyligi", icon: '🀄' },
+                  ].map(stat => (
+                    <div key={stat.label} className="text-center">
+                      <div className="text-2xl mb-1">{stat.icon}</div>
+                      <div className="text-xl font-black text-white">{stat.value}</div>
+                      <div className="text-xs text-gray-500">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Footer */}
         <motion.div
-          className="text-center mt-20 pb-10"
+          className="text-center mt-10 pb-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
@@ -437,7 +578,7 @@ export default function Home() {
           <div className="chinese-font text-5xl text-white/10 font-black mb-4">
             加油！💪 努力学习！
           </div>
-          <p className="text-gray-500">Xitoy tilini o&apos;rganishda muvaffaqiyat!</p>
+          <p className="text-gray-500 text-sm">Xitoy tilini o&apos;rganishda muvaffaqiyat! · Made by <a href="https://nuraddinov-uz.vercel.app" target="_blank" className="text-red-500 hover:text-red-400 transition-colors font-bold">Sarvarbek Nuraddinov</a></p>
         </motion.div>
       </div>
     </div>
