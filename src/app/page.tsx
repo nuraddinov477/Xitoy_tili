@@ -510,41 +510,17 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Bio */}
-                    <p className="text-gray-300 text-sm leading-relaxed mb-5">
-                      Machine Learning modellari ishlab chiqish va zamonaviy veb ilovalar yaratish — asosiy yo&apos;nalishim.
-                      Sharq tillarini, ayniqsa <span className="text-red-400 font-bold">Xitoy tilini</span> chuqur o&apos;rganish maqsadida
-                      bu portfolioni yaratdim. 2+ yillik tajriba bilan ML va Full-stack rivojlanish sohasida ishlayapman.
-                    </p>
-
-                    {/* Skills */}
-                    <div className="mb-5">
-                      <p className="text-xs text-gray-500 uppercase tracking-widest mb-2">Texnologiyalar</p>
-                      <div className="flex flex-wrap gap-2">
-                        {['Python','PyTorch','Next.js','React','TypeScript','FastAPI','PostgreSQL','Docker','LangChain','Tailwind CSS'].map(s => (
-                          <span key={s} className="text-xs px-2.5 py-1 rounded-lg font-medium"
-                            style={{ background: 'rgba(255,255,255,0.06)', color: 'rgba(255,255,255,0.7)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                            {s}
-                          </span>
-                        ))}
+                    {/* Portfolio link */}
+                    <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl font-bold text-sm transition-all hover:scale-105 hover:brightness-125"
+                      style={{ background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(139,92,246,0.2))', border: '1px solid rgba(220,38,38,0.5)', color: '#f87171' }}>
+                      <span className="text-lg">🌐</span>
+                      <div>
+                        <div className="text-white font-black">nuraddinov-uz.vercel.app</div>
+                        <div className="text-xs text-gray-400 font-normal">Shaxsiy portfolio saytim</div>
                       </div>
-                    </div>
-
-                    {/* Social links */}
-                    <div className="flex flex-wrap gap-3">
-                      {[
-                        { label: '🌐 Portfolio', href: 'https://nuraddinov-uz.vercel.app', color: 'rgba(220,38,38,0.25)', border: 'rgba(220,38,38,0.4)', text: '#f87171' },
-                        { label: '✉️ Email', href: 'mailto:nuraddinovsarvarbek05@gmail.com', color: 'rgba(59,130,246,0.15)', border: 'rgba(59,130,246,0.3)', text: '#93c5fd' },
-                        { label: '💬 Telegram', href: 'https://t.me/nuraddinov_477', color: 'rgba(6,182,212,0.15)', border: 'rgba(6,182,212,0.3)', text: '#67e8f9' },
-                        { label: '🐙 GitHub', href: 'https://github.com/nuraddinov477', color: 'rgba(255,255,255,0.06)', border: 'rgba(255,255,255,0.15)', text: 'rgba(255,255,255,0.7)' },
-                      ].map(link => (
-                        <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
-                          className="text-xs px-4 py-2 rounded-xl font-bold transition-all hover:scale-105 hover:brightness-125"
-                          style={{ background: link.color, border: `1px solid ${link.border}`, color: link.text }}>
-                          {link.label}
-                        </a>
-                      ))}
-                    </div>
+                      <span className="text-gray-500 ml-1">→</span>
+                    </a>
                   </div>
                 </div>
 
