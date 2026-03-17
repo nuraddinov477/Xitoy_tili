@@ -294,7 +294,7 @@ export default function Home() {
 
         {/* ═══ ABOUT ME ═══ */}
         <motion.div
-          className="mb-24 flex justify-center"
+          className="mb-16 flex justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
@@ -413,7 +413,23 @@ export default function Home() {
           </div>
         </motion.div>
 
+        {/* Section divider */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9 }}
+        >
+          <div className="inline-flex items-center gap-4 mb-3">
+            <div className="h-px w-24 bg-gradient-to-r from-transparent to-red-500/60"/>
+            <span className="chinese-font text-red-400 text-3xl font-black">课程</span>
+            <div className="h-px w-24 bg-gradient-to-l from-transparent to-red-500/60"/>
+          </div>
+          <p className="text-gray-500 text-xs tracking-[0.3em] uppercase">HSK 1 — 15 ta Mavzu</p>
+        </motion.div>
+
         {/* Topics Grid */}
+        <div className="px-4 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {topics.map((topic, index) => (
             <Link href={`/topic/${topic.id}`} key={topic.id} className="block">
@@ -546,6 +562,7 @@ export default function Home() {
               </motion.div>
             </Link>
           ))}
+        </div>
         </div>
 
         {/* Footer */}
