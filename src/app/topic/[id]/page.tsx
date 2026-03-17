@@ -33,11 +33,12 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   const [activeModal, setActiveModal] = useState<ModalType>(null)
   const [flipped, setFlipped] = useState<number | null>(null)
   const [openGrammar, setOpenGrammar] = useState<number | null>(null)
+  const [activeDialogue, setActiveDialogue] = useState(0)
 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
 
   const imgUrl = topicImages[topic.id]
-  const dialogueLines = topic.dialogue.lines
+  const dialogues = topic.dialogues
 
   const panels = [
     {
@@ -70,7 +71,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
       sublabel: 'Suhbat',
       icon: MessageSquare,
       emoji: '💬',
-      count: dialogueLines.length,
+      count: topic.dialogues.reduce((s: number, d: {lines: unknown[]}) => s + d.lines.length, 0),
       unit: 'satr',
       gradient: 'from-pink-500 to-rose-600',
       color: '#ec4899',
@@ -184,7 +185,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
             >
               <p className="text-2xl md:text-3xl font-bold text-white/95 tracking-wide">{topic.uz}</p>
               <div className="flex gap-3 mt-1">
-                {[`${topic.vocabulary.length} so'z`, `${topic.grammar.length} qoida`, `${dialogueLines.length} dialog`].map((t, i) => (
+                {[`${topic.vocabulary.length} so'z`, `${topic.grammar.length} qoida`, `${topic.dialogues.length} dialog`].map((t, i) => (
                   <span key={i} className="text-xs px-3 py-1 rounded-full font-medium"
                     style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.8)' }}>
                     {t}
@@ -497,6 +498,26 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                   {/* ═══ DIALOGUE — chat ═══ */}
                   {activeModal === 'dialogue' && (
                     <div>
+                      {/* Dialogue tabs */}
+                      {topic.dialogues.length > 1 && (
+                        <div className="flex gap-2 mb-4 px-1 overflow-x-auto pb-1">
+                          {topic.dialogues.map((dlg, idx) => (
+                            <button key={idx} onClick={() => setActiveDialogue(idx)}
+                              className="flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-bold transition-all"
+                              style={activeDialogue === idx ? {
+                                background: topic.glow.replace('0.6','0.85'),
+                                color: '#fff',
+                              } : {
+                                background: 'rgba(255,255,255,0.07)',
+                                color: 'rgba(255,255,255,0.5)',
+                                border: '1px solid rgba(255,255,255,0.12)',
+                              }}>
+                              {idx + 1}. {dlg.title}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
                       {/* Chat heads */}
                       <div className="flex justify-between items-center mb-5 px-2">
                         <div className="flex items-center gap-2">
@@ -517,43 +538,45 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                         </div>
                       </div>
 
-                      <div className="space-y-3 pb-2">
-                        {dialogueLines.map((line, i) => (
-                          <motion.div key={i}
-                            initial={{ opacity: 0, y: 12, x: line.speaker === 'A' ? -15 : 15 }}
-                            animate={{ opacity: 1, y: 0, x: 0 }}
-                            transition={{ delay: i * 0.12, type: 'spring', stiffness: 150 }}
-                            className={`flex items-end gap-2 ${line.speaker === 'B' ? 'flex-row-reverse' : ''}`}
-                          >
-                            {/* Avatar */}
-                            <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0"
-                              style={{ background: line.speaker === 'A' ? 'rgba(88,80,236,0.4)' : topic.glow.replace('0.6','0.4') }}>
-                              {line.speaker === 'A' ? '🧑' : '👩'}
-                            </div>
+                      <AnimatePresence mode="wait">
+                        <motion.div key={activeDialogue} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }}
+                          className="space-y-3 pb-2">
+                          {topic.dialogues[activeDialogue].lines.map((line: { speaker: string; zh: string; pinyin: string; uz: string }, i: number) => (
+                            <motion.div key={i}
+                              initial={{ opacity: 0, y: 12, x: line.speaker === 'A' ? -15 : 15 }}
+                              animate={{ opacity: 1, y: 0, x: 0 }}
+                              transition={{ delay: i * 0.1, type: 'spring', stiffness: 150 }}
+                              className={`flex items-end gap-2 ${line.speaker === 'B' ? 'flex-row-reverse' : ''}`}
+                            >
+                              {/* Avatar */}
+                              <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0"
+                                style={{ background: line.speaker === 'A' ? 'rgba(88,80,236,0.4)' : topic.glow.replace('0.6','0.4') }}>
+                                {line.speaker === 'A' ? '🧑' : '👩'}
+                              </div>
 
-                            {/* Bubble */}
-                            <div className="max-w-[75%] space-y-1">
-                              <div className="rounded-2xl px-4 py-3"
-                                style={line.speaker === 'A' ? {
-                                  background: 'linear-gradient(135deg, rgba(88,80,236,0.25), rgba(88,80,236,0.1))',
-                                  border: '1px solid rgba(88,80,236,0.35)',
-                                  borderBottomLeftRadius: '5px',
-                                } : {
-                                  background: `linear-gradient(135deg, ${topic.glow.replace('0.6','0.35')}, ${topic.glow.replace('0.6','0.15')})`,
-                                  border: `1px solid ${topic.glow.replace('0.6','0.45')}`,
-                                  borderBottomRightRadius: '5px',
-                                }}>
-                                <div className="chinese-font text-xl font-black text-white leading-snug">{line.zh}</div>
-                                <div className="text-xs font-bold mt-1" style={{ color: '#fb923c' }}>{line.pinyin}</div>
+                              {/* Bubble */}
+                              <div className="max-w-[78%] space-y-1">
+                                <div className="rounded-2xl px-4 py-3"
+                                  style={line.speaker === 'A' ? {
+                                    background: 'linear-gradient(135deg, rgba(88,80,236,0.25), rgba(88,80,236,0.1))',
+                                    border: '1px solid rgba(88,80,236,0.35)',
+                                    borderBottomLeftRadius: '5px',
+                                  } : {
+                                    background: `linear-gradient(135deg, ${topic.glow.replace('0.6','0.35')}, ${topic.glow.replace('0.6','0.15')})`,
+                                    border: `1px solid ${topic.glow.replace('0.6','0.45')}`,
+                                    borderBottomRightRadius: '5px',
+                                  }}>
+                                  <div className="chinese-font text-xl font-black text-white leading-snug">{line.zh}</div>
+                                  <div className="text-xs font-bold mt-1" style={{ color: '#fb923c' }}>{line.pinyin}</div>
+                                </div>
+                                <div className={`text-xs text-gray-400 px-1 ${line.speaker === 'B' ? 'text-right' : 'text-left'}`}>
+                                  {line.uz}
+                                </div>
                               </div>
-                              {/* Translation below bubble */}
-                              <div className={`text-xs text-gray-400 px-1 ${line.speaker === 'B' ? 'text-right' : 'text-left'}`}>
-                                {line.uz}
-                              </div>
-                            </div>
-                          </motion.div>
-                        ))}
-                      </div>
+                            </motion.div>
+                          ))}
+                        </motion.div>
+                      </AnimatePresence>
                     </div>
                   )}
                 </div>
