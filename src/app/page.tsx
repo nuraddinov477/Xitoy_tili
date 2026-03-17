@@ -322,89 +322,87 @@ export default function Home() {
                 学
               </div>
 
-              <div className="px-8 pt-9 pb-7 text-center relative z-10">
+              <div className="px-10 pt-10 pb-8 text-center relative z-10">
 
                 {/* Avatar */}
-                <div className="relative inline-flex mb-5">
+                <div className="relative inline-flex mb-6">
                   <motion.div
-                    className="w-20 h-20 rounded-2xl flex items-center justify-center text-4xl"
+                    className="w-24 h-24 rounded-3xl flex items-center justify-center text-5xl"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(220,38,38,0.3), rgba(109,40,217,0.3))',
-                      border: '1.5px solid rgba(220,38,38,0.4)',
-                      boxShadow: '0 0 25px rgba(220,38,38,0.2)',
+                      background: 'linear-gradient(135deg, rgba(220,38,38,0.25), rgba(109,40,217,0.25))',
+                      border: '2px solid rgba(220,38,38,0.35)',
                     }}
-                    animate={{ boxShadow: ['0 0 20px rgba(220,38,38,0.15)', '0 0 35px rgba(220,38,38,0.3)', '0 0 20px rgba(220,38,38,0.15)'] }}
-                    transition={{ duration: 2.5, repeat: Infinity }}
+                    animate={{ boxShadow: ['0 0 20px rgba(220,38,38,0.12)', '0 0 40px rgba(220,38,38,0.28)', '0 0 20px rgba(220,38,38,0.12)'] }}
+                    transition={{ duration: 3, repeat: Infinity }}
                   >
                     👨‍💻
                   </motion.div>
-                  <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-black flex items-center justify-center">
-                    <div className="w-1.5 h-1.5 bg-green-200 rounded-full animate-pulse"/>
+                  <div className="absolute -bottom-1.5 -right-1.5 w-6 h-6 bg-green-500 rounded-full border-2 border-[#0a0a16] flex items-center justify-center">
+                    <div className="w-2 h-2 bg-green-200 rounded-full animate-pulse"/>
                   </div>
                 </div>
 
                 {/* Name */}
-                <h2 className="text-[1.6rem] font-black text-white tracking-tight mb-1 leading-tight">
+                <h2 className="text-3xl font-black text-white tracking-tight mb-2 leading-tight">
                   Nuraddinov Sarvarbek
                 </h2>
 
                 {/* Role */}
-                <div className="inline-flex items-center gap-2 mb-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-red-500"/>
-                  <p className="text-red-400 font-semibold text-sm">ML Engineer & Web Developer</p>
-                  <div className="w-1.5 h-1.5 rounded-full bg-red-500"/>
+                <div className="inline-flex items-center gap-2 mb-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"/>
+                  <p className="text-red-400 font-bold text-base tracking-wide">ML Engineer & Web Developer</p>
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"/>
                 </div>
 
                 {/* Location */}
-                <p className="text-gray-500 text-xs mb-6 flex items-center justify-center gap-1">
-                  📍 Toshkent, O&apos;zbekiston
+                <p className="text-gray-500 text-sm mb-8 flex items-center justify-center gap-1.5">
+                  <span>📍</span> Toshkent, O&apos;zbekiston
                 </p>
 
                 {/* University */}
-                <div className="flex items-center justify-center gap-3 px-5 py-3.5 rounded-2xl mb-5 mx-auto"
+                <div className="flex items-center justify-center gap-4 px-6 py-4 rounded-2xl mb-6"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    background: 'linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02))',
+                    border: '1px solid rgba(255,255,255,0.08)',
                   }}>
-                  <span className="text-2xl">🎓</span>
+                  <span className="text-3xl">🎓</span>
                   <div className="text-left">
-                    <p className="text-white font-bold text-sm leading-tight">TDSHI · Kompyuter Lingvistikasi</p>
-                    <p className="text-gray-400 text-xs mt-0.5 flex items-center gap-1.5">
-                      2-kurs talabasi
-                      <span className="text-white/10">·</span>
-                      <span className="chinese-font text-red-400/60 text-xs">计算机语言学</span>
+                    <p className="text-white font-bold text-base leading-snug">Toshkent Davlat Sharqshunoslik Universiteti</p>
+                    <p className="text-gray-400 text-sm mt-1 flex items-center gap-2">
+                      Kompyuter Lingvistikasi · 2-kurs
+                      <span className="chinese-font text-red-400/60">计算机语言学</span>
                     </p>
                   </div>
                 </div>
 
                 {/* CTA link */}
                 <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 px-7 py-3 rounded-2xl text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-2xl font-bold transition-all duration-300 hover:scale-105"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(220,38,38,0.4), rgba(109,40,217,0.25))',
+                    background: 'linear-gradient(135deg, rgba(220,38,38,0.4), rgba(109,40,217,0.3))',
                     border: '1px solid rgba(220,38,38,0.5)',
-                    boxShadow: '0 4px 25px rgba(220,38,38,0.18)',
+                    boxShadow: '0 6px 30px rgba(220,38,38,0.2)',
                     color: '#fff',
                   }}>
-                  <span>🌐</span>
-                  <span className="font-black">nuraddinov-uz.vercel.app</span>
-                  <span className="group-hover:translate-x-0.5 transition-transform text-red-300">↗</span>
+                  <span className="text-lg">🌐</span>
+                  <span className="text-base font-black tracking-tight">nuraddinov-uz.vercel.app</span>
+                  <span className="group-hover:translate-x-1 transition-transform text-red-300 text-lg">↗</span>
                 </a>
               </div>
 
               {/* Stats bottom */}
               <div className="grid grid-cols-3 border-t"
-                style={{ borderColor: 'rgba(255,255,255,0.05)' }}>
+                style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
                 {[
                   { value: '2+', label: 'Yil tajriba', icon: '⚡' },
                   { value: '15', label: 'HSK mavzu', icon: '📚' },
                   { value: '150+', label: "So'z", icon: '🀄' },
                 ].map((stat, i) => (
-                  <div key={stat.label} className="py-4 text-center relative"
-                    style={{ borderRight: i < 2 ? '1px solid rgba(255,255,255,0.05)' : 'none' }}>
-                    <div className="text-xl mb-0.5">{stat.icon}</div>
-                    <div className="text-lg font-black text-white">{stat.value}</div>
-                    <div className="text-[11px] text-gray-500">{stat.label}</div>
+                  <div key={stat.label} className="py-5 text-center"
+                    style={{ borderRight: i < 2 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
+                    <div className="text-2xl mb-1">{stat.icon}</div>
+                    <div className="text-xl font-black text-white mb-0.5">{stat.value}</div>
+                    <div className="text-xs text-gray-500 tracking-wide">{stat.label}</div>
                   </div>
                 ))}
               </div>
