@@ -235,7 +235,7 @@ export default function Home() {
         style={{ zIndex: 0, opacity: 0.55 }}
       />
 
-      <div className="relative z-10 max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-12">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-12">
         {/* Header */}
         <motion.div
           className="text-center mb-16"
@@ -429,7 +429,6 @@ export default function Home() {
         </motion.div>
 
         {/* Topics Grid */}
-        <div className="px-4 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {topics.map((topic, index) => (
             <Link href={`/topic/${topic.id}`} key={topic.id} className="block">
@@ -562,7 +561,6 @@ export default function Home() {
               </motion.div>
             </Link>
           ))}
-        </div>
         </div>
 
         {/* Footer */}
