@@ -381,30 +381,27 @@ export default function Home() {
                 </div>
 
                 {/* Family */}
-                <div className="rounded-2xl overflow-hidden"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
-                    border: '1px solid rgba(255,255,255,0.08)',
-                  }}>
-                  <div className="flex items-center gap-2 px-5 py-3 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-                    <span className="text-lg">👨‍👩‍👦‍👦</span>
-                    <p className="text-white/70 text-xs font-bold uppercase tracking-widest">Oila · 5 kishi</p>
-                  </div>
-                  <div className="px-5 py-4 space-y-2.5">
-                    {[
-                      { icon: '👨', label: 'Dadam', desc: '' },
-                      { icon: '👩', label: 'Oyim', desc: '' },
-                      { icon: '🧑‍💻', label: 'Sarvarbek (men)', desc: 'TDSHI · Kompyuter Lingvistikasi' },
-                      { icon: '👦', label: 'Katta ukam', desc: 'Toshkent Arxitektura va Qurilish Universiteti' },
-                      { icon: '👦', label: 'Kichik ukam', desc: 'Xorazm · Jaloliddin Manguberdi Harbiy Litseyи' },
-                    ].map((member, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <span className="text-base flex-shrink-0 mt-0.5">{member.icon}</span>
-                        <div>
-                          <span className="text-white text-xs font-bold">{member.label}</span>
-                          {member.desc && <p className="text-gray-500 text-xs mt-0.5 leading-snug">{member.desc}</p>}
-                        </div>
-                      </div>
+                <div className="rounded-2xl px-5 py-4 text-left"
+                  style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-2">👨‍👩‍👦‍👦 Oila</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Oilamizda <span className="text-white font-semibold">5 kishi</span> yashaymiz — dadam, oyim va uch o&apos;g&apos;il. Katta ukam{' '}
+                    <span className="text-red-400 font-semibold">Toshkent Arxitektura va Qurilish Universitetida</span>,
+                    kichik ukam esa Xorazmda{' '}
+                    <span className="text-red-400 font-semibold">Jaloliddin Manguberdi Harbiy Akademik Litseyida</span> o&apos;qiydi.
+                  </p>
+                </div>
+
+                {/* Interests */}
+                <div className="rounded-2xl px-5 py-4 text-left"
+                  style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlar</p>
+                  <div className="flex flex-wrap gap-2">
+                    {['🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili', '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat'].map((item) => (
+                      <span key={item} className="text-xs px-3 py-1.5 rounded-full font-medium"
+                        style={{ background: 'rgba(220,38,38,0.15)', border: '1px solid rgba(220,38,38,0.25)', color: '#fca5a5' }}>
+                        {item}
+                      </span>
                     ))}
                   </div>
                 </div>
