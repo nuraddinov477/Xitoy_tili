@@ -380,6 +380,35 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* Family */}
+                <div className="rounded-2xl overflow-hidden"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                  }}>
+                  <div className="flex items-center gap-2 px-5 py-3 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+                    <span className="text-lg">👨‍👩‍👦‍👦</span>
+                    <p className="text-white/70 text-xs font-bold uppercase tracking-widest">Oila · 5 kishi</p>
+                  </div>
+                  <div className="px-5 py-4 space-y-2.5">
+                    {[
+                      { icon: '👨', label: 'Dadam', desc: '' },
+                      { icon: '👩', label: 'Oyim', desc: '' },
+                      { icon: '🧑‍💻', label: 'Sarvarbek (men)', desc: 'TDSHI · Kompyuter Lingvistikasi' },
+                      { icon: '👦', label: 'Katta ukam', desc: 'Toshkent Arxitektura va Qurilish Universiteti' },
+                      { icon: '👦', label: 'Kichik ukam', desc: 'Xorazm · Jaloliddin Manguberdi Harbiy Litseyи' },
+                    ].map((member, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <span className="text-base flex-shrink-0 mt-0.5">{member.icon}</span>
+                        <div>
+                          <span className="text-white text-xs font-bold">{member.label}</span>
+                          {member.desc && <p className="text-gray-500 text-xs mt-0.5 leading-snug">{member.desc}</p>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* CTA link */}
                 <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold transition-all duration-300 hover:scale-105"
