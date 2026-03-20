@@ -111,6 +111,42 @@ const topics = [
     example: '山和河 (Tog\' va daryo)', desc: 'Tabiat va muhit',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
   },
+  // HSK 2
+  {
+    id: 20, zh: '日常生活', uz: 'Kundalik hayot', en: 'Daily Routine',
+    emoji: '🌅', color: 'from-amber-500 to-orange-700',
+    glow: 'rgba(245,158,11,0.6)', hsk: 2, words: 60,
+    example: '几点起床？(Soat nechada turasiz?)', desc: 'Kun tartibi va odatlar',
+    image: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=1200&q=80',
+  },
+  {
+    id: 16, zh: '运动锻炼', uz: 'Sport va mashq', en: 'Sports & Exercise',
+    emoji: '🏃', color: 'from-green-500 to-emerald-700',
+    glow: 'rgba(16,185,129,0.6)', hsk: 2, words: 60,
+    example: '我每天跑步 (Har kuni yuguraman)', desc: 'Sport turlari va mashqlar',
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80',
+  },
+  {
+    id: 17, zh: '身体健康', uz: "Sog'liq va kasallik", en: 'Health & Illness',
+    emoji: '🏥', color: 'from-blue-500 to-cyan-700',
+    glow: 'rgba(59,130,246,0.6)', hsk: 2, words: 60,
+    example: '我感冒了 (Shamolladim)', desc: "Shifokorga borish va sog'liq",
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80',
+  },
+  {
+    id: 18, zh: '比较与购物', uz: 'Taqqoslash va xarid', en: 'Comparison & Shopping',
+    emoji: '🛍️', color: 'from-pink-500 to-fuchsia-700',
+    glow: 'rgba(236,72,153,0.6)', hsk: 2, words: 60,
+    example: '这个比那个贵 (Bu naridan qimmat)', desc: 'Narx taqqoslash va savdo',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80',
+  },
+  {
+    id: 19, zh: '交通出行', uz: 'Transport va yo\'l', en: 'Transport & Travel',
+    emoji: '🚇', color: 'from-violet-500 to-purple-700',
+    glow: 'rgba(139,92,246,0.6)', hsk: 2, words: 60,
+    example: '坐地铁去 (Metroda borish)', desc: 'Metro, avtobus va yo\'l so\'rash',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80',
+  },
 ]
 
 const CHINESE_CHARS = '你好谢再见学习工作家庭饮食购物交通天气时间颜色健康旅行动物自然爱好汉语中文老师学生朋友爸妈哥姐弟妹人口有几岁年月日时分秒'
@@ -235,10 +271,10 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             {[
-              { icon: BookOpen, label: 'Mavzular', value: '15' },
+              { icon: BookOpen, label: 'Mavzular', value: '20' },
               { icon: Star, label: "So'zlar", value: `${totalWords}+` },
-              { icon: TrendingUp, label: 'HSK Darajalari', value: '1-3' },
-              { icon: Award, label: 'Namunalar', value: '15' },
+              { icon: TrendingUp, label: 'HSK Darajalari', value: '1-2' },
+              { icon: Award, label: 'Namunalar', value: '20' },
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -364,7 +400,7 @@ export default function Home() {
                 style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
                 {[
                   { value: '2+', label: 'Yil tajriba', icon: '⚡' },
-                  { value: '15', label: 'HSK mavzu', icon: '📚' },
+                  { value: '20', label: 'HSK mavzu', icon: '📚' },
                   { value: '150+', label: "So'z", icon: '🀄' },
                 ].map((stat, i) => (
                   <div key={stat.label} className="py-5 text-center"
@@ -391,7 +427,7 @@ export default function Home() {
             <span className="chinese-font text-red-400 text-3xl font-black">课程</span>
             <div className="h-px w-24 bg-gradient-to-l from-transparent to-red-500/60"/>
           </div>
-          <p className="text-gray-500 text-xs tracking-[0.3em] uppercase">HSK 1–2 • 19 ta Mavzu</p>
+          <p className="text-gray-500 text-xs tracking-[0.3em] uppercase">HSK 1–2 • 20 ta Mavzu</p>
         </motion.div>
 
         {/* Topics Grid */}

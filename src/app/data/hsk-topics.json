@@ -3843,6 +3843,263 @@
       ]
     },
     {
+      "id": 20,
+      "zh": "日常生活",
+      "uz": "Kundalik hayot",
+      "emoji": "🌅",
+      "hsk": 2,
+      "color": "from-amber-500 to-orange-700",
+      "glow": "rgba(245,158,11,0.6)",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "vocabulary": [
+        {
+          "zh": "起床",
+          "pinyin": "qǐchuáng",
+          "uz": "Turmoq (uyqidan)",
+          "en": "to get up"
+        },
+        {
+          "zh": "睡觉",
+          "pinyin": "shuìjiào",
+          "uz": "Uxlamoq",
+          "en": "to sleep"
+        },
+        {
+          "zh": "洗澡",
+          "pinyin": "xǐzǎo",
+          "uz": "Dush qilmoq",
+          "en": "to shower, bathe"
+        },
+        {
+          "zh": "吃早饭",
+          "pinyin": "chī zǎofàn",
+          "uz": "Nonushta qilmoq",
+          "en": "to eat breakfast"
+        },
+        {
+          "zh": "上班",
+          "pinyin": "shàngbān",
+          "uz": "Ishga bormoq",
+          "en": "to go to work"
+        },
+        {
+          "zh": "下班",
+          "pinyin": "xiàbān",
+          "uz": "Ishdan qaytmoq",
+          "en": "to get off work"
+        },
+        {
+          "zh": "习惯",
+          "pinyin": "xíguàn",
+          "uz": "Odat, odatlanmoq",
+          "en": "habit, to be used to"
+        },
+        {
+          "zh": "一般",
+          "pinyin": "yībān",
+          "uz": "Odatda, odatiy",
+          "en": "usually, ordinary"
+        },
+        {
+          "zh": "左右",
+          "pinyin": "zuǒyòu",
+          "uz": "Taxminan, chamasida",
+          "en": "approximately, around"
+        },
+        {
+          "zh": "准时",
+          "pinyin": "zhǔnshí",
+          "uz": "O'z vaqtida, aniq",
+          "en": "on time, punctual"
+        },
+        {
+          "zh": "已经",
+          "pinyin": "yǐjīng",
+          "uz": "Allaqachon",
+          "en": "already"
+        },
+        {
+          "zh": "还没",
+          "pinyin": "hái méi",
+          "uz": "Hali... emas",
+          "en": "not yet"
+        },
+        {
+          "zh": "马上",
+          "pinyin": "mǎshàng",
+          "uz": "Hoziroq, darhol",
+          "en": "right away, immediately"
+        },
+        {
+          "zh": "然后",
+          "pinyin": "rán hòu",
+          "uz": "Keyin, so'ngra",
+          "en": "then, afterwards"
+        },
+        {
+          "zh": "以前",
+          "pinyin": "yǐqián",
+          "uz": "Avval, oldin",
+          "en": "before, in the past"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "几点 + 动词",
+          "example": "你每天几点起床？我六点半起床。",
+          "pinyin": "Nǐ měitiān jǐ diǎn qǐchuáng? Wǒ liù diǎn bàn qǐchuáng.",
+          "uz": "Har kuni soat nechada turasiz? Men olti yarimda turaman.",
+          "explanation": "Kun tartibini ifodalash: 几点 (soat necha) + fe'l"
+        },
+        {
+          "pattern": "先...然后...最后...",
+          "example": "我先洗澡，然后吃早饭，最后去上班。",
+          "pinyin": "Wǒ xiān xǐzǎo, rán hòu chī zǎofàn, zuìhòu qù shàngbān.",
+          "uz": "Men avval dush qilaman, keyin nonushta qilaman, oxirida ishga boraman.",
+          "explanation": "Tartibli harakatlar: 先 (avval) → 然后 (keyin) → 最后 (oxirida)"
+        },
+        {
+          "pattern": "动词 + 了 (完成)",
+          "example": "我已经吃饭了，你呢？",
+          "pinyin": "Wǒ yǐjīng chīfàn le, nǐ ne?",
+          "uz": "Men allaqachon ovqat yedim, siz-chi?",
+          "explanation": "Tugallangan harakat: 已经 + fe'l + 了"
+        },
+        {
+          "pattern": "还没 + 动词 + 呢",
+          "example": "他还没起床呢，还在睡觉。",
+          "pinyin": "Tā hái méi qǐchuáng ne, hái zài shuìjiào.",
+          "uz": "U hali turmagan, hali uxlamoqda.",
+          "explanation": "Bajarilmagan harakat: 还没 + fe'l + 呢"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Ertalabki tartib",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "你每天早上几点起床？听说你每天很早起床。",
+              "pinyin": "Nǐ měitiān zǎoshang jǐ diǎn qǐchuáng? Tīng shuō nǐ měitiān hěn zǎo qǐchuáng.",
+              "uz": "Har kuni ertalab soat nechada turasiz? Eshitishimcha har kuni juda erta turar ekansiz."
+            },
+            {
+              "speaker": "B",
+              "zh": "我一般六点左右起床。先洗澡，然后吃早饭，大概七点半出门去上班。",
+              "pinyin": "Wǒ yībān liù diǎn zuǒyòu qǐchuáng. Xiān xǐzǎo, rán hòu chī zǎofàn, dàgài qī diǎn bàn chūmén qù shàngbān.",
+              "uz": "Men odatda soat oltida turaman. Avval dush qilaman, keyin nonushta qilaman, taxminan yetti yarimda ishga chiqaman."
+            },
+            {
+              "speaker": "A",
+              "zh": "哇，这么早！我每天七点才起，总是来不及吃早饭，直接出门。",
+              "pinyin": "Wā, zhème zǎo! Wǒ měitiān qī diǎn cái qǐ, zǒng shì lái bu jí chī zǎofàn, zhíjiē chūmén.",
+              "uz": "Voy, juda erta! Men har kuni yettida turaman, doim nonushta qilishga ulgurolmayman, to'g'ridan-to'g'ri chiqib ketaman."
+            },
+            {
+              "speaker": "B",
+              "zh": "早饭是最重要的一餐，不能不吃。你应该早一点起，养成好习惯。",
+              "pinyin": "Zǎofàn shì zuì zhòngyào de yī cān, bù néng bù chī. Nǐ yīnggāi zǎo yīdiǎn qǐ, yǎngchéng hǎo xíguàn.",
+              "uz": "Nonushta eng muhim ovqat, undan voz kechib bo'lmaydi. Biroz erta turishingiz kerak, yaxshi odat shakllantiring."
+            },
+            {
+              "speaker": "A",
+              "zh": "你说得对。你晚上几点睡觉？怎么能早起？",
+              "pinyin": "Nǐ shuō de duì. Nǐ wǎnshang jǐ diǎn shuìjiào? Zěnme néng zǎo qǐ?",
+              "uz": "To'g'ri aytasiz. Kechqurun soat nechada yotasiz? Qanday qilib erta turish mumkin?"
+            },
+            {
+              "speaker": "B",
+              "zh": "我晚上十点前睡觉，睡够八小时，早上自然就能早起了。",
+              "pinyin": "Wǒ wǎnshang shí diǎn qián shuìjiào, shuì gòu bā xiǎoshí, zǎoshang zìrán jiù néng zǎo qǐ le.",
+              "uz": "Men kechqurun o'ndan oldin yotaman, sakkiz soat uxlayman, ertalab o'z-o'zidan erta turib ketaman."
+            }
+          ]
+        },
+        {
+          "title": "Ish kuni oxiri",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "今天下班这么晚？都八点了。你平时几点下班？",
+              "pinyin": "Jīntiān xiàbān zhème wǎn? Dōu bā diǎn le. Nǐ píngshí jǐ diǎn xiàbān?",
+              "uz": "Bugun ishdan bu qadar kech qoldingizmi? Allaqachon sakkiz bo'ldi. Odatda soat nechada qaytasiz?"
+            },
+            {
+              "speaker": "B",
+              "zh": "一般六点下班，但是今天有个重要的会议，开到刚才才结束。",
+              "pinyin": "Yībān liù diǎn xiàbān, dànshì jīntiān yǒu ge zhòngyào de huìyì, kāi dào gāngcái cái jiéshù.",
+              "uz": "Odatda oltida ishdan qaytaman, lekin bugun muhim yig'ilish bor edi, hozirgina tugadi."
+            },
+            {
+              "speaker": "A",
+              "zh": "辛苦了！你下班以后一般做什么？直接回家吗？",
+              "pinyin": "Xīnkǔ le! Nǐ xiàbān yǐhòu yībān zuò shénme? Zhíjiē huíjiā ma?",
+              "uz": "Qiynalib keldingiz! Ishdan keyin odatda nima qilasiz? To'g'ri uyga qaytasizmi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "有时候去超市买菜，然后回家做饭。今天太累了，想叫外卖。",
+              "pinyin": "Yǒushíhou qù chāoshì mǎi cài, rán hòu huíjiā zuòfàn. Jīntiān tài lèi le, xiǎng jiào wàimài.",
+              "uz": "Ba'zan supermarketga borib sabzavot-meva olaman, keyin uyda ovqat pishiraman. Bugun juda charchadim, yetkazib berish xizmatini chaqirmoqchiman."
+            },
+            {
+              "speaker": "A",
+              "zh": "我也是，今天加班太累了。你家人等你吃饭吗？",
+              "pinyin": "Wǒ yě shì, jīntiān jiābān tài lèi le. Nǐ jiārén děng nǐ chīfàn ma?",
+              "uz": "Men ham shunday, bugun qolish juda charchatdi. Oila a'zolaringiz sizni ovqatga kutmoqdami?"
+            },
+            {
+              "speaker": "B",
+              "zh": "是的，我老婆说已经做好了，让我马上回家。我先走了，明天见！",
+              "pinyin": "Shì de, wǒ lǎopo shuō yǐjīng zuò hǎo le, ràng wǒ mǎshàng huíjiā. Wǒ xiān zǒu le, míngtiān jiàn!",
+              "uz": "Ha, xotinim allaqachon tayyor qilib qo'yganini, hoziroq qaytishimni aytdi. Men ketdim, ertaga ko'rishguncha!"
+            }
+          ]
+        },
+        {
+          "title": "Dam olish kuni",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "今天是周末，你有什么计划？还是像平时一样早起吗？",
+              "pinyin": "Jīntiān shì zhōumò, nǐ yǒu shénme jìhuà? Háishì xiàng píngshí yīyàng zǎo qǐ ma?",
+              "uz": "Bugun dam olish kuni, qanday rejalaringiz bor? Odatdagidek erta turasizmi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "周末我一般睡到八点，不用那么早起。上午打扫一下房间，下午出去逛逛。",
+              "pinyin": "Zhōumò wǒ yībān shuì dào bā diǎn, bú yòng nàme zǎo qǐ. Shàngwǔ dǎsǎo yīxià fángjiān, xiàwǔ chūqu guàngguàng.",
+              "uz": "Dam olish kunlari men odatda sakkizgacha uxlayman, bu qadar erta turishga hojat yo'q. Ertalab xonani tozalayman, tushdan keyin sayr qilaman."
+            },
+            {
+              "speaker": "A",
+              "zh": "听起来很休闲。我今天还没起床呢，已经九点了，有点儿懒。",
+              "pinyin": "Tīng qǐlái hěn xiūxián. Wǒ jīntiān hái méi qǐchuáng ne, yǐjīng jiǔ diǎn le, yǒudiǎnr lǎn.",
+              "uz": "Juda dam olishga o'xshaydi. Men bugun hali turmaganman, allaqachon to'qqiz bo'ldi, biroz dangasalik qilyapman."
+            },
+            {
+              "speaker": "B",
+              "zh": "哈哈，周末就应该好好休息。今天下午你有空吗？一起去公园走走？",
+              "pinyin": "Hāhā, zhōumò jiù yīnggāi hǎohǎo xiūxi. Jīntiān xiàwǔ nǐ yǒu kòng ma? Yīqǐ qù gōngyuán zǒuzou?",
+              "uz": "Xaxaxa, dam olish kunlari yaxshilab dam olish kerak. Bugun tushdan keyin bo'sh vaqtingiz bormi? Birga bog'ga sayr qilamizmi?"
+            },
+            {
+              "speaker": "A",
+              "zh": "好啊！几点？我先起床洗澡，然后吃个早饭，大概十一点可以出发。",
+              "pinyin": "Hǎo a! Jǐ diǎn? Wǒ xiān qǐchuáng xǐzǎo, rán hòu chī ge zǎofàn, dàgài shíyī diǎn kěyǐ chūfā.",
+              "uz": "Mayli! Soat nechada? Men avval turib dush qilaman, keyin nonushta qilaman, taxminan o'n birda yo'lga chiqishim mumkin."
+            },
+            {
+              "speaker": "B",
+              "zh": "好，我们十一点半在公园门口见面。你先好好休息一下，不着急。",
+              "pinyin": "Hǎo, wǒmen shíyī diǎn bàn zài gōngyuán ménkǒu jiànmiàn. Nǐ xiān hǎohǎo xiūxi yīxià, bù zhāojí.",
+              "uz": "Xop, o'n bir yarimda bog' oldida uchrashaylik. Avval yaxshilab dam oling, shoshilmasdan."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 16,
       "zh": "运动锻炼",
       "uz": "Sport va mashq",
