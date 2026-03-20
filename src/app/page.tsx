@@ -149,8 +149,17 @@ export default function Home() {
     const cols = Math.floor(window.innerWidth / fontSize)
     const drops: number[] = Array(cols).fill(1)
 
-    const draw = () => {
-      schemeTimer += 45
+    ctx.font = `${fontSize}px monospace`
+
+    let lastTime = 0
+    let rafId = 0
+
+    const draw = (timestamp: number) => {
+      rafId = requestAnimationFrame(draw)
+      if (timestamp - lastTime < 100) return // max 10fps
+      lastTime = timestamp
+
+      schemeTimer += 100
       if (schemeTimer >= SCHEME_INTERVAL) {
         schemeTimer = 0
         schemeIndex = (schemeIndex + 1) % colorSchemes.length
@@ -164,24 +173,16 @@ export default function Home() {
         const char = CHINESE_CHARS[Math.floor(Math.random() * CHINESE_CHARS.length)]
         const y = drops[i] * fontSize
         const brightness = Math.random()
-        if (brightness > 0.95) {
-          ctx.fillStyle = '#ffffff'
-        } else if (brightness > 0.65) {
-          ctx.fillStyle = scheme.bright
-        } else {
-          ctx.fillStyle = scheme.mid
-        }
-        ctx.font = `${fontSize}px "Noto Sans SC", monospace`
+        ctx.fillStyle = brightness > 0.95 ? '#ffffff' : brightness > 0.65 ? scheme.bright : scheme.mid
         ctx.fillText(char, i * fontSize, y)
-
         if (y > canvas.height && Math.random() > 0.975) drops[i] = 0
         drops[i]++
       }
     }
 
-    const interval = setInterval(draw, 45)
+    rafId = requestAnimationFrame(draw)
     return () => {
-      clearInterval(interval)
+      cancelAnimationFrame(rafId)
       window.removeEventListener('resize', resize)
     }
   }, [])
@@ -190,43 +191,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Diagonal animated gradient background */}
-      <motion.div
-        className="fixed inset-0 pointer-events-none"
-        style={{ zIndex: -1 }}
-        animate={{
-          background: [
-            'linear-gradient(135deg, #1a0505 0%, #0a0a0a 50%, #200808 100%)',  // Qizil
-            'linear-gradient(135deg, #1a0510 0%, #0a0a0a 50%, #200515 100%)',  // Pushti
-            'linear-gradient(135deg, #051a08 0%, #0a0a0a 50%, #082008 100%)',  // Yashil
-            'linear-gradient(135deg, #1a1505 0%, #0a0a0a 50%, #201a05 100%)',  // Sariq
-            'linear-gradient(135deg, #050a1a 0%, #0a0a0a 50%, #081520 100%)',  // Ko'k
-            'linear-gradient(135deg, #1a0505 0%, #0a0a0a 50%, #200808 100%)',  // Qizil (qayta)
-          ],
-        }}
-        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-      />
-      {/* Animated background gradient */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-[-20%] left-[-20%] w-[60%] h-[60%] rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)' }}
-          animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute bottom-[-20%] right-[-20%] w-[60%] h-[60%] rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(236,72,153,0.15) 0%, transparent 70%)' }}
-          animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
-          transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute top-[40%] left-[40%] w-[40%] h-[40%] rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%)' }}
-          animate={{ x: [0, 30, -30, 0], y: [0, -30, 30, 0] }}
-          transition={{ duration: 30, repeat: Infinity, ease: 'easeInOut' }}
-        />
-      </div>
+      {/* Static dark background */}
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -1, background: 'linear-gradient(135deg, #1a0505 0%, #0a0a0a 50%, #200808 100%)' }} />
 
       {/* Matrix canvas */}
       <canvas
