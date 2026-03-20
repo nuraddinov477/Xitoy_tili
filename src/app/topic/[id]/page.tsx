@@ -38,7 +38,6 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
 
   const imgUrl = topicImages[topic.id]
-  const dialogues = topic.dialogues
 
   const panels = [
     {
@@ -373,13 +372,16 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                     <div>
                       <p className="text-center text-gray-500 text-xs mb-4">Kartochkani bosing — ag&apos;daring 🔄</p>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                        {topic.vocabulary.map((word, i) => (
+                        {topic.vocabulary.map((word, i) => {
+                          const imgKeyword = encodeURIComponent(word.en.split(',')[0].trim())
+                          const imgUrl = `https://source.unsplash.com/200x160/?${imgKeyword}&sig=${i}`
+                          return (
                           <motion.div key={i}
                             initial={{ opacity: 0, scale: 0.8, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             transition={{ delay: i * 0.05, type: 'spring', stiffness: 120 }}
                             className="cursor-pointer"
-                            style={{ perspective: '1000px', height: '140px' }}
+                            style={{ perspective: '1000px', height: '160px' }}
                             onClick={() => setFlipped(flipped === i ? null : i)}
                           >
                             <motion.div
@@ -388,40 +390,50 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                               animate={{ rotateY: flipped === i ? 180 : 0 }}
                               transition={{ duration: 0.55, type: 'spring', stiffness: 100 }}
                             >
-                              {/* Old — old (Chinese) */}
-                              <div className="absolute inset-0 rounded-2xl flex flex-col items-center justify-center"
-                                style={{
-                                  backfaceVisibility: 'hidden',
-                                  background: `linear-gradient(145deg, ${topic.glow.replace('0.6','0.18')}, rgba(255,255,255,0.03))`,
-                                  border: `1px solid ${topic.glow.replace('0.6','0.25')}`,
-                                }}>
-                                <motion.div
-                                  className="chinese-font font-black text-white"
-                                  style={{ fontSize: word.zh.length > 2 ? '2rem' : '2.8rem', textShadow: `0 0 20px ${topic.glow}` }}
-                                  animate={{ scale: flipped === i ? 1 : [1, 1.05, 1] }}
-                                  transition={{ duration: 3, repeat: Infinity, delay: i * 0.2 }}
-                                >
-                                  {word.zh}
-                                </motion.div>
-                                <div className="text-xs mt-2 font-semibold" style={{ color: '#fb923c' }}>{word.pinyin}</div>
-                                <div className="absolute bottom-2 right-2 text-gray-600 text-xs">↻</div>
+                              {/* Old — rasm + xitoy belgisi */}
+                              <div className="absolute inset-0 rounded-2xl overflow-hidden flex flex-col items-center justify-end"
+                                style={{ backfaceVisibility: 'hidden', border: `1px solid ${topic.glow.replace('0.6','0.4')}` }}>
+                                {/* Background image */}
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                  src={imgUrl}
+                                  alt={word.en}
+                                  className="absolute inset-0 w-full h-full object-cover"
+                                  loading="lazy"
+                                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                                />
+                                {/* Dark overlay */}
+                                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%)' }} />
+                                {/* Content */}
+                                <div className="relative z-10 text-center pb-3 px-2 w-full">
+                                  <div
+                                    className="chinese-font font-black text-white leading-none"
+                                    style={{ fontSize: word.zh.length > 3 ? '1.8rem' : '2.4rem', textShadow: `0 0 20px ${topic.glow}, 0 2px 8px rgba(0,0,0,0.8)` }}
+                                  >
+                                    {word.zh}
+                                  </div>
+                                  <div className="text-xs mt-1 font-bold" style={{ color: '#fb923c', textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}>{word.pinyin}</div>
+                                </div>
+                                <div className="absolute top-2 right-2 text-white/40 text-xs z-10">↻</div>
                               </div>
 
-                              {/* Orqa — ma'no (Uzbek/English) */}
-                              <div className="absolute inset-0 rounded-2xl flex flex-col items-center justify-center px-3"
+                              {/* Orqa — ma'no (O'zbek/Ingliz) */}
+                              <div className="absolute inset-0 rounded-2xl flex flex-col items-center justify-center px-3 gap-2"
                                 style={{
                                   backfaceVisibility: 'hidden',
                                   transform: 'rotateY(180deg)',
-                                  background: `linear-gradient(145deg, ${topic.glow.replace('0.6','0.3')}, ${topic.glow.replace('0.6','0.1')})`,
+                                  background: `linear-gradient(145deg, ${topic.glow.replace('0.6','0.35')}, ${topic.glow.replace('0.6','0.12')})`,
                                   border: `1px solid ${topic.glow.replace('0.6','0.5')}`,
                                 }}>
-                                <div className="chinese-font text-2xl font-black text-white mb-1">{word.zh}</div>
-                                <div className="text-white font-bold text-sm text-center leading-tight">{word.uz}</div>
-                                <div className="text-white/60 text-xs text-center mt-1">{word.en}</div>
+                                <div className="chinese-font text-2xl font-black text-white" style={{ textShadow: `0 0 15px ${topic.glow}` }}>{word.zh}</div>
+                                <div className="w-8 h-px opacity-50" style={{ background: topic.glow }} />
+                                <div className="text-white font-bold text-sm text-center leading-snug">{word.uz}</div>
+                                <div className="text-white/55 text-xs text-center">{word.en}</div>
                               </div>
                             </motion.div>
                           </motion.div>
-                        ))}
+                          )
+                        })}
                       </div>
                     </div>
                   )}
