@@ -3946,31 +3946,31 @@
       "grammar": [
         {
           "pattern": "几点 + 动词",
-          "example": "你每天几点起床？我六点半起床。",
-          "pinyin": "Nǐ měitiān jǐ diǎn qǐchuáng? Wǒ liù diǎn bàn qǐchuáng.",
-          "uz": "Har kuni soat nechada turasiz? Men olti yarimda turaman.",
-          "explanation": "Kun tartibini ifodalash: 几点 (soat necha) + fe'l"
+          "explanation": "Kun tartibini ifodalash: 几点 (soat necha) + fe'l",
+          "example_zh": "你每天几点起床？我六点半起床。",
+          "example_pinyin": "Nǐ měitiān jǐ diǎn qǐchuáng? Wǒ liù diǎn bàn qǐchuáng.",
+          "example_uz": "Har kuni soat nechada turasiz? Men olti yarimda turaman."
         },
         {
           "pattern": "先...然后...最后...",
-          "example": "我先洗澡，然后吃早饭，最后去上班。",
-          "pinyin": "Wǒ xiān xǐzǎo, rán hòu chī zǎofàn, zuìhòu qù shàngbān.",
-          "uz": "Men avval dush qilaman, keyin nonushta qilaman, oxirida ishga boraman.",
-          "explanation": "Tartibli harakatlar: 先 (avval) → 然后 (keyin) → 最后 (oxirida)"
+          "explanation": "Tartibli harakatlar: 先 (avval) → 然后 (keyin) → 最后 (oxirida)",
+          "example_zh": "我先洗澡，然后吃早饭，最后去上班。",
+          "example_pinyin": "Wǒ xiān xǐzǎo, rán hòu chī zǎofàn, zuìhòu qù shàngbān.",
+          "example_uz": "Men avval dush qilaman, keyin nonushta qilaman, oxirida ishga boraman."
         },
         {
           "pattern": "动词 + 了 (完成)",
-          "example": "我已经吃饭了，你呢？",
-          "pinyin": "Wǒ yǐjīng chīfàn le, nǐ ne?",
-          "uz": "Men allaqachon ovqat yedim, siz-chi?",
-          "explanation": "Tugallangan harakat: 已经 + fe'l + 了"
+          "explanation": "Tugallangan harakat: 已经 + fe'l + 了",
+          "example_zh": "我已经吃饭了，你呢？",
+          "example_pinyin": "Wǒ yǐjīng chīfàn le, nǐ ne?",
+          "example_uz": "Men allaqachon ovqat yedim, siz-chi?"
         },
         {
           "pattern": "还没 + 动词 + 呢",
-          "example": "他还没起床呢，还在睡觉。",
-          "pinyin": "Tā hái méi qǐchuáng ne, hái zài shuìjiào.",
-          "uz": "U hali turmagan, hali uxlamoqda.",
-          "explanation": "Bajarilmagan harakat: 还没 + fe'l + 呢"
+          "explanation": "Bajarilmagan harakat: 还没 + fe'l + 呢",
+          "example_zh": "他还没起床呢，还在睡觉。",
+          "example_pinyin": "Tā hái méi qǐchuáng ne, hái zài shuìjiào.",
+          "example_uz": "U hali turmagan, hali uxlamoqda."
         }
       ],
       "dialogues": [
@@ -4203,31 +4203,31 @@
       "grammar": [
         {
           "pattern": "每天 + 动词 + 时间",
-          "example": "我每天跑步一个小时。",
-          "pinyin": "Wǒ měitiān pǎobù yī gè xiǎoshí.",
-          "uz": "Men har kuni bir soat yuguraman.",
-          "explanation": "Har kuni qilingan harakatni ifodalash: 每天 + fe'l + vaqt miqdori"
+          "explanation": "Har kuni qilingan harakatni ifodalash: 每天 + fe'l + vaqt miqdori",
+          "example_zh": "我每天跑步一个小时。",
+          "example_pinyin": "Wǒ měitiān pǎobù yī gè xiǎoshí.",
+          "example_uz": "Men har kuni bir soat yuguraman."
         },
         {
           "pattern": "动词 + 得 + 好/不好",
-          "example": "她游泳游得很好。",
-          "pinyin": "Tā yóuyǒng yóu de hěn hǎo.",
-          "uz": "U suzishni juda yaxshi biladi.",
-          "explanation": "Harakat sifatini ifodalash: fe'l + 得 + baho"
+          "explanation": "Harakat sifatini ifodalash: fe'l + 得 + baho",
+          "example_zh": "她游泳游得很好。",
+          "example_pinyin": "Tā yóuyǒng yóu de hěn hǎo.",
+          "example_uz": "U suzishni juda yaxshi biladi."
         },
         {
           "pattern": "对...有好处",
-          "example": "运动对身体有好处。",
-          "pinyin": "Yùndòng duì shēntǐ yǒu hǎochù.",
-          "uz": "Sport sog'liq uchun foydali.",
-          "explanation": "Foyda ifodalash: 对 + ob'ekt + 有好处"
+          "explanation": "Foyda ifodalash: 对 + ob'ekt + 有好处",
+          "example_zh": "运动对身体有好处。",
+          "example_pinyin": "Yùndòng duì shēntǐ yǒu hǎochù.",
+          "example_uz": "Sport sog'liq uchun foydali."
         },
         {
           "pattern": "平时 + 习惯",
-          "example": "你平时怎么锻炼？",
-          "pinyin": "Nǐ píngshí zěnme duànliàn?",
-          "uz": "Odatda qanday mashq qilasan?",
-          "explanation": "Odatiy holat: 平时 (odatda) + harakat"
+          "explanation": "Odatiy holat: 平时 (odatda) + harakat",
+          "example_zh": "你平时怎么锻炼？",
+          "example_pinyin": "Nǐ píngshí zěnme duànliàn?",
+          "example_uz": "Odatda qanday mashq qilasan?"
         }
       ],
       "dialogues": [
@@ -4460,31 +4460,31 @@
       "grammar": [
         {
           "pattern": "哪儿不舒服",
-          "example": "你哪儿不舒服？",
-          "pinyin": "Nǐ nǎr bù shūfu?",
-          "uz": "Qaering og'riyapti? / Nima og'riyapti?",
-          "explanation": "Shifokor so'rovi: 哪儿 (qayer) + 不舒服 (noqulay)"
+          "explanation": "Shifokor so'rovi: 哪儿 (qayer) + 不舒服 (noqulay)",
+          "example_zh": "你哪儿不舒服？",
+          "example_pinyin": "Nǐ nǎr bù shūfu?",
+          "example_uz": "Qaering og'riyapti? / Nima og'riyapti?"
         },
         {
           "pattern": "已经...了",
-          "example": "我已经发烧两天了。",
-          "pinyin": "Wǒ yǐjīng fāshāo liǎng tiān le.",
-          "uz": "Men allaqachon ikki kundan beri isitmada yotibman.",
-          "explanation": "Davom etayotgan holat: 已经 + harakat + vaqt + 了"
+          "explanation": "Davom etayotgan holat: 已经 + harakat + vaqt + 了",
+          "example_zh": "我已经发烧两天了。",
+          "example_pinyin": "Wǒ yǐjīng fāshāo liǎng tiān le.",
+          "example_uz": "Men allaqachon ikki kundan beri isitmada yotibman."
         },
         {
           "pattern": "应该 + 动词",
-          "example": "你应该多休息，少工作。",
-          "pinyin": "Nǐ yīnggāi duō xiūxi, shǎo gōngzuò.",
-          "uz": "Siz ko'proq dam olishingiz, kamroq ishlashingiz kerak.",
-          "explanation": "Tavsiya/majburiyat: 应该 (kerak) + fe'l"
+          "explanation": "Tavsiya/majburiyat: 应该 (kerak) + fe'l",
+          "example_zh": "你应该多休息，少工作。",
+          "example_pinyin": "Nǐ yīnggāi duō xiūxi, shǎo gōngzuò.",
+          "example_uz": "Siz ko'proq dam olishingiz, kamroq ishlashingiz kerak."
         },
         {
           "pattern": "好多了 / 还是...",
-          "example": "吃了药以后好多了。",
-          "pinyin": "Chī le yào yǐhòu hǎo duō le.",
-          "uz": "Dori ichgandan keyin ancha yaxshilashdi.",
-          "explanation": "Holat o'zgarishi: 以后 (keyin) + 好多了 (ancha yaxshi)"
+          "explanation": "Holat o'zgarishi: 以后 (keyin) + 好多了 (ancha yaxshi)",
+          "example_zh": "吃了药以后好多了。",
+          "example_pinyin": "Chī le yào yǐhòu hǎo duō le.",
+          "example_uz": "Dori ichgandan keyin ancha yaxshilashdi."
         }
       ],
       "dialogues": [
@@ -4717,31 +4717,31 @@
       "grammar": [
         {
           "pattern": "A 比 B + 形容词",
-          "example": "这件衣服比那件贵一百块。",
-          "pinyin": "Zhè jiàn yīfu bǐ nà jiàn guì yī bǎi kuài.",
-          "uz": "Bu kiyim o'shandan yuz yuan qimmat.",
-          "explanation": "Taqqoslash: A + 比 + B + sifat + farq miqdori"
+          "explanation": "Taqqoslash: A + 比 + B + sifat + farq miqdori",
+          "example_zh": "这件衣服比那件贵一百块。",
+          "example_pinyin": "Zhè jiàn yīfu bǐ nà jiàn guì yī bǎi kuài.",
+          "example_uz": "Bu kiyim o'shandan yuz yuan qimmat."
         },
         {
           "pattern": "没有 A 那么...",
-          "example": "这个没有那个那么贵。",
-          "pinyin": "Zhège méiyǒu nàge nàme guì.",
-          "uz": "Bu narsa o'shancha qimmat emas.",
-          "explanation": "Teskari taqqoslash: 没有 + A + 那么 + sifat"
+          "explanation": "Teskari taqqoslash: 没有 + A + 那么 + sifat",
+          "example_zh": "这个没有那个那么贵。",
+          "example_pinyin": "Zhège méiyǒu nàge nàme guì.",
+          "example_uz": "Bu narsa o'shancha qimmat emas."
         },
         {
           "pattern": "越来越...",
-          "example": "这里的东西越来越贵了。",
-          "pinyin": "Zhèlǐ de dōngxi yuèláiyuè guì le.",
-          "uz": "Bu yerdagi narsalar tobora qimmatlashib ketmoqda.",
-          "explanation": "Gradual o'zgarish: 越来越 + sifat + 了"
+          "explanation": "Gradual o'zgarish: 越来越 + sifat + 了",
+          "example_zh": "这里的东西越来越贵了。",
+          "example_pinyin": "Zhèlǐ de dōngxi yuèláiyuè guì le.",
+          "example_uz": "Bu yerdagi narsalar tobora qimmatlashib ketmoqda."
         },
         {
           "pattern": "能不能...？",
-          "example": "能不能便宜一点儿？",
-          "pinyin": "Néng bu néng piányí yīdiǎnr?",
-          "uz": "Biroz arzonlashtira olasizmi?",
-          "explanation": "Muomala iltimosi: 能不能 + fe'l + biroz?"
+          "explanation": "Muomala iltimosi: 能不能 + fe'l + biroz?",
+          "example_zh": "能不能便宜一点儿？",
+          "example_pinyin": "Néng bu néng piányí yīdiǎnr?",
+          "example_uz": "Biroz arzonlashtira olasizmi?"
         }
       ],
       "dialogues": [
@@ -4974,31 +4974,31 @@
       "grammar": [
         {
           "pattern": "坐/骑/开 + 交通工具 + 来/去",
-          "example": "我每天坐地铁去上班。",
-          "pinyin": "Wǒ měitiān zuò dìtiě qù shàngbān.",
-          "uz": "Men har kuni metroda ishga boraman.",
-          "explanation": "Transport vositasi: 坐/骑/开 + transport + 来/去 + maqsad"
+          "explanation": "Transport vositasi: 坐/骑/开 + transport + 来/去 + maqsad",
+          "example_zh": "我每天坐地铁去上班。",
+          "example_pinyin": "Wǒ měitiān zuò dìtiě qù shàngbān.",
+          "example_uz": "Men har kuni metroda ishga boraman."
         },
         {
           "pattern": "从...到...需要...分钟",
-          "example": "从这里到机场大概需要四十分钟。",
-          "pinyin": "Cóng zhèlǐ dào jīchǎng dàgài xūyào sìshí fēnzhōng.",
-          "uz": "Bu yerdan aeroportgacha taxminan qirq daqiqa kerak.",
-          "explanation": "Masofani vaqt bilan ifodalash: 从 + joy + 到 + joy + 需要 + vaqt"
+          "explanation": "Masofani vaqt bilan ifodalash: 从 + joy + 到 + joy + 需要 + vaqt",
+          "example_zh": "从这里到机场大概需要四十分钟。",
+          "example_pinyin": "Cóng zhèlǐ dào jīchǎng dàgài xūyào sìshí fēnzhōng.",
+          "example_uz": "Bu yerdan aeroportgacha taxminan qirq daqiqa kerak."
         },
         {
           "pattern": "先...然后...再...",
-          "example": "先坐地铁到中山站，然后换二号线，再坐三站。",
-          "pinyin": "Xiān zuò dìtiě dào Zhōngshān zhàn, rán hòu huàn èr hào xiàn, zài zuò sān zhàn.",
-          "uz": "Avval metro bilan Zhongshan bekatigacha boring, keyin 2-liniyaga o'ting, yana uch bekat boring.",
-          "explanation": "Ketma-ket harakatlar: 先 (avval) + 然后 (keyin) + 再 (va yana)"
+          "explanation": "Ketma-ket harakatlar: 先 (avval) + 然后 (keyin) + 再 (va yana)",
+          "example_zh": "先坐地铁到中山站，然后换二号线，再坐三站。",
+          "example_pinyin": "Xiān zuò dìtiě dào Zhōngshān zhàn, rán hòu huàn èr hào xiàn, zài zuò sān zhàn.",
+          "example_uz": "Avval metro bilan Zhongshan bekatigacha boring, keyin 2-liniyaga o'ting, yana uch bekat boring."
         },
         {
           "pattern": "怎么去...最方便",
-          "example": "去故宫坐地铁最方便。",
-          "pinyin": "Qù Gùgōng zuò dìtiě zuì fāngbiàn.",
-          "uz": "Eski saroylarga metroda borish eng qulay.",
-          "explanation": "Eng qulay yo'l: 坐 + transport + 最方便"
+          "explanation": "Eng qulay yo'l: 坐 + transport + 最方便",
+          "example_zh": "去故宫坐地铁最方便。",
+          "example_pinyin": "Qù Gùgōng zuò dìtiě zuì fāngbiàn.",
+          "example_uz": "Eski saroylarga metroda borish eng qulay."
         }
       ],
       "dialogues": [
