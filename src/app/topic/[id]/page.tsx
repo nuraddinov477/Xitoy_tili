@@ -1,8 +1,8 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState, use } from 'react'
-import { ArrowLeft, X, BookOpen, MessageSquare, GraduationCap, ChevronRight } from 'lucide-react'
+import { useState, use, useCallback } from 'react'
+import { ArrowLeft, X, BookOpen, MessageSquare, GraduationCap, ChevronRight, Volume2 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import topicsData from '@/app/data/hsk-topics.json'
@@ -34,6 +34,20 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   const [flipped, setFlipped] = useState<number | null>(null)
   const [openGrammar, setOpenGrammar] = useState<number | null>(null)
   const [activeDialogue, setActiveDialogue] = useState(0)
+  const [speaking, setSpeaking] = useState<string | null>(null)
+
+  const speak = useCallback((text: string) => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return
+    window.speechSynthesis.cancel()
+    if (speaking === text) { setSpeaking(null); return }
+    const utter = new SpeechSynthesisUtterance(text)
+    utter.lang = 'zh-CN'
+    utter.rate = 0.85
+    utter.onend = () => setSpeaking(null)
+    utter.onerror = () => setSpeaking(null)
+    setSpeaking(text)
+    window.speechSynthesis.speak(utter)
+  }, [speaking])
 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
 
@@ -373,8 +387,6 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                       <p className="text-center text-gray-500 text-xs mb-4">Kartochkani bosing — ag&apos;daring 🔄</p>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                         {topic.vocabulary.map((word, i) => {
-                          const imgKeyword = encodeURIComponent(word.en.split(',')[0].trim())
-                          const imgUrl = `https://source.unsplash.com/200x160/?${imgKeyword}&sig=${i}`
                           return (
                           <motion.div key={i}
                             initial={{ opacity: 0, scale: 0.8, y: 20 }}
@@ -396,7 +408,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                                 {/* Background image */}
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                  src={imgUrl}
+                                  src={`https://source.unsplash.com/200x160/?${encodeURIComponent(word.en.split(',')[0].trim())}&sig=${i}`}
                                   alt={word.en}
                                   className="absolute inset-0 w-full h-full object-cover"
                                   loading="lazy"
@@ -404,6 +416,14 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                                 />
                                 {/* Dark overlay */}
                                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%)' }} />
+                                {/* Speak button top-left */}
+                                <button
+                                  className="absolute top-2 left-2 z-10 w-7 h-7 rounded-full flex items-center justify-center transition-all"
+                                  style={{ background: speaking === word.zh ? topic.glow.replace('0.6','0.8') : 'rgba(0,0,0,0.5)', border: `1px solid ${topic.glow.replace('0.6','0.4')}` }}
+                                  onClick={(e) => { e.stopPropagation(); speak(word.zh) }}
+                                >
+                                  <Volume2 size={12} className={speaking === word.zh ? 'text-white' : 'text-white/70'} />
+                                </button>
                                 {/* Content */}
                                 <div className="relative z-10 text-center pb-3 px-2 w-full">
                                   <div
@@ -568,7 +588,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
 
                               {/* Bubble */}
                               <div className="max-w-[78%] space-y-1">
-                                <div className="rounded-2xl px-4 py-3"
+                                <div className="rounded-2xl px-4 py-3 relative"
                                   style={line.speaker === 'A' ? {
                                     background: 'linear-gradient(135deg, rgba(88,80,236,0.25), rgba(88,80,236,0.1))',
                                     border: '1px solid rgba(88,80,236,0.35)',
@@ -578,8 +598,16 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                                     border: `1px solid ${topic.glow.replace('0.6','0.45')}`,
                                     borderBottomRightRadius: '5px',
                                   }}>
-                                  <div className="chinese-font text-xl font-black text-white leading-snug">{line.zh}</div>
+                                  <div className="chinese-font text-xl font-black text-white leading-snug pr-8">{line.zh}</div>
                                   <div className="text-xs font-bold mt-1" style={{ color: '#fb923c' }}>{line.pinyin}</div>
+                                  {/* Speak button */}
+                                  <button
+                                    className="absolute top-2 right-2 w-7 h-7 rounded-full flex items-center justify-center transition-all"
+                                    style={{ background: speaking === line.zh ? 'rgba(251,146,60,0.5)' : 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)' }}
+                                    onClick={() => speak(line.zh)}
+                                  >
+                                    <Volume2 size={12} className={speaking === line.zh ? 'text-orange-300' : 'text-white/60'} />
+                                  </button>
                                 </div>
                                 <div className={`text-xs text-gray-400 px-1 ${line.speaker === 'B' ? 'text-right' : 'text-left'}`}>
                                   {line.uz}
