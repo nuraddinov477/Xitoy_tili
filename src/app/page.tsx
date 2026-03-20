@@ -425,7 +425,7 @@ export default function Home() {
             <span className="chinese-font text-red-400 text-3xl font-black">课程</span>
             <div className="h-px w-24 bg-gradient-to-l from-transparent to-red-500/60"/>
           </div>
-          <p className="text-gray-500 text-xs tracking-[0.3em] uppercase">HSK 1 — 15 ta Mavzu</p>
+          <p className="text-gray-500 text-xs tracking-[0.3em] uppercase">HSK 1–2 • 19 ta Mavzu</p>
         </motion.div>
 
         {/* Topics Grid */}

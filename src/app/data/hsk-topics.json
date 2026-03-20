@@ -3841,6 +3841,1034 @@
           ]
         }
       ]
+    },
+    {
+      "id": 16,
+      "zh": "运动锻炼",
+      "uz": "Sport va mashq",
+      "emoji": "🏃",
+      "hsk": 2,
+      "color": "from-green-500 to-emerald-700",
+      "glow": "rgba(16,185,129,0.6)",
+      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+      "vocabulary": [
+        {
+          "zh": "运动",
+          "pinyin": "yùndòng",
+          "uz": "Sport qilmoq / jismoniy mashq",
+          "en": "exercise, sport"
+        },
+        {
+          "zh": "锻炼",
+          "pinyin": "duànliàn",
+          "uz": "Mashq qilmoq, chiniqmoq",
+          "en": "to exercise, to train"
+        },
+        {
+          "zh": "跑步",
+          "pinyin": "pǎobù",
+          "uz": "Yugurmoq",
+          "en": "to run, jogging"
+        },
+        {
+          "zh": "游泳",
+          "pinyin": "yóuyǒng",
+          "uz": "Suzmoq",
+          "en": "to swim"
+        },
+        {
+          "zh": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "uz": "Basketbol o'ynamoq",
+          "en": "to play basketball"
+        },
+        {
+          "zh": "踢足球",
+          "pinyin": "tī zúqiú",
+          "uz": "Futbol o'ynamoq",
+          "en": "to play football"
+        },
+        {
+          "zh": "打太极拳",
+          "pinyin": "dǎ tàijíquán",
+          "uz": "Taychi qilmoq",
+          "en": "to do tai chi"
+        },
+        {
+          "zh": "每天",
+          "pinyin": "měitiān",
+          "uz": "Har kuni",
+          "en": "every day"
+        },
+        {
+          "zh": "早上",
+          "pinyin": "zǎoshang",
+          "uz": "Ertalab",
+          "en": "morning"
+        },
+        {
+          "zh": "小时",
+          "pinyin": "xiǎoshí",
+          "uz": "Soat (vaqt birligi)",
+          "en": "hour"
+        },
+        {
+          "zh": "健康",
+          "pinyin": "jiànkāng",
+          "uz": "Sog'liq / sog'lom",
+          "en": "health, healthy"
+        },
+        {
+          "zh": "身体",
+          "pinyin": "shēntǐ",
+          "uz": "Tana, jismoniy holat",
+          "en": "body, health"
+        },
+        {
+          "zh": "重要",
+          "pinyin": "zhòngyào",
+          "uz": "Muhim",
+          "en": "important"
+        },
+        {
+          "zh": "一起",
+          "pinyin": "yīqǐ",
+          "uz": "Birga",
+          "en": "together"
+        },
+        {
+          "zh": "怎么样",
+          "pinyin": "zěnmeyàng",
+          "uz": "Qanday? / Nima deysan?",
+          "en": "how about, what do you think"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "每天 + 动词 + 时间",
+          "example": "我每天跑步一个小时。",
+          "pinyin": "Wǒ měitiān pǎobù yī gè xiǎoshí.",
+          "uz": "Men har kuni bir soat yuguraman.",
+          "explanation": "Har kuni qilingan harakatni ifodalash: 每天 + fe'l + vaqt miqdori"
+        },
+        {
+          "pattern": "动词 + 得 + 好/不好",
+          "example": "她游泳游得很好。",
+          "pinyin": "Tā yóuyǒng yóu de hěn hǎo.",
+          "uz": "U suzishni juda yaxshi biladi.",
+          "explanation": "Harakat sifatini ifodalash: fe'l + 得 + baho"
+        },
+        {
+          "pattern": "对...有好处",
+          "example": "运动对身体有好处。",
+          "pinyin": "Yùndòng duì shēntǐ yǒu hǎochù.",
+          "uz": "Sport sog'liq uchun foydali.",
+          "explanation": "Foyda ifodalash: 对 + ob'ekt + 有好处"
+        },
+        {
+          "pattern": "平时 + 习惯",
+          "example": "你平时怎么锻炼？",
+          "pinyin": "Nǐ píngshí zěnme duànliàn?",
+          "uz": "Odatda qanday mashq qilasan?",
+          "explanation": "Odatiy holat: 平时 (odatda) + harakat"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Ertalabki yugurish",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "你好，你也来跑步吗？这个公园早上人很多。",
+              "pinyin": "Nǐ hǎo, nǐ yě lái pǎobù ma? Zhège gōngyuán zǎoshang rén hěn duō.",
+              "uz": "Salom, siz ham yugurgani keldingizmi? Bu bog'da ertalab odam juda ko'p."
+            },
+            {
+              "speaker": "B",
+              "zh": "是啊，我每天早上来这里跑步，已经跑了三年了。你呢？",
+              "pinyin": "Shì a, wǒ měitiān zǎoshang lái zhèlǐ pǎobù, yǐjīng pǎo le sān nián le. Nǐ ne?",
+              "uz": "Ha, men har kuni ertalab shu yerga yugurgani kelaman, allaqachon uch yil bo'ldi. Siz-chi?"
+            },
+            {
+              "speaker": "A",
+              "zh": "我刚开始跑步，才跑了一个月。每天跑多少？",
+              "pinyin": "Wǒ gāng kāishǐ pǎobù, cái pǎo le yī gè yuè. Měitiān pǎo duōshǎo?",
+              "uz": "Men yugura boshlaganim endigina, atigi bir oy bo'ldi. Har kuni qancha yuguraysiz?"
+            },
+            {
+              "speaker": "B",
+              "zh": "我每天跑五公里，大概需要三十分钟。刚开始的时候你跑多少？",
+              "pinyin": "Wǒ měitiān pǎo wǔ gōnglǐ, dàgài xūyào sānshí fēnzhōng. Gāng kāishǐ de shíhou nǐ pǎo duōshǎo?",
+              "uz": "Men har kuni besh kilometr yuguraman, taxminan o'ttiz daqiqa vaqt ketadi. Boshida qancha yugurdingiz?"
+            },
+            {
+              "speaker": "A",
+              "zh": "我每次只能跑两公里，有点儿累。怎么才能跑得更多？",
+              "pinyin": "Wǒ měicì zhǐ néng pǎo liǎng gōnglǐ, yǒudiǎnr lèi. Zěnme cái néng pǎo de gèng duō?",
+              "uz": "Har safar faqat ikki kilometr yugura olaman, biroz charchayman. Qanday qilib ko'proq yugura olaman?"
+            },
+            {
+              "speaker": "B",
+              "zh": "慢慢来，不要急。每周增加一点点就可以了。运动对身体非常有好处！",
+              "pinyin": "Màn màn lái, bú yào jí. Měi zhōu zēngjiā yīdiǎndiǎn jiù kěyǐ le. Yùndòng duì shēntǐ fēicháng yǒu hǎochù!",
+              "uz": "Asta-sekin, shoshilmang. Har hafta ozgina ko'paytirsa bo'ladi. Sport sog'liq uchun juda foydali!"
+            }
+          ]
+        },
+        {
+          "title": "Sport tanlash",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "周末你一般做什么运动？我想找一个新的运动。",
+              "pinyin": "Zhōumò nǐ yībān zuò shénme yùndòng? Wǒ xiǎng zhǎo yī gè xīn de yùndòng.",
+              "uz": "Dam olish kunlari odatda qanday sport bilan shug'ullanasiz? Men yangi bir sport topmoqchiman."
+            },
+            {
+              "speaker": "B",
+              "zh": "我周末打篮球或者游泳。你喜欢哪种运动？",
+              "pinyin": "Wǒ zhōumò dǎ lánqiú huòzhě yóuyǒng. Nǐ xǐhuān nǎ zhǒng yùndòng?",
+              "uz": "Men dam olish kunlari basketbol o'ynayman yoki suzaman. Qaysi turdagi sportni yoqtirasiz?"
+            },
+            {
+              "speaker": "A",
+              "zh": "我以前打网球，但是最近没有时间。游泳怎么样？难不难？",
+              "pinyin": "Wǒ yǐqián dǎ wǎngqiú, dànshì zuìjìn méiyǒu shíjiān. Yóuyǒng zěnmeyàng? Nán bu nán?",
+              "uz": "Men ilgari tennis o'ynardim, lekin so'nggi paytda vaqtim bo'lmadi. Suzish qanday? Qiyin emasmi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "游泳不太难，但是你需要先学基本动作。我可以教你，我学了十年了。",
+              "pinyin": "Yóuyǒng bú tài nán, dànshì nǐ xūyào xiān xué jīběn dòngzuò. Wǒ kěyǐ jiāo nǐ, wǒ xué le shí nián le.",
+              "uz": "Suzish unchalik qiyin emas, lekin avval asosiy harakatlarni o'rganishingiz kerak. Men sizga o'rgata olaman, men o'n yildan beri suzaman."
+            },
+            {
+              "speaker": "A",
+              "zh": "真的吗？太好了！你什么时候有空？我们一起去游泳池吧。",
+              "pinyin": "Zhēn de ma? Tài hǎo le! Nǐ shénme shíhou yǒu kòng? Wǒmen yīqǐ qù yóuyǒngchí ba.",
+              "uz": "Haqiqatanmi? Zo'r! Qachon bo'sh vaqtingiz bor? Keling, birga suzish havzasiga boraylik."
+            },
+            {
+              "speaker": "B",
+              "zh": "这个周六下午怎么样？我们三点在游泳池门口见面吧。",
+              "pinyin": "Zhège zhōuliù xiàwǔ zěnmeyàng? Wǒmen sān diǎn zài yóuyǒngchí ménkǒu jiànmiàn ba.",
+              "uz": "Bu shanba kuni tushdan keyin qanday? Uchda suzish havzasi oldida uchrashaylik."
+            }
+          ]
+        },
+        {
+          "title": "Sog'liq va sport",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "医生说我需要多运动，但是我不知道从哪里开始。",
+              "pinyin": "Yīshēng shuō wǒ xūyào duō yùndòng, dànshì wǒ bù zhīdào cóng nǎlǐ kāishǐ.",
+              "uz": "Doktor ko'proq sport qilishim kerakligini aytdi, lekin qayerdan boshlashni bilmayapman."
+            },
+            {
+              "speaker": "B",
+              "zh": "你可以先从散步开始，每天走三十分钟。这对心脏很好。",
+              "pinyin": "Nǐ kěyǐ xiān cóng sànbù kāishǐ, měitiān zǒu sānshí fēnzhōng. Zhè duì xīnzàng hěn hǎo.",
+              "uz": "Avval sayrdan boshlashingiz mumkin, har kuni o'ttiz daqiqa yuring. Bu yurak uchun juda foydali."
+            },
+            {
+              "speaker": "A",
+              "zh": "散步我可以做，但是我觉得太简单了，没有效果。",
+              "pinyin": "Sànbù wǒ kěyǐ zuò, dànshì wǒ juéde tài jiǎndān le, méiyǒu xiàoguǒ.",
+              "uz": "Sayr qila olaman, lekin bu juda oddiy ko'rinadi, samara yo'qdek."
+            },
+            {
+              "speaker": "B",
+              "zh": "不是的！研究表明散步能减少很多病。你可以慢慢加上慢跑。",
+              "pinyin": "Bú shì de! Yánjiū biǎomíng sànbù néng jiǎnshǎo hěn duō bìng. Nǐ kěyǐ màn màn jiā shàng màn pǎo.",
+              "uz": "Unday emas! Tadqiqotlar ko'rsatadiki, sayr ko'p kasalliklarni kamaytira oladi. Asta-sekin sekin yugurish qo'shishingiz mumkin."
+            },
+            {
+              "speaker": "A",
+              "zh": "好的，我明白了。每天坚持运动，身体才能好起来。",
+              "pinyin": "Hǎo de, wǒ míngbái le. Měitiān jiānchí yùndòng, shēntǐ cái néng hǎo qǐlái.",
+              "uz": "Xop, tushundim. Har kuni sport qilishni davom etsam, sog'liq yaxshilanadi."
+            },
+            {
+              "speaker": "B",
+              "zh": "对！最重要的是坚持。三个月以后你会感觉完全不一样。",
+              "pinyin": "Duì! Zuì zhòngyào de shì jiānchí. Sān gè yuè yǐhòu nǐ huì gǎnjué wánquán bù yīyàng.",
+              "uz": "To'g'ri! Eng muhimi — davom etish. Uch oydan keyin o'zingizni butunlay boshqacha his qilasiz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "zh": "身体健康",
+      "uz": "Sog'liq va kasallik",
+      "emoji": "🏥",
+      "hsk": 2,
+      "color": "from-blue-500 to-cyan-700",
+      "glow": "rgba(59,130,246,0.6)",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+      "vocabulary": [
+        {
+          "zh": "生病",
+          "pinyin": "shēngbìng",
+          "uz": "Kasal bo'lmoq",
+          "en": "to get sick"
+        },
+        {
+          "zh": "头疼",
+          "pinyin": "tóuténg",
+          "uz": "Bosh og'riq",
+          "en": "headache"
+        },
+        {
+          "zh": "发烧",
+          "pinyin": "fāshāo",
+          "uz": "Isitma",
+          "en": "fever"
+        },
+        {
+          "zh": "肚子疼",
+          "pinyin": "dùzi téng",
+          "uz": "Qorin og'riq",
+          "en": "stomachache"
+        },
+        {
+          "zh": "感冒",
+          "pinyin": "gǎnmào",
+          "uz": "Shamollash",
+          "en": "cold, flu"
+        },
+        {
+          "zh": "咳嗽",
+          "pinyin": "késou",
+          "uz": "Yo'tal",
+          "en": "cough"
+        },
+        {
+          "zh": "医院",
+          "pinyin": "yīyuàn",
+          "uz": "Kasalxona",
+          "en": "hospital"
+        },
+        {
+          "zh": "医生",
+          "pinyin": "yīshēng",
+          "uz": "Shifokor",
+          "en": "doctor"
+        },
+        {
+          "zh": "药",
+          "pinyin": "yào",
+          "uz": "Dori",
+          "en": "medicine"
+        },
+        {
+          "zh": "休息",
+          "pinyin": "xiūxi",
+          "uz": "Dam olmoq",
+          "en": "to rest"
+        },
+        {
+          "zh": "检查",
+          "pinyin": "jiǎnchá",
+          "uz": "Ko'rik qilmoq, tekshirmoq",
+          "en": "to examine, checkup"
+        },
+        {
+          "zh": "严重",
+          "pinyin": "yánzhòng",
+          "uz": "Jiddiy, og'ir",
+          "en": "serious, severe"
+        },
+        {
+          "zh": "好多了",
+          "pinyin": "hǎo duō le",
+          "uz": "Ancha yaxshilashdi",
+          "en": "much better"
+        },
+        {
+          "zh": "多喝水",
+          "pinyin": "duō hē shuǐ",
+          "uz": "Ko'p suv ich",
+          "en": "drink more water"
+        },
+        {
+          "zh": "注意",
+          "pinyin": "zhùyì",
+          "uz": "E'tibor bermoq, ehtiyot bo'lmoq",
+          "en": "to pay attention, to be careful"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "哪儿不舒服",
+          "example": "你哪儿不舒服？",
+          "pinyin": "Nǐ nǎr bù shūfu?",
+          "uz": "Qaering og'riyapti? / Nima og'riyapti?",
+          "explanation": "Shifokor so'rovi: 哪儿 (qayer) + 不舒服 (noqulay)"
+        },
+        {
+          "pattern": "已经...了",
+          "example": "我已经发烧两天了。",
+          "pinyin": "Wǒ yǐjīng fāshāo liǎng tiān le.",
+          "uz": "Men allaqachon ikki kundan beri isitmada yotibman.",
+          "explanation": "Davom etayotgan holat: 已经 + harakat + vaqt + 了"
+        },
+        {
+          "pattern": "应该 + 动词",
+          "example": "你应该多休息，少工作。",
+          "pinyin": "Nǐ yīnggāi duō xiūxi, shǎo gōngzuò.",
+          "uz": "Siz ko'proq dam olishingiz, kamroq ishlashingiz kerak.",
+          "explanation": "Tavsiya/majburiyat: 应该 (kerak) + fe'l"
+        },
+        {
+          "pattern": "好多了 / 还是...",
+          "example": "吃了药以后好多了。",
+          "pinyin": "Chī le yào yǐhòu hǎo duō le.",
+          "uz": "Dori ichgandan keyin ancha yaxshilashdi.",
+          "explanation": "Holat o'zgarishi: 以后 (keyin) + 好多了 (ancha yaxshi)"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Shifokorga borish",
+          "lines": [
+            {
+              "speaker": "Bemor",
+              "zh": "医生，我不太舒服，已经三天了。头疼，还有点儿发烧。",
+              "pinyin": "Yīshēng, wǒ bú tài shūfu, yǐjīng sān tiān le. Tóuténg, hái yǒudiǎnr fāshāo.",
+              "uz": "Shifokor, o'zim yaxshi emasman, allaqachon uch kun bo'ldi. Boshim og'riyapti, biroz isitmam ham bor."
+            },
+            {
+              "speaker": "Shifokor",
+              "zh": "好的，我来检查一下。你还有哪儿不舒服？嗓子疼吗？",
+              "pinyin": "Hǎo de, wǒ lái jiǎnchá yīxià. Nǐ hái nǎr bù shūfu? Sǎngzi téng ma?",
+              "uz": "Xop, ko'rib chiqay. Yana qayeringiz noqulayroq? Tomog'ingiz og'riyaptimi?"
+            },
+            {
+              "speaker": "Bemor",
+              "zh": "是的，嗓子也有点儿疼，而且还咳嗽。晚上睡不着觉。",
+              "pinyin": "Shì de, sǎngzi yě yǒudiǎnr téng, érqiě hái késou. Wǎnshang shuì bu zháo jiào.",
+              "uz": "Ha, tomog'im ham biroz og'riyapti, bundan tashqari yo'talim ham bor. Kechasi uxlay olmayapman."
+            },
+            {
+              "speaker": "Shifokor",
+              "zh": "你这是感冒了，不太严重。我给你开一些药，你回去好好休息。",
+              "pinyin": "Nǐ zhè shì gǎnmào le, bú tài yánzhòng. Wǒ gěi nǐ kāi yīxiē yào, nǐ huíqu hǎohǎo xiūxi.",
+              "uz": "Bu shamollash, unchalik jiddiy emas. Men sizga dori yozib beraman, uyga borib yaxshilab dam oling."
+            },
+            {
+              "speaker": "Bemor",
+              "zh": "谢谢医生。我需要注意什么？需要忌口吗？",
+              "pinyin": "Xièxie yīshēng. Wǒ xūyào zhùyì shénme? Xūyào jì kǒu ma?",
+              "uz": "Rahmat, shifokor. Nimaga e'tibor berishim kerak? Parhezga rioya qilishim kerakmi?"
+            },
+            {
+              "speaker": "Shifokor",
+              "zh": "多喝热水，多休息，少吃辛辣食物。三天后如果没好转，再来检查。",
+              "pinyin": "Duō hē rè shuǐ, duō xiūxi, shǎo chī xīnlà shíwù. Sān tiān hòu rúguǒ méi hǎo zhuǎn, zài lái jiǎnchá.",
+              "uz": "Ko'p issiq suv iching, ko'p dam oling, achchiq-o'tkir ovqat kamroq yeng. Uch kundan keyin yaxshilanmasa, qayta keling."
+            }
+          ]
+        },
+        {
+          "title": "Do'stim bilan suhbat",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "你今天看起来不太好，怎么了？脸色很差。",
+              "pinyin": "Nǐ jīntiān kàn qǐlái bú tài hǎo, zěnme le? Liǎnsè hěn chà.",
+              "uz": "Bugun ko'rinishingiz yaxshi emas, nima bo'ldi? Yuzingiz rangsiz."
+            },
+            {
+              "speaker": "B",
+              "zh": "我昨天晚上开始肚子疼，一晚上没睡好。不知道吃什么坏的了。",
+              "pinyin": "Wǒ zuótiān wǎnshang kāishǐ dùzi téng, yī wǎnshang méi shuì hǎo. Bù zhīdào chī shénme huài de le.",
+              "uz": "Kecha kechqurun qorim og'riy boshladi, bir kecha yaxshi uxlamadim. Nima yegan edim bilmayapman."
+            },
+            {
+              "speaker": "A",
+              "zh": "严重吗？你去医院了吗？这种情况应该去看医生。",
+              "pinyin": "Yánzhòng ma? Nǐ qù yīyuàn le ma? Zhè zhǒng qíngkuàng yīnggāi qù kàn yīshēng.",
+              "uz": "Jiddiyroqmi? Kasalxonaga borgansizmi? Bunday holda shifokorga borish kerak."
+            },
+            {
+              "speaker": "B",
+              "zh": "还没有。我以为休息一下就好了，但是现在更疼了。",
+              "pinyin": "Hái méiyǒu. Wǒ yǐwéi xiūxi yīxià jiù hǎo le, dànshì xiànzài gèng téng le.",
+              "uz": "Hali yo'q. Dam olsam yaxshilanadi deb o'yladim, lekin hozir yanada ko'proq og'riyapti."
+            },
+            {
+              "speaker": "A",
+              "zh": "你现在就去医院吧，我陪你去。不要拖太长时间，会更严重的。",
+              "pinyin": "Nǐ xiànzài jiù qù yīyuàn ba, wǒ péi nǐ qù. Bú yào tuō tài cháng shíjiān, huì gèng yánzhòng de.",
+              "uz": "Hoziroq kasalxonaga boring, men sizga hamrohlik qilaman. Uzoq kechiktirmang, yanada yomonlashishi mumkin."
+            },
+            {
+              "speaker": "B",
+              "zh": "好的，谢谢你。我去拿一下我的东西就走。真的很感谢你。",
+              "pinyin": "Hǎo de, xièxie nǐ. Wǒ qù ná yīxià wǒ de dōngxi jiù zǒu. Zhēn de hěn gǎnxiè nǐ.",
+              "uz": "Xop, rahmat. Narsalarimni olib, ketaman. Sizga juda minnatdorman."
+            }
+          ]
+        },
+        {
+          "title": "Sog'lom turmush tarzi",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "你看起来很健康，有什么保持健康的秘诀吗？",
+              "pinyin": "Nǐ kàn qǐlái hěn jiànkāng, yǒu shénme bǎochí jiànkāng de mìjué ma?",
+              "uz": "Siz juda sog'lom ko'rinasiz, sog'lom bo'lishning siriga ega bo'lsangiz?"
+            },
+            {
+              "speaker": "B",
+              "zh": "其实很简单。我每天早睡早起，不吸烟不喝酒，经常运动。",
+              "pinyin": "Qíshí hěn jiǎndān. Wǒ měitiān zǎo shuì zǎo qǐ, bù xīyān bù hē jiǔ, jīngcháng yùndòng.",
+              "uz": "Aslida juda oddiy. Men har kuni erta yotib erta turaman, chekmayman, ichmayman, doim sport qilaman."
+            },
+            {
+              "speaker": "A",
+              "zh": "我也想健康，但是工作太忙，没有时间运动，经常加班到很晚。",
+              "pinyin": "Wǒ yě xiǎng jiànkāng, dànshì gōngzuò tài máng, méiyǒu shíjiān yùndòng, jīngcháng jiābān dào hěn wǎn.",
+              "uz": "Men ham sog'lom bo'lishni xohlayman, lekin ish juda band, sport qilish uchun vaqt yo'q, ko'pincha kech qolgacha qolaman."
+            },
+            {
+              "speaker": "B",
+              "zh": "健康比工作更重要。你不注意健康，以后会有很多问题。",
+              "pinyin": "Jiànkāng bǐ gōngzuò gèng zhòngyào. Nǐ bù zhùyì jiànkāng, yǐhòu huì yǒu hěn duō wèntí.",
+              "uz": "Sog'liq ishdan muhimroq. Sog'liqqa e'tibor bermasa, keyinchalik ko'p muammolar bo'ladi."
+            },
+            {
+              "speaker": "A",
+              "zh": "你说得对。我应该改变生活方式，从明天开始少加班，多休息。",
+              "pinyin": "Nǐ shuō de duì. Wǒ yīnggāi gǎibiàn shēnghuó fāngshì, cóng míngtiān kāishǐ shǎo jiābān, duō xiūxi.",
+              "uz": "To'g'ri aytasiz. Hayot tarzimni o'zgartirishim kerak, ertadan boshlab kamroq qolaman, ko'proq dam olaman."
+            },
+            {
+              "speaker": "B",
+              "zh": "好！另外，每天多喝水也很重要，至少喝八杯水。",
+              "pinyin": "Hǎo! Lìngwài, měitiān duō hē shuǐ yě hěn zhòngyào, zhìshǎo hē bā bēi shuǐ.",
+              "uz": "Yaxshi! Bundan tashqari, har kuni ko'proq suv ichish ham juda muhim, kamida sakkiz stakan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "zh": "比较与购物",
+      "uz": "Taqqoslash va xarid",
+      "emoji": "🛍️",
+      "hsk": 2,
+      "color": "from-pink-500 to-fuchsia-700",
+      "glow": "rgba(236,72,153,0.6)",
+      "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80",
+      "vocabulary": [
+        {
+          "zh": "比",
+          "pinyin": "bǐ",
+          "uz": "...dan (taqqoslash)",
+          "en": "compared to, than"
+        },
+        {
+          "zh": "更",
+          "pinyin": "gèng",
+          "uz": "Yanada ko'proq",
+          "en": "even more"
+        },
+        {
+          "zh": "最",
+          "pinyin": "zuì",
+          "uz": "Eng",
+          "en": "most"
+        },
+        {
+          "zh": "贵",
+          "pinyin": "guì",
+          "uz": "Qimmat",
+          "en": "expensive"
+        },
+        {
+          "zh": "便宜",
+          "pinyin": "piányí",
+          "uz": "Arzon",
+          "en": "cheap, inexpensive"
+        },
+        {
+          "zh": "质量",
+          "pinyin": "zhìliàng",
+          "uz": "Sifat",
+          "en": "quality"
+        },
+        {
+          "zh": "打折",
+          "pinyin": "dǎzhé",
+          "uz": "Chegirma qilmoq",
+          "en": "to discount"
+        },
+        {
+          "zh": "换",
+          "pinyin": "huàn",
+          "uz": "Almashtirmoq",
+          "en": "to exchange"
+        },
+        {
+          "zh": "合适",
+          "pinyin": "héshì",
+          "uz": "Mos, to'g'ri",
+          "en": "suitable, fit"
+        },
+        {
+          "zh": "颜色",
+          "pinyin": "yánsè",
+          "uz": "Rang",
+          "en": "color"
+        },
+        {
+          "zh": "号",
+          "pinyin": "hào",
+          "uz": "O'lcham (kiyim)",
+          "en": "size (clothing)"
+        },
+        {
+          "zh": "款式",
+          "pinyin": "kuǎnshì",
+          "uz": "Uslub, model",
+          "en": "style, design"
+        },
+        {
+          "zh": "试穿",
+          "pinyin": "shì chuān",
+          "uz": "Kiyib ko'rmoq",
+          "en": "to try on"
+        },
+        {
+          "zh": "收据",
+          "pinyin": "shōujù",
+          "uz": "Chek, kvitansiya",
+          "en": "receipt"
+        },
+        {
+          "zh": "退货",
+          "pinyin": "tuì huò",
+          "uz": "Tovar qaytarmoq",
+          "en": "to return goods"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "A 比 B + 形容词",
+          "example": "这件衣服比那件贵一百块。",
+          "pinyin": "Zhè jiàn yīfu bǐ nà jiàn guì yī bǎi kuài.",
+          "uz": "Bu kiyim o'shandan yuz yuan qimmat.",
+          "explanation": "Taqqoslash: A + 比 + B + sifat + farq miqdori"
+        },
+        {
+          "pattern": "没有 A 那么...",
+          "example": "这个没有那个那么贵。",
+          "pinyin": "Zhège méiyǒu nàge nàme guì.",
+          "uz": "Bu narsa o'shancha qimmat emas.",
+          "explanation": "Teskari taqqoslash: 没有 + A + 那么 + sifat"
+        },
+        {
+          "pattern": "越来越...",
+          "example": "这里的东西越来越贵了。",
+          "pinyin": "Zhèlǐ de dōngxi yuèláiyuè guì le.",
+          "uz": "Bu yerdagi narsalar tobora qimmatlashib ketmoqda.",
+          "explanation": "Gradual o'zgarish: 越来越 + sifat + 了"
+        },
+        {
+          "pattern": "能不能...？",
+          "example": "能不能便宜一点儿？",
+          "pinyin": "Néng bu néng piányí yīdiǎnr?",
+          "uz": "Biroz arzonlashtira olasizmi?",
+          "explanation": "Muomala iltimosi: 能不能 + fe'l + biroz?"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Kiyim do'konida",
+          "lines": [
+            {
+              "speaker": "Xaridor",
+              "zh": "你好，我想买一件外套。这件多少钱？",
+              "pinyin": "Nǐ hǎo, wǒ xiǎng mǎi yī jiàn wàitào. Zhè jiàn duōshǎo qián?",
+              "uz": "Salom, bir palto sotib olmoqchiman. Bu qancha turadi?"
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "这件是我们最新款，八百八十块。质量非常好，穿了很多年也不会坏。",
+              "pinyin": "Zhè jiàn shì wǒmen zuì xīn kuǎn, bābǎi bāshí kuài. Zhìliàng fēicháng hǎo, chuān le hěn duō nián yě bú huì huài.",
+              "uz": "Bu bizning eng yangi modelimiz, sakkiz yuz sakson yuan. Sifati juda yaxshi, ko'p yillar kiyib ham buzilib ketmaydi."
+            },
+            {
+              "speaker": "Xaridor",
+              "zh": "有点儿贵，能不能便宜一点儿？那件黑色的呢？",
+              "pinyin": "Yǒudiǎnr guì, néng bu néng piányí yīdiǎnr? Nà jiàn hēi sè de ne?",
+              "uz": "Biroz qimmatroq, arzonlashtira olasizmi? U qora rangi necha?"
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "黑色的六百五十块，比这件便宜很多，但是款式不一样。你想试穿吗？",
+              "pinyin": "Hēi sè de liùbǎi wǔshí kuài, bǐ zhè jiàn piányí hěn duō, dànshì kuǎnshì bù yīyàng. Nǐ xiǎng shì chuān ma?",
+              "uz": "Qorasining narxi olti yuz ellik yuan, bundan ancha arzon, lekin modeli boshqacha. Kiyib ko'rmoqchimisiz?"
+            },
+            {
+              "speaker": "Xaridor",
+              "zh": "好，我试试。我穿L号，有L号的吗？",
+              "pinyin": "Hǎo, wǒ shì shì. Wǒ chuān L hào, yǒu L hào de ma?",
+              "uz": "Xop, kiyib ko'ray. Men L o'lcham kiyaman, L o'lchami bormi?"
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "有的，这里是L号的。试穿间在那边，试好了告诉我。",
+              "pinyin": "Yǒu de, zhèlǐ shì L hào de. Shì chuān jiān zài nà biān, shì hǎo le gàosu wǒ.",
+              "uz": "Bor, bu L o'lcham. Kiyib ko'rish xonasi u tomonda, kiygandan keyin menga ayting."
+            }
+          ]
+        },
+        {
+          "title": "Narx savdolashuv",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "这双鞋太好看了！但是一千二百块，太贵了。",
+              "pinyin": "Zhè shuāng xié tài hǎokàn le! Dànshì yīqiān èrbǎi kuài, tài guì le.",
+              "uz": "Bu tufli juda chiroyli! Lekin bir ming ikki yuz yuan, juda qimmat."
+            },
+            {
+              "speaker": "B",
+              "zh": "旁边那家店可能更便宜。我们去看看，货比三家不吃亏。",
+              "pinyin": "Pángbiān nà jiā diàn kěnéng gèng piányí. Wǒmen qù kànkan, huò bǐ sān jiā bù chīkuī.",
+              "uz": "Yondagi do'kon arzonroq bo'lishi mumkin. Borib ko'raylik, bir necha joyda solishtirish foydali."
+            },
+            {
+              "speaker": "A",
+              "zh": "好主意！不过这款式在别的地方没有，是限量版的。",
+              "pinyin": "Hǎo zhǔyì! Búguò zhè kuǎnshì zài bié de dìfang méiyǒu, shì xiànliàng bǎn de.",
+              "uz": "Yaxshi fikr! Lekin bu model boshqa joyda yo'q, cheklangan nashr."
+            },
+            {
+              "speaker": "B",
+              "zh": "那就问一下能不能打折。现在很多店都打八折或者九折。",
+              "pinyin": "Nà jiù wèn yīxià néng bu néng dǎzhé. Xiànzài hěn duō diàn dōu dǎ bā zhé huòzhě jiǔ zhé.",
+              "uz": "U holda chegirma bo'larmikan deb so'rang. Hozir ko'p do'konlar yigirma yoki o'n foiz chegirma qiladi."
+            },
+            {
+              "speaker": "A",
+              "zh": "好，我问问。老板，能打折吗？如果打九折我就买。",
+              "pinyin": "Hǎo, wǒ wènwen. Lǎobǎn, néng dǎzhé ma? Rúguǒ dǎ jiǔ zhé wǒ jiù mǎi.",
+              "uz": "Xop, so'rayman. Egasi, chegirma bo'ladimi? O'n foiz chegirma bo'lsa olaman."
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "好的，就算你九折，一千零八十块。这已经是最低价了，不能再便宜了。",
+              "pinyin": "Hǎo de, jiùsuàn nǐ jiǔ zhé, yīqiān líng bāshí kuài. Zhè yǐjīng shì zuìdī jià le, bù néng zài piányí le.",
+              "uz": "Xop, o'n foiz chegirma bilan bir ming sakson yuan. Bu allaqachon eng past narx, bundan arzonlashtira olmayman."
+            }
+          ]
+        },
+        {
+          "title": "Tovar qaytarish",
+          "lines": [
+            {
+              "speaker": "Xaridor",
+              "zh": "你好，我昨天在这里买了这双鞋，但是回家以后发现有点儿小，可以换吗？",
+              "pinyin": "Nǐ hǎo, wǒ zuótiān zài zhèlǐ mǎi le zhè shuāng xié, dànshì huíjiā yǐhòu fāxiàn yǒudiǎnr xiǎo, kěyǐ huàn ma?",
+              "uz": "Salom, kecha bu yerdan shu tuflilarni sotib oldim, lekin uyga qaytgach biroz kichik ekanini payqadim, almashtirsam bo'ladimi?"
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "当然可以，您有收据吗？",
+              "pinyin": "Dāngrán kěyǐ, nín yǒu shōujù ma?",
+              "uz": "Albatta bo'ladi, chekingiz bormi?"
+            },
+            {
+              "speaker": "Xaridor",
+              "zh": "有，在这里。我穿三十八号，这双是三十七号，太小了。",
+              "pinyin": "Yǒu, zài zhèlǐ. Wǒ chuān sānshíbā hào, zhè shuāng shì sānshíqī hào, tài xiǎo le.",
+              "uz": "Bor, mana shu yerda. Men o'ttiz sakkizinchi o'lcham kiyaman, bu tuflilar o'ttiz yettinchi o'lcham, juda kichik."
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "好的，我来看看库存。三十八号的这个款式还有两种颜色，黑色和棕色。",
+              "pinyin": "Hǎo de, wǒ lái kànkan kùcún. Sānshíbā hào de zhège kuǎnshì hái yǒu liǎng zhǒng yánsè, hēi sè hé zōng sè.",
+              "uz": "Xop, omborni ko'rib chiqay. O'ttiz sakkizinchi o'lchamdagi bu modeldan ikkita rang bor, qora va jigarrang."
+            },
+            {
+              "speaker": "Xaridor",
+              "zh": "我要黑色的，和这双一样的颜色就好。",
+              "pinyin": "Wǒ yào hēi sè de, hé zhè shuāng yīyàng de yánsè jiù hǎo.",
+              "uz": "Qorasini olaman, xuddi shu tuflinikiga o'xshash rang bo'lsa bo'ldi."
+            },
+            {
+              "speaker": "Sotuvchi",
+              "zh": "好的，给您换好了。如果回去试穿以后还有问题，可以再来换。",
+              "pinyin": "Hǎo de, gěi nín huàn hǎo le. Rúguǒ huíqu shì chuān yǐhòu hái yǒu wèntí, kěyǐ zài lái huàn.",
+              "uz": "Xop, almashtirib berdim. Uyga borib kiygandan keyin ham muammo bo'lsa, yana kelishingiz mumkin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "zh": "交通出行",
+      "uz": "Transport va yo'l",
+      "emoji": "🚇",
+      "hsk": 2,
+      "color": "from-violet-500 to-purple-700",
+      "glow": "rgba(139,92,246,0.6)",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80",
+      "vocabulary": [
+        {
+          "zh": "地铁",
+          "pinyin": "dìtiě",
+          "uz": "Metro",
+          "en": "subway, metro"
+        },
+        {
+          "zh": "公共汽车",
+          "pinyin": "gōnggòng qìchē",
+          "uz": "Avtobus",
+          "en": "bus"
+        },
+        {
+          "zh": "出租车",
+          "pinyin": "chūzūchē",
+          "uz": "Taksi",
+          "en": "taxi"
+        },
+        {
+          "zh": "骑车",
+          "pinyin": "qí chē",
+          "uz": "Velosiped/moped minmoq",
+          "en": "to ride a bike/scooter"
+        },
+        {
+          "zh": "堵车",
+          "pinyin": "dǔchē",
+          "uz": "Tirbandlik",
+          "en": "traffic jam"
+        },
+        {
+          "zh": "换乘",
+          "pinyin": "huànchéng",
+          "uz": "Transport almashmoq",
+          "en": "to transfer (transport)"
+        },
+        {
+          "zh": "站",
+          "pinyin": "zhàn",
+          "uz": "Bekat, to'xtash joyi",
+          "en": "station, stop"
+        },
+        {
+          "zh": "路",
+          "pinyin": "lù",
+          "uz": "Yo'l, marshrut raqami",
+          "en": "route number, road"
+        },
+        {
+          "zh": "方向",
+          "pinyin": "fāngxiàng",
+          "uz": "Yo'nalish",
+          "en": "direction"
+        },
+        {
+          "zh": "迷路",
+          "pinyin": "mílù",
+          "uz": "Yo'l adashmoq",
+          "en": "to get lost"
+        },
+        {
+          "zh": "附近",
+          "pinyin": "fùjìn",
+          "uz": "Yaqin atrofda",
+          "en": "nearby, in the vicinity"
+        },
+        {
+          "zh": "大概",
+          "pinyin": "dàgài",
+          "uz": "Taxminan",
+          "en": "approximately"
+        },
+        {
+          "zh": "分钟",
+          "pinyin": "fēnzhōng",
+          "uz": "Daqiqa",
+          "en": "minute"
+        },
+        {
+          "zh": "快",
+          "pinyin": "kuài",
+          "uz": "Tez",
+          "en": "fast, quick"
+        },
+        {
+          "zh": "方便",
+          "pinyin": "fāngbiàn",
+          "uz": "Qulay",
+          "en": "convenient"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "坐/骑/开 + 交通工具 + 来/去",
+          "example": "我每天坐地铁去上班。",
+          "pinyin": "Wǒ měitiān zuò dìtiě qù shàngbān.",
+          "uz": "Men har kuni metroda ishga boraman.",
+          "explanation": "Transport vositasi: 坐/骑/开 + transport + 来/去 + maqsad"
+        },
+        {
+          "pattern": "从...到...需要...分钟",
+          "example": "从这里到机场大概需要四十分钟。",
+          "pinyin": "Cóng zhèlǐ dào jīchǎng dàgài xūyào sìshí fēnzhōng.",
+          "uz": "Bu yerdan aeroportgacha taxminan qirq daqiqa kerak.",
+          "explanation": "Masofani vaqt bilan ifodalash: 从 + joy + 到 + joy + 需要 + vaqt"
+        },
+        {
+          "pattern": "先...然后...再...",
+          "example": "先坐地铁到中山站，然后换二号线，再坐三站。",
+          "pinyin": "Xiān zuò dìtiě dào Zhōngshān zhàn, rán hòu huàn èr hào xiàn, zài zuò sān zhàn.",
+          "uz": "Avval metro bilan Zhongshan bekatigacha boring, keyin 2-liniyaga o'ting, yana uch bekat boring.",
+          "explanation": "Ketma-ket harakatlar: 先 (avval) + 然后 (keyin) + 再 (va yana)"
+        },
+        {
+          "pattern": "怎么去...最方便",
+          "example": "去故宫坐地铁最方便。",
+          "pinyin": "Qù Gùgōng zuò dìtiě zuì fāngbiàn.",
+          "uz": "Eski saroylarga metroda borish eng qulay.",
+          "explanation": "Eng qulay yo'l: 坐 + transport + 最方便"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Yo'l so'rash",
+          "lines": [
+            {
+              "speaker": "Sayyoh",
+              "zh": "打扰一下，请问故宫怎么走？我是第一次来北京，不太熟悉。",
+              "pinyin": "Dǎrǎo yīxià, qǐngwèn Gùgōng zěnme zǒu? Wǒ shì dì yī cì lái Běijīng, bú tài shúxī.",
+              "uz": "Uzr, eski saroylarga qanday boraman? Men Pekinga birinchi marta keldim, yo'llarni bilmayman."
+            },
+            {
+              "speaker": "Mahalliy",
+              "zh": "故宫啊，你现在在天安门广场吗？往北走大概五分钟就到了。",
+              "pinyin": "Gùgōng a, nǐ xiànzài zài Tiānānmén guǎngchǎng ma? Wǎng běi zǒu dàgài wǔ fēnzhōng jiù dào le.",
+              "uz": "Eski saroy, hozir Tiananmen maydonida turibsizmi? Shimol tomonga taxminan besh daqiqa yursangiz yetasiz."
+            },
+            {
+              "speaker": "Sayyoh",
+              "zh": "我不在天安门，我在王府井地铁站出口。离故宫远吗？",
+              "pinyin": "Wǒ bú zài Tiānānmén, wǒ zài Wángfǔjǐng dìtiě zhàn chūkǒu. Lí Gùgōng yuǎn ma?",
+              "uz": "Men Tiananmenda emasman, Wangfujing metro bekati chiqishidaman. Eski saroyga uzoqmi?"
+            },
+            {
+              "speaker": "Mahalliy",
+              "zh": "哦，那有点儿距离。你可以坐地铁一号线到天安门东站，只有两站。",
+              "pinyin": "Ō, nà yǒudiǎnr jùlí. Nǐ kěyǐ zuò dìtiě yī hào xiàn dào Tiānānmén Dōng zhàn, zhǐ yǒu liǎng zhàn.",
+              "uz": "Oh, u holda biroz uzoqroq. Metro 1-liniyada Tiananmen Sharq bekatigacha borishingiz mumkin, atigi ikki bekat."
+            },
+            {
+              "speaker": "Sayyoh",
+              "zh": "好的，谢谢！从那站出来以后，往哪个方向走？",
+              "pinyin": "Hǎo de, xièxie! Cóng nà zhàn chūlái yǐhòu, wǎng nǎge fāngxiàng zǒu?",
+              "uz": "Xop, rahmat! O'sha bekatdan chiqib, qaysi tomonga yuraman?"
+            },
+            {
+              "speaker": "Mahalliy",
+              "zh": "出来以后往北走，看到红墙就是故宫了，非常明显，不会迷路的。",
+              "pinyin": "Chūlái yǐhòu wǎng běi zǒu, kàndào hóng qiáng jiù shì Gùgōng le, fēicháng míngxiǎn, bú huì mílù de.",
+              "uz": "Chiqib shimolga yuring, qizil devorni ko'rsangiz — eski saroy o'sha, juda ko'zga tashlanadi, yo'l adashib qolmaysiz."
+            }
+          ]
+        },
+        {
+          "title": "Metro tizimi haqida",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "你每天怎么上班？开车还是坐地铁？",
+              "pinyin": "Nǐ měitiān zěnme shàngbān? Kāichē háishì zuò dìtiě?",
+              "uz": "Har kuni ishga qanday borasiz? Mashina haydaydimi yoki metroda borasizmi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "我坐地铁。北京堵车太严重了，开车有时候一个小时都走不了几公里。",
+              "pinyin": "Wǒ zuò dìtiě. Běijīng dǔchē tài yánzhòng le, kāichē yǒushíhou yī gè xiǎoshí dōu zǒu bu liǎo jǐ gōnglǐ.",
+              "uz": "Men metroda boraman. Pekinda tirbandlik juda yomon, mashinada bazan bir soatda bir necha kilometr ham bosa bo'lmaydi."
+            },
+            {
+              "speaker": "A",
+              "zh": "地铁快吗？我家附近有地铁站，但是我没用过。",
+              "pinyin": "Dìtiě kuài ma? Wǒ jiā fùjìn yǒu dìtiě zhàn, dànshì wǒ méi yòngguò.",
+              "uz": "Metro tezdirmi? Uyim yaqinida metro bekati bor, lekin hech ishlatmaganman."
+            },
+            {
+              "speaker": "B",
+              "zh": "非常快！而且很便宜，一般两块到六块钱就能到任何地方。比出租车便宜多了。",
+              "pinyin": "Fēicháng kuài! Érqiě hěn piányí, yībān liǎng kuài dào liù kuài qián jiù néng dào rènhé dìfang. Bǐ chūzūchē piányí duō le.",
+              "uz": "Juda tez! Va juda arzon, odatda ikki-olti yuan bilan istalgan joyga borsa bo'ladi. Taksidan ancha arzon."
+            },
+            {
+              "speaker": "A",
+              "zh": "听起来不错！我下次试试。换乘麻烦吗？",
+              "pinyin": "Tīng qǐlái búcuò! Wǒ xià cì shì shì. Huànchéng máfan ma?",
+              "uz": "Yaxshi eshitiladi! Keyingi safar sinab ko'raman. Transport almashtirish qiyinmi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "不麻烦，站内换乘不需要重新买票。看好路线图，很容易找到方向。",
+              "pinyin": "Bù máfan, zhàn nèi huànchéng bù xūyào chóngxīn mǎi piào. Kàn hǎo lùxiàn tú, hěn róngyì zhǎodào fāngxiàng.",
+              "uz": "Qiyin emas, bekat ichida transport almashlash uchun qayta chipta sotib olish kerak emas. Marshrut xaritasiga e'tibor bersangiz, yo'nalishni topish juda oson."
+            }
+          ]
+        },
+        {
+          "title": "Taksi olish",
+          "lines": [
+            {
+              "speaker": "A",
+              "zh": "已经十一点了，地铁停运了。我们怎么回去？",
+              "pinyin": "Yǐjīng shíyī diǎn le, dìtiě tíngyùn le. Wǒmen zěnme huíqu?",
+              "uz": "Allaqachon o'n bir bo'ldi, metro to'xtagan. Qanday qaytamiz?"
+            },
+            {
+              "speaker": "B",
+              "zh": "我们打出租车吧，或者用手机软件叫车，比较方便。",
+              "pinyin": "Wǒmen dǎ chūzūchē ba, huòzhě yòng shǒujī ruǎnjiàn jiào chē, bǐjiào fāngbiàn.",
+              "uz": "Taksi olamiz yoki telefon dasturida mashina chaqiramiz, ancha qulay."
+            },
+            {
+              "speaker": "A",
+              "zh": "好，你来叫吧。从这里到我家要多少钱？",
+              "pinyin": "Hǎo, nǐ lái jiào ba. Cóng zhèlǐ dào wǒ jiā yào duōshǎo qián?",
+              "uz": "Xop, siz chaqiring. Bu yerdan uyimgacha qancha turadi?"
+            },
+            {
+              "speaker": "B",
+              "zh": "大概八十到一百块吧，因为现在晚上有附加费。你住哪个区？",
+              "pinyin": "Dàgài bāshí dào yī bǎi kuài ba, yīnwèi xiànzài wǎnshang yǒu fùjiā fèi. Nǐ zhù nǎ gè qū?",
+              "uz": "Taxminan sakson-yuz yuan, chunki hozir kechqurun qo'shimcha to'lov bor. Qaysi tumandasiz?"
+            },
+            {
+              "speaker": "A",
+              "zh": "朝阳区，离这里有点儿远。好，我先回去，明天记得把今晚的费用还给我。",
+              "pinyin": "Cháoyáng qū, lí zhèlǐ yǒudiǎnr yuǎn. Hǎo, wǒ xiān huíqu, míngtiān jìde bǎ jīnwǎn de fèiyòng huán gěi wǒ.",
+              "uz": "Chaoyang tumani, bu yerdan biroz uzoq. Xop, men uyga ketaman, ertaga bugungi xarajatni qaytarishni unutmang."
+            },
+            {
+              "speaker": "B",
+              "zh": "没问题，车来了！司机说大概二十分钟到，路上不堵车。",
+              "pinyin": "Méi wèntí, chē lái le! Sījī shuō dàgài èrshí fēnzhōng dào, lùshang bù dǔchē.",
+              "uz": "Muammo yo'q, mashina keldi! Haydovchi taxminan yigirma daqiqada yetamiz, yo'lda tirbandlik yo'q dedi."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
