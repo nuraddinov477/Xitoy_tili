@@ -41,12 +41,30 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
     window.speechSynthesis.cancel()
     if (speaking === text) { setSpeaking(null); return }
     const utter = new SpeechSynthesisUtterance(text)
+    // Find best Chinese voice available
+    const voices = window.speechSynthesis.getVoices()
+    const zhVoice = voices.find(v => v.lang.startsWith('zh')) ||
+                    voices.find(v => v.lang.includes('zh')) ||
+                    voices.find(v => v.name.toLowerCase().includes('chinese'))
+    if (zhVoice) utter.voice = zhVoice
     utter.lang = 'zh-CN'
-    utter.rate = 0.85
+    utter.rate = 0.8
+    utter.pitch = 1
+    utter.volume = 1
     utter.onend = () => setSpeaking(null)
     utter.onerror = () => setSpeaking(null)
     setSpeaking(text)
-    window.speechSynthesis.speak(utter)
+    // Voices may not load instantly — retry once after voiceschanged
+    if (voices.length === 0) {
+      window.speechSynthesis.addEventListener('voiceschanged', () => {
+        const v2 = window.speechSynthesis.getVoices()
+        const zh2 = v2.find(v => v.lang.startsWith('zh'))
+        if (zh2) utter.voice = zh2
+        window.speechSynthesis.speak(utter)
+      }, { once: true })
+    } else {
+      window.speechSynthesis.speak(utter)
+    }
   }, [speaking])
 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
@@ -408,7 +426,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                                 {/* Background image */}
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                  src={`https://source.unsplash.com/200x160/?${encodeURIComponent(word.en.split(',')[0].trim())}&sig=${i}`}
+                                  src={`https://loremflickr.com/200/160/${encodeURIComponent(word.en.split(',')[0].trim())}?random=${topic.id * 100 + i}`}
                                   alt={word.en}
                                   className="absolute inset-0 w-full h-full object-cover"
                                   loading="lazy"
