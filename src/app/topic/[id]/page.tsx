@@ -37,34 +37,26 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   const [speaking, setSpeaking] = useState<string | null>(null)
 
   const speak = useCallback((text: string) => {
-    if (typeof window === 'undefined' || !window.speechSynthesis) return
-    window.speechSynthesis.cancel()
     if (speaking === text) { setSpeaking(null); return }
-    const utter = new SpeechSynthesisUtterance(text)
-    // Find best Chinese voice available
-    const voices = window.speechSynthesis.getVoices()
-    const zhVoice = voices.find(v => v.lang.startsWith('zh')) ||
-                    voices.find(v => v.lang.includes('zh')) ||
-                    voices.find(v => v.name.toLowerCase().includes('chinese'))
-    if (zhVoice) utter.voice = zhVoice
-    utter.lang = 'zh-CN'
-    utter.rate = 0.8
-    utter.pitch = 1
-    utter.volume = 1
-    utter.onend = () => setSpeaking(null)
-    utter.onerror = () => setSpeaking(null)
     setSpeaking(text)
-    // Voices may not load instantly — retry once after voiceschanged
-    if (voices.length === 0) {
-      window.speechSynthesis.addEventListener('voiceschanged', () => {
-        const v2 = window.speechSynthesis.getVoices()
-        const zh2 = v2.find(v => v.lang.startsWith('zh'))
-        if (zh2) utter.voice = zh2
+    // Google Translate TTS — works in any browser without voice installation
+    const url = `https://translate.googleapis.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=zh-CN&client=gtx&format=audio/mp3`
+    const audio = new Audio(url)
+    audio.onended = () => setSpeaking(null)
+    audio.onerror = () => {
+      // Fallback: Web Speech API
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        const utter = new SpeechSynthesisUtterance(text)
+        utter.lang = 'zh-CN'
+        utter.rate = 0.8
+        utter.onend = () => setSpeaking(null)
+        utter.onerror = () => setSpeaking(null)
         window.speechSynthesis.speak(utter)
-      }, { once: true })
-    } else {
-      window.speechSynthesis.speak(utter)
+      } else {
+        setSpeaking(null)
+      }
     }
+    audio.play().catch(() => setSpeaking(null))
   }, [speaking])
 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
