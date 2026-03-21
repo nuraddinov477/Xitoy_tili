@@ -295,96 +295,75 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* ═══ ABOUT ME ═══ */}
+        {/* ═══ MEN HAQIMDA ═══ */}
         <motion.div
-          className="mb-20 max-w-2xl mx-auto"
+          className="mb-24 mx-auto"
+          style={{ maxWidth: '800px' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.7 }}
         >
-          {/* Top: Avatar + Name */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10">
-            {/* Avatar */}
+          {/* Section title */}
+          <div className="flex items-center gap-4 mb-10">
+            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.08)' }}/>
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-[0.2em]">Men haqimda</span>
+            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.08)' }}/>
+          </div>
+
+          {/* Avatar + Name row */}
+          <div className="flex flex-col sm:flex-row items-center gap-8 mb-10">
             <div className="relative flex-shrink-0">
               <motion.div
-                className="w-32 h-32 rounded-3xl overflow-hidden"
-                style={{ border: '2px solid rgba(220,38,38,0.4)', boxShadow: '0 0 40px rgba(220,38,38,0.2)' }}
-                animate={{ boxShadow: ['0 0 20px rgba(220,38,38,0.15)', '0 0 50px rgba(220,38,38,0.35)', '0 0 20px rgba(220,38,38,0.15)'] }}
+                className="w-36 h-36 rounded-full overflow-hidden"
+                style={{ border: '3px solid rgba(220,38,38,0.5)' }}
+                animate={{ boxShadow: ['0 0 25px rgba(220,38,38,0.2)', '0 0 55px rgba(220,38,38,0.4)', '0 0 25px rgba(220,38,38,0.2)'] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                <NextImage
-                  src="/avatar.jpg"
-                  alt="Sarvarbek Nuraddinov"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover"
-                />
+                <NextImage src="/avatar.jpg" alt="Sarvarbek Nuraddinov" width={144} height={144} className="w-full h-full object-cover"/>
               </motion.div>
-              <div className="absolute -bottom-2 -right-2 w-7 h-7 bg-green-500 rounded-full border-2 border-black flex items-center justify-center">
-                <div className="w-2.5 h-2.5 bg-green-200 rounded-full animate-pulse"/>
-              </div>
+              <div className="absolute bottom-1 right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-black"/>
             </div>
 
-            {/* Name & meta */}
-            <div className="text-center sm:text-left space-y-2">
-              <h2 className="text-3xl font-black text-white tracking-tight">Nuraddinov Sarvarbek</h2>
-              <div className="flex items-center justify-center sm:justify-start gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"/>
-                <p className="text-red-400 font-bold">ML Engineer & Web Developer</p>
-                <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"/>
-              </div>
-              <p className="text-gray-500 text-sm flex items-center justify-center sm:justify-start gap-1.5">
-                <span>📍</span> Toshkent, O&apos;zbekiston
-              </p>
+            <div className="text-center sm:text-left">
+              <h2 className="text-4xl font-black text-white mb-2">Nuraddinov Sarvarbek</h2>
+              <p className="text-red-400 font-semibold text-lg mb-1">ML Engineer & Web Developer</p>
+              <p className="text-gray-500 text-sm mb-2">📍 Toshkent, O&apos;zbekiston</p>
               <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-red-400 hover:text-red-300 transition-colors mt-1">
-                <span>🌐</span> nuraddinov-uz.vercel.app <span>↗</span>
+                className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 text-sm font-semibold transition-colors">
+                🌐 nuraddinov-uz.vercel.app ↗
               </a>
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="flex items-center gap-3 mb-8">
-            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.06)' }}/>
-            <span className="chinese-font text-red-900 text-lg">关于我</span>
-            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.06)' }}/>
-          </div>
+          {/* Body text */}
+          <div className="space-y-5 text-gray-300 text-base leading-relaxed">
 
-          {/* Info grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {/* Education */}
-            <div className="rounded-2xl px-5 py-4"
-              style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-              <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">🎓 Ta&apos;lim</p>
-              <p className="text-white font-semibold text-sm leading-snug">Toshkent Davlat Sharqshunoslik Universiteti</p>
-              <p className="text-gray-400 text-xs mt-1">Kompyuter Lingvistikasi · 2-kurs</p>
-              <p className="chinese-font text-red-900 text-xs mt-1">计算机语言学 · 东方学</p>
+            {/* Ta'lim */}
+            <p>
+              <span className="text-white font-semibold">Toshkent Davlat Sharqshunoslik Universitetida</span> Kompyuter Lingvistikasi yo&apos;nalishi bo&apos;yicha 2-kurs talabisiman. Sharq tillari, xususan xitoy tili va sun&apos;iy intellekt texnologiyalari kesishmasida ilm olmoqdaman.
+            </p>
+
+            {/* Oila */}
+            <p>
+              Oilamizda <span className="text-white font-semibold">5 kishi</span> yashaymiz — dadam, oyim va uch o&apos;g&apos;il. Katta ukam hozir <span className="text-red-400 font-medium">Toshkent Arxitektura va Qurilish Universitetida</span> tahsil olmoqda. Kichik ukam esa Xorazmda — <span className="text-red-400 font-medium">Jaloliddin Manguberdi Harbiy Akademik Litseyida</span> o&apos;qiydi.
+            </p>
+
+            {/* Qiziqishlar */}
+            <div>
+              <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Qiziqishlarim</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  '🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili',
+                  '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat',
+                ].map((item) => (
+                  <span key={item} className="text-sm px-4 py-2 rounded-full font-medium"
+                    style={{ background: 'rgba(220,38,38,0.1)', border: '1px solid rgba(220,38,38,0.2)', color: '#fca5a5' }}>
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            {/* Family */}
-            <div className="rounded-2xl px-5 py-4"
-              style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-              <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">👨‍👩‍👦‍👦 Oila</p>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                Oilamizda <span className="text-white font-semibold">5 kishi</span> — dadam, oyim va uch o&apos;g&apos;il. Katta ukam <span className="text-red-400 font-medium">TAQI</span>da, kichik ukam Xorazmda <span className="text-red-400 font-medium">Jaloliddin Manguberdi Harbiy Litseyida</span> o&apos;qiydi.
-              </p>
-            </div>
-          </div>
-
-          {/* Interests */}
-          <div>
-            <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlar</p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                '🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili',
-                '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat',
-              ].map((item) => (
-                <span key={item} className="text-xs px-3 py-1.5 rounded-full font-medium"
-                  style={{ background: 'rgba(220,38,38,0.12)', border: '1px solid rgba(220,38,38,0.2)', color: '#fca5a5' }}>
-                  {item}
-                </span>
-              ))}
-            </div>
           </div>
         </motion.div>
 
