@@ -242,7 +242,7 @@ export default function Home() {
       <div className="relative z-10 max-w-5xl mx-auto px-8 py-12" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-24"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -298,7 +298,7 @@ export default function Home() {
 
         {/* ═══ MEN HAQIMDA TUGMA ═══ */}
         <motion.div
-          className="flex justify-center mb-14"
+          className="flex justify-center mb-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
@@ -462,7 +462,7 @@ export default function Home() {
 
         {/* Section divider */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
