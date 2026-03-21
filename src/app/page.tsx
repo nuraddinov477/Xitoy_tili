@@ -620,10 +620,15 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
         >
-          <div className="chinese-font text-5xl text-white/10 font-black mb-4">
+          <div className="chinese-font text-5xl text-white/10 font-black mb-6">
             加油！💪 努力学习！
           </div>
-          <p className="text-gray-500 text-sm">Xitoy tilini o&apos;rganishda muvaffaqiyat! · Made by <a href="https://nuraddinov-uz.vercel.app" target="_blank" className="text-red-500 hover:text-red-400 transition-colors font-bold">Sarvarbek Nuraddinov</a></p>
+          <p className="text-white font-black text-xl mb-1">Nuraddinov Sarvarbek</p>
+          <p className="text-gray-500 text-sm mb-3">Toshkent Davlat Sharqshunoslik Universiteti · Kompyuter Lingvistikasi · 2-kurs</p>
+          <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
+            className="text-red-500 hover:text-red-400 transition-colors text-sm font-semibold">
+            nuraddinov-uz.vercel.app ↗
+          </a>
         </motion.div>
       </div>
     </div>
