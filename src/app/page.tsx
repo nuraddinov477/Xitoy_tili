@@ -620,11 +620,11 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
         >
-          <div className="chinese-font text-5xl text-white/10 font-black mb-6">
-            加油！💪 努力学习！
-          </div>
-          <div className="inline-block px-8 py-4 rounded-2xl mb-2"
-            style={{ border: '2px solid rgba(30,58,138,0.8)', background: 'rgba(15,23,42,0.6)' }}>
+          <div className="rounded-2xl px-8 py-8"
+            style={{ border: '2px solid rgba(30,58,138,0.8)', background: 'rgba(15,23,42,0.5)' }}>
+            <div className="chinese-font text-5xl text-white/10 font-black mb-6">
+              加油！💪 努力学习！
+            </div>
             <p className="text-white font-black text-xl mb-1">Nuraddinov Sarvarbek</p>
             <p className="text-gray-400 text-sm mb-3">Toshkent Davlat Sharqshunoslik Universiteti · Kompyuter Lingvistikasi · 2-kurs</p>
             <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
