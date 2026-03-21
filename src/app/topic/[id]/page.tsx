@@ -36,6 +36,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   const [activeDialogue, setActiveDialogue] = useState(0)
   const [speaking, setSpeaking] = useState<string | null>(null)
 
+
   const speak = useCallback((text: string) => {
     if (speaking === text) { setSpeaking(null); return }
     setSpeaking(text)
@@ -60,6 +61,15 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   }, [speaking])
 
   if (!topic) return <div className="text-white p-8">Mavzu topilmadi</div>
+
+  const dialogChars = [
+    { a: { name: 'Zhang Wei', img: 'https://randomuser.me/api/portraits/men/32.jpg' }, b: { name: 'Li Fang', img: 'https://randomuser.me/api/portraits/women/44.jpg' } },
+    { a: { name: 'Wang Gang', img: 'https://randomuser.me/api/portraits/men/45.jpg' }, b: { name: 'Chen Xia', img: 'https://randomuser.me/api/portraits/women/68.jpg' } },
+    { a: { name: 'Liu Yang', img: 'https://randomuser.me/api/portraits/men/55.jpg' }, b: { name: 'Zhao Mei', img: 'https://randomuser.me/api/portraits/women/32.jpg' } },
+    { a: { name: 'Sun Hao', img: 'https://randomuser.me/api/portraits/men/22.jpg' }, b: { name: 'Wu Ling', img: 'https://randomuser.me/api/portraits/women/55.jpg' } },
+    { a: { name: 'Ma Jun', img: 'https://randomuser.me/api/portraits/men/67.jpg' }, b: { name: 'Hu Yan', img: 'https://randomuser.me/api/portraits/women/22.jpg' } },
+  ]
+  const ch = dialogChars[(topic.id - 1) % dialogChars.length]
 
   const imgUrl = topicImages[topic.id]
 
@@ -541,12 +551,17 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                   {activeModal === 'dialogue' && (
                     <div>
                       {/* Banner image */}
-                      <div className="relative h-32 rounded-2xl overflow-hidden mb-4">
+                      <div className="relative h-36 rounded-2xl overflow-hidden mb-4">
                         <img src={topic.image} alt={topic.uz} className="w-full h-full object-cover"/>
-                        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7))' }}/>
-                        <div className="absolute bottom-3 left-4">
-                          <span className="chinese-font text-white text-2xl font-black" style={{ textShadow: `0 0 20px ${topic.glow}` }}>{topic.zh}</span>
-                          <span className="text-white/70 text-xs ml-2">{topic.uz}</span>
+                        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.75))' }}/>
+                        <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+                          <div>
+                            <span className="chinese-font text-white text-3xl font-black block" style={{ textShadow: `0 0 20px ${topic.glow}` }}>{topic.zh}</span>
+                            <span className="text-white/80 text-sm font-medium">{topic.uz}</span>
+                          </div>
+                          <span className="text-white/50 text-xs px-2 py-1 rounded-lg" style={{ background: 'rgba(0,0,0,0.4)' }}>
+                            {topic.dialogues[activeDialogue]?.title}
+                          </span>
                         </div>
                       </div>
 
@@ -571,22 +586,21 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                       )}
 
                       {/* Chat heads */}
-                      <div className="flex justify-between items-center mb-5 px-2">
-                        <div className="flex items-center gap-2">
-                          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Wang Ming"
-                            className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500"/>
+                      <div className="flex justify-between items-center mb-4 px-2 py-3 rounded-2xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                        <div className="flex items-center gap-2.5">
+                          <img src={ch.a.img} alt={ch.a.name} className="w-11 h-11 rounded-full object-cover border-2 border-indigo-500"/>
                           <div>
-                            <div className="text-white text-sm font-bold">Wang Ming</div>
+                            <div className="text-white text-sm font-bold">{ch.a.name}</div>
                             <div className="text-green-400 text-xs flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block"/>online</div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2">
+                        <div className="text-gray-600 text-xs">💬</div>
+                        <div className="flex items-center gap-2.5">
                           <div className="text-right">
-                            <div className="text-white text-sm font-bold">Li Fang</div>
+                            <div className="text-white text-sm font-bold">{ch.b.name}</div>
                             <div className="text-green-400 text-xs flex items-center gap-1 justify-end"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block"/>online</div>
                           </div>
-                          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Li Fang"
-                            className="w-10 h-10 rounded-full object-cover"
+                          <img src={ch.b.img} alt={ch.b.name} className="w-11 h-11 rounded-full object-cover"
                             style={{ border: `2px solid ${topic.glow.replace('0.6','0.8')}` }}/>
                         </div>
                       </div>
@@ -603,8 +617,8 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                             >
                               {/* Avatar */}
                               <img
-                                src={line.speaker === 'A' ? 'https://randomuser.me/api/portraits/men/32.jpg' : 'https://randomuser.me/api/portraits/women/44.jpg'}
-                                alt={line.speaker === 'A' ? 'Wang Ming' : 'Li Fang'}
+                                src={line.speaker === 'A' ? ch.a.img : ch.b.img}
+                                alt={line.speaker === 'A' ? ch.a.name : ch.b.name}
                                 className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                                 style={{ border: `2px solid ${line.speaker === 'A' ? 'rgba(88,80,236,0.6)' : topic.glow.replace('0.6','0.7')}` }}
                               />
