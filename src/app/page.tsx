@@ -437,19 +437,24 @@ export default function Home() {
                 </div>
 
                 {/* Portfolio link */}
-                <a
-                  href="https://nuraddinov-uz.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 w-full py-3.5 rounded-2xl font-bold text-white transition-all hover:scale-[1.02]"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(220,38,38,0.35), rgba(109,40,217,0.25))',
-                    border: '1px solid rgba(220,38,38,0.4)',
-                    boxShadow: '0 8px 30px rgba(220,38,38,0.18)',
-                  }}
-                >
-                  🌐 <span>nuraddinov-uz.vercel.app</span> <span className="text-red-300">↗</span>
-                </a>
+                <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                    Men haqimda to&apos;liqroq ma&apos;lumot olmoqchi bo&apos;lsangiz, quyidagi link orqali shaxsiy saytimga o&apos;tib bilib olishingiz mumkin.
+                  </p>
+                  <a
+                    href="https://nuraddinov-uz.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 w-full py-3.5 rounded-2xl font-bold text-white transition-all hover:scale-[1.02]"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(220,38,38,0.35), rgba(109,40,217,0.25))',
+                      border: '1px solid rgba(220,38,38,0.4)',
+                      boxShadow: '0 8px 30px rgba(220,38,38,0.18)',
+                    }}
+                  >
+                    🌐 <span>nuraddinov-uz.vercel.app</span> <span className="text-red-300">↗</span>
+                  </a>
+                </div>
               </div>
             </motion.div>
           </motion.div>
