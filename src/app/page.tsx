@@ -623,12 +623,15 @@ export default function Home() {
           <div className="chinese-font text-5xl text-white/10 font-black mb-6">
             加油！💪 努力学习！
           </div>
-          <p className="text-white font-black text-xl mb-1">Nuraddinov Sarvarbek</p>
-          <p className="text-gray-500 text-sm mb-3">Toshkent Davlat Sharqshunoslik Universiteti · Kompyuter Lingvistikasi · 2-kurs</p>
-          <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
-            className="text-red-500 hover:text-red-400 transition-colors text-sm font-semibold">
-            nuraddinov-uz.vercel.app ↗
-          </a>
+          <div className="inline-block px-8 py-4 rounded-2xl mb-2"
+            style={{ border: '2px solid rgba(30,58,138,0.8)', background: 'rgba(15,23,42,0.6)' }}>
+            <p className="text-white font-black text-xl mb-1">Nuraddinov Sarvarbek</p>
+            <p className="text-gray-400 text-sm mb-3">Toshkent Davlat Sharqshunoslik Universiteti · Kompyuter Lingvistikasi · 2-kurs</p>
+            <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
+              className="text-red-500 hover:text-red-400 transition-colors text-sm font-semibold">
+              nuraddinov-uz.vercel.app ↗
+            </a>
+          </div>
         </motion.div>
       </div>
     </div>
