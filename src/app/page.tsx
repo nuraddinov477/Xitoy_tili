@@ -225,6 +225,7 @@ export default function Home() {
   }, [])
 
   const totalWords = topics.reduce((sum, t) => sum + t.words, 0)
+  const [showAbout, setShowAbout] = useState(false)
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -295,77 +296,146 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* ═══ MEN HAQIMDA ═══ */}
+        {/* ═══ MEN HAQIMDA TUGMA ═══ */}
         <motion.div
-          className="mb-24 mx-auto"
-          style={{ maxWidth: '800px' }}
-          initial={{ opacity: 0, y: 30 }}
+          className="flex justify-center mb-14"
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.7 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
         >
-          {/* Section title */}
-          <div className="flex items-center gap-4 mb-10">
-            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.08)' }}/>
-            <span className="text-gray-500 text-xs font-bold uppercase tracking-[0.2em]">Men haqimda</span>
-            <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.08)' }}/>
-          </div>
-
-          {/* Avatar + Name row */}
-          <div className="flex flex-col sm:flex-row items-center gap-8 mb-10">
-            <div className="relative flex-shrink-0">
-              <motion.div
-                className="w-36 h-36 rounded-full overflow-hidden"
-                style={{ border: '3px solid rgba(220,38,38,0.5)' }}
-                animate={{ boxShadow: ['0 0 25px rgba(220,38,38,0.2)', '0 0 55px rgba(220,38,38,0.4)', '0 0 25px rgba(220,38,38,0.2)'] }}
-                transition={{ duration: 3, repeat: Infinity }}
-              >
-                <NextImage src="/avatar.jpg" alt="Sarvarbek Nuraddinov" width={144} height={144} className="w-full h-full object-cover"/>
-              </motion.div>
-              <div className="absolute bottom-1 right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-black"/>
+          <motion.button
+            onClick={() => setShowAbout(true)}
+            className="group flex items-center gap-4 px-8 py-4 rounded-2xl cursor-pointer transition-all duration-300"
+            style={{
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(220,38,38,0.25)',
+              backdropFilter: 'blur(10px)',
+            }}
+            whileHover={{ scale: 1.03, borderColor: 'rgba(220,38,38,0.6)', background: 'rgba(220,38,38,0.08)' }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0" style={{ border: '2px solid rgba(220,38,38,0.4)' }}>
+              <NextImage src="/avatar.jpg" alt="Sarvarbek" width={48} height={48} className="w-full h-full object-cover"/>
             </div>
-
-            <div className="text-center sm:text-left">
-              <h2 className="text-4xl font-black text-white mb-2">Nuraddinov Sarvarbek</h2>
-              <p className="text-red-400 font-semibold text-lg mb-1">ML Engineer & Web Developer</p>
-              <p className="text-gray-500 text-sm mb-2">📍 Toshkent, O&apos;zbekiston</p>
-              <a href="https://nuraddinov-uz.vercel.app" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-red-400 hover:text-red-300 text-sm font-semibold transition-colors">
-                🌐 nuraddinov-uz.vercel.app ↗
-              </a>
+            <div className="text-left">
+              <p className="text-white font-bold text-base">Nuraddinov Sarvarbek</p>
+              <p className="text-red-400 text-sm">Men haqimda →</p>
             </div>
-          </div>
-
-          {/* Body text */}
-          <div className="space-y-5 text-gray-300 text-base leading-relaxed">
-
-            {/* Ta'lim */}
-            <p>
-              <span className="text-white font-semibold">Toshkent Davlat Sharqshunoslik Universitetida</span> Kompyuter Lingvistikasi yo&apos;nalishi bo&apos;yicha 2-kurs talabisiman. Sharq tillari, xususan xitoy tili va sun&apos;iy intellekt texnologiyalari kesishmasida ilm olmoqdaman.
-            </p>
-
-            {/* Oila */}
-            <p>
-              Oilamizda <span className="text-white font-semibold">5 kishi</span> yashaymiz — dadam, oyim va uch o&apos;g&apos;il. Katta ukam hozir <span className="text-red-400 font-medium">Toshkent Arxitektura va Qurilish Universitetida</span> tahsil olmoqda. Kichik ukam esa Xorazmda — <span className="text-red-400 font-medium">Jaloliddin Manguberdi Harbiy Akademik Litseyida</span> o&apos;qiydi.
-            </p>
-
-            {/* Qiziqishlar */}
-            <div>
-              <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Qiziqishlarim</p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  '🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili',
-                  '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat',
-                ].map((item) => (
-                  <span key={item} className="text-sm px-4 py-2 rounded-full font-medium"
-                    style={{ background: 'rgba(220,38,38,0.1)', border: '1px solid rgba(220,38,38,0.2)', color: '#fca5a5' }}>
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-          </div>
+          </motion.button>
         </motion.div>
+
+        {/* ═══ MEN HAQIMDA MODAL ═══ */}
+        {showAbout && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(8px)' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            onClick={() => setShowAbout(false)}
+          >
+            <motion.div
+              className="relative w-full overflow-y-auto rounded-3xl"
+              style={{
+                maxWidth: '580px',
+                maxHeight: '90vh',
+                background: 'linear-gradient(160deg, #120808 0%, #08081a 100%)',
+                border: '1px solid rgba(220,38,38,0.3)',
+                boxShadow: '0 30px 100px rgba(0,0,0,0.8), 0 0 80px rgba(220,38,38,0.1)',
+              }}
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ type: 'spring', damping: 20 }}
+              onClick={e => e.stopPropagation()}
+            >
+              {/* Top gradient line */}
+              <div className="h-[3px] w-full bg-gradient-to-r from-red-700 via-rose-300 to-violet-600 rounded-t-3xl"/>
+
+              {/* Close button */}
+              <button
+                onClick={() => setShowAbout(false)}
+                className="absolute top-4 right-4 w-9 h-9 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition-colors z-10"
+                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}
+              >
+                ✕
+              </button>
+
+              <div className="px-8 pt-10 pb-8 space-y-7">
+                {/* Avatar + name */}
+                <div className="flex items-center gap-6">
+                  <div className="relative flex-shrink-0">
+                    <motion.div
+                      className="w-24 h-24 rounded-full overflow-hidden"
+                      style={{ border: '3px solid rgba(220,38,38,0.5)' }}
+                      animate={{ boxShadow: ['0 0 20px rgba(220,38,38,0.2)', '0 0 50px rgba(220,38,38,0.45)', '0 0 20px rgba(220,38,38,0.2)'] }}
+                      transition={{ duration: 3, repeat: Infinity }}
+                    >
+                      <NextImage src="/avatar.jpg" alt="Sarvarbek Nuraddinov" width={96} height={96} className="w-full h-full object-cover"/>
+                    </motion.div>
+                    <div className="absolute bottom-0 right-0 w-5 h-5 bg-green-500 rounded-full border-2 border-[#120808]"/>
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-black text-white leading-tight">Nuraddinov Sarvarbek</h2>
+                    <div className="flex items-center gap-1.5 mt-1">
+                      <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"/>
+                      <p className="text-red-400 font-semibold text-sm">ML Engineer & Web Developer</p>
+                    </div>
+                    <p className="text-gray-500 text-xs mt-1">📍 Toshkent, O&apos;zbekiston</p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="h-px" style={{ background: 'rgba(255,255,255,0.06)' }}/>
+
+                {/* Ta'lim */}
+                <div>
+                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">🎓 Ta&apos;lim</p>
+                  <p className="text-gray-200 text-sm leading-relaxed">
+                    <span className="text-white font-semibold">Toshkent Davlat Sharqshunoslik Universiteti</span> — Kompyuter Lingvistikasi yo&apos;nalishi, 2-kurs talabasi. Sharq tillari va sun&apos;iy intellekt texnologiyalari kesishmasida ilm olmoqdaman.
+                  </p>
+                </div>
+
+                {/* Oila */}
+                <div>
+                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">👨‍👩‍👦‍👦 Oila</p>
+                  <p className="text-gray-200 text-sm leading-relaxed">
+                    Oilamizda <span className="text-white font-semibold">5 kishi</span> — dadam, oyim va uch o&apos;g&apos;il. Katta ukam{' '}
+                    <span className="text-red-400 font-medium">Toshkent Arxitektura va Qurilish Universitetida</span> tahsil olmoqda.
+                    Kichik ukam esa Xorazmda{' '}
+                    <span className="text-red-400 font-medium">Jaloliddin Manguberdi Harbiy Akademik Litseyida</span> o&apos;qiydi.
+                  </p>
+                </div>
+
+                {/* Qiziqishlar */}
+                <div>
+                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlarim</p>
+                  <div className="flex flex-wrap gap-2">
+                    {['🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili', '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat'].map(item => (
+                      <span key={item} className="text-xs px-3 py-1.5 rounded-full font-medium"
+                        style={{ background: 'rgba(220,38,38,0.12)', border: '1px solid rgba(220,38,38,0.22)', color: '#fca5a5' }}>
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Portfolio link */}
+                <a
+                  href="https://nuraddinov-uz.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 w-full py-3.5 rounded-2xl font-bold text-white transition-all hover:scale-[1.02]"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(220,38,38,0.35), rgba(109,40,217,0.25))',
+                    border: '1px solid rgba(220,38,38,0.4)',
+                    boxShadow: '0 8px 30px rgba(220,38,38,0.18)',
+                  }}
+                >
+                  🌐 <span>nuraddinov-uz.vercel.app</span> <span className="text-red-300">↗</span>
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
 
         {/* Section divider */}
         <motion.div
