@@ -429,7 +429,7 @@ export default function Home() {
                 <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlarim</p>
                   <div className="flex flex-wrap gap-2">
-                    {['🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili', '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat'].map(item => (
+                    {['🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili', '📚 Kitob o\'qish', '🎵 Musiqa', '🌏 Sayohat'].map(item => (
                       <span key={item} className="text-xs px-3 py-1.5 rounded-full font-medium"
                         style={{ background: 'rgba(220,38,38,0.12)', border: '1px solid rgba(220,38,38,0.22)', color: '#fca5a5' }}>
                         {item}
