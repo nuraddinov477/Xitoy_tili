@@ -439,7 +439,7 @@ export default function Home() {
                 {/* Portfolio link */}
                 <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                    Men haqimda to&apos;liqroq ma&apos;lumot olmoqchi bo&apos;lsangiz, quyidagi link orqali shaxsiy saytimga o&apos;tib bilib olishingiz mumkin.
+                    Men haqimda to&apos;liqroq ma&apos;lumot olmoqchi bo&apos;lsangiz yoki men bilan hamkorlik qilmoqchi bo&apos;lsangiz, quyidagi link orqali shaxsiy saytimga o&apos;tib o&apos;zingizga kerakli ma&apos;lumotni olishingiz mumkin.
                   </p>
                   <a
                     href="https://nuraddinov-uz.vercel.app"
