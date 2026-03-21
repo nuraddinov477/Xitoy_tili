@@ -615,10 +615,13 @@ export default function Home() {
 
       </div>
 
+        {/* Spacer */}
+        <div style={{ height: '8rem' }} />
+
         {/* Footer */}
         <motion.div
           className="relative z-10 text-center"
-          style={{ marginTop: '6rem' }}
+          style={{ marginTop: 0 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
