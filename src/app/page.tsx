@@ -387,27 +387,45 @@ export default function Home() {
                 <div className="h-px" style={{ background: 'rgba(255,255,255,0.06)' }}/>
 
                 {/* Ta'lim */}
-                <div>
-                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">🎓 Ta&apos;lim</p>
-                  <p className="text-gray-200 text-sm leading-relaxed">
-                    <span className="text-white font-semibold">Toshkent Davlat Sharqshunoslik Universiteti</span> — Kompyuter Lingvistikasi yo&apos;nalishi, 2-kurs talabasi. Sharq tillari va sun&apos;iy intellekt texnologiyalari kesishmasida ilm olmoqdaman.
+                <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">🎓 Ta&apos;lim</p>
+                  <p className="text-white font-semibold text-sm mb-1">Toshkent Davlat Sharqshunoslik Universiteti</p>
+                  <p className="text-gray-400 text-sm mb-3">Kompyuter Lingvistikasi · 2-kurs talabasi</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Sharq tillari, xususan xitoy tili va sun&apos;iy intellekt texnologiyalari kesishmasida ilm olmoqdaman. Lingvistika va dasturlashni birlashtirgan yo&apos;nalish bo&apos;yicha chuqur bilim egallashga intilyapman.
                   </p>
                 </div>
 
                 {/* Oila */}
-                <div>
-                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-2">👨‍👩‍👦‍👦 Oila</p>
-                  <p className="text-gray-200 text-sm leading-relaxed">
-                    Oilamizda <span className="text-white font-semibold">5 kishi</span> — dadam, oyim va uch o&apos;g&apos;il. Katta ukam{' '}
-                    <span className="text-red-400 font-medium">Toshkent Arxitektura va Qurilish Universitetida</span> tahsil olmoqda.
-                    Kichik ukam esa Xorazmda{' '}
-                    <span className="text-red-400 font-medium">Jaloliddin Manguberdi Harbiy Akademik Litseyida</span> o&apos;qiydi.
+                <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">👨‍👩‍👦‍👦 Oilamiz</p>
+                  <p className="text-gray-300 text-sm leading-[1.8]">
+                    Oilamizda <span className="text-white font-bold">5 kishi</span> yashaydi —{' '}
+                    <span className="text-red-300 font-medium">dadam</span>,{' '}
+                    <span className="text-red-300 font-medium">oyim</span>,{' '}
+                    men va ikkita ukam.
                   </p>
+                  <div className="mt-4 space-y-2.5">
+                    <div className="flex items-start gap-3">
+                      <span className="text-base mt-0.5">👦</span>
+                      <div>
+                        <p className="text-white text-sm font-medium">Katta ukam</p>
+                        <p className="text-gray-400 text-xs mt-0.5">Toshkent Arxitektura va Qurilish Universitetida tahsil olmoqda</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-base mt-0.5">👦</span>
+                      <div>
+                        <p className="text-white text-sm font-medium">Kichik ukam</p>
+                        <p className="text-gray-400 text-xs mt-0.5">Xorazm — Jaloliddin Manguberdi Harbiy Akademik Litseyi talabasi</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Qiziqishlar */}
-                <div>
-                  <p className="text-gray-600 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlarim</p>
+                <div className="rounded-2xl px-5 py-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">✨ Qiziqishlarim</p>
                   <div className="flex flex-wrap gap-2">
                     {['🤖 Sun\'iy intellekt', '💻 Web dasturlash', '🀄 Xitoy tili', '📚 Kitob o\'qish', '🎵 Musiqa', '♟️ Shaxmat', '🌏 Sayohat'].map(item => (
                       <span key={item} className="text-xs px-3 py-1.5 rounded-full font-medium"
