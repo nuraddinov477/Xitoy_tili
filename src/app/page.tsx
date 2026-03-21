@@ -239,7 +239,7 @@ export default function Home() {
         style={{ zIndex: 0, opacity: 0.55 }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-8 pt-12 pb-20" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+      <div className="relative z-10 max-w-5xl mx-auto px-8 pt-12" style={{ marginLeft: 'auto', marginRight: 'auto', paddingBottom: '6rem' }}>
         {/* Header */}
         <motion.div
           className="text-center"
@@ -617,7 +617,8 @@ export default function Home() {
 
         {/* Footer */}
         <motion.div
-          className="relative z-10 text-center mt-20"
+          className="relative z-10 text-center"
+          style={{ marginTop: '6rem' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
