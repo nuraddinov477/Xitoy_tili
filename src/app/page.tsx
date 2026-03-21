@@ -613,14 +613,16 @@ export default function Home() {
           ))}
         </div>
 
+      </div>
+
         {/* Footer */}
         <motion.div
-          className="text-center mt-20 pb-10 -mx-8"
+          className="relative z-10 text-center mt-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
         >
-          <div className="rounded-t-2xl px-8 py-8"
+          <div className="px-8 py-8"
             style={{ border: '2px solid rgba(30,58,138,0.8)', background: 'rgba(15,23,42,0.5)' }}>
             <div className="chinese-font text-5xl text-white/10 font-black mb-6">
               加油！💪 努力学习！
@@ -633,7 +635,6 @@ export default function Home() {
             </a>
           </div>
         </motion.div>
-      </div>
     </div>
   )
 }
