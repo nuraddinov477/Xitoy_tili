@@ -114,25 +114,18 @@ const topics = [
   },
   // HSK 2
   {
-    id: 20, zh: '日常生活', uz: 'Kundalik hayot', en: 'Daily Routine',
-    emoji: '🌅', color: 'from-amber-500 to-orange-700',
-    glow: 'rgba(245,158,11,0.6)', hsk: 2, words: 60,
-    example: '几点起床？(Soat nechada turasiz?)', desc: 'Kun tartibi va odatlar',
-    image: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=1200&q=80',
+    id: 16, zh: '九月去北京旅游最好', uz: 'Pekinga sayohat', en: 'Travel to Beijing',
+    emoji: '✈️', color: 'from-sky-500 to-blue-700',
+    glow: 'rgba(14,165,233,0.6)', hsk: 2, words: 18,
+    example: '九月去北京旅游最好 (Sentabr eng yaxshi)', desc: 'Sayohat va oylar',
+    image: 'https://images.unsplash.com/photo-1508804052814-cd3ba865a116?w=1200&q=80',
   },
   {
-    id: 16, zh: '运动锻炼', uz: 'Sport va mashq', en: 'Sports & Exercise',
-    emoji: '🏃', color: 'from-green-500 to-emerald-700',
-    glow: 'rgba(16,185,129,0.6)', hsk: 2, words: 60,
-    example: '我每天跑步 (Har kuni yuguraman)', desc: 'Sport turlari va mashqlar',
-    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80',
-  },
-  {
-    id: 17, zh: '身体健康', uz: "Sog'liq va kasallik", en: 'Health & Illness',
-    emoji: '🏥', color: 'from-blue-500 to-cyan-700',
-    glow: 'rgba(59,130,246,0.6)', hsk: 2, words: 60,
-    example: '我感冒了 (Shamolladim)', desc: "Shifokorga borish va sog'liq",
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80',
+    id: 17, zh: '我每天六点起床', uz: 'Kundalik tartib', en: 'Daily Routine',
+    emoji: '⏰', color: 'from-orange-500 to-amber-700',
+    glow: 'rgba(249,115,22,0.6)', hsk: 2, words: 18,
+    example: '我每天六点起床 (Har kuni 6da turaman)', desc: 'Kun tartibi va vaqt',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
   },
   {
     id: 18, zh: '比较与购物', uz: 'Taqqoslash va xarid', en: 'Comparison & Shopping',
@@ -147,6 +140,13 @@ const topics = [
     glow: 'rgba(139,92,246,0.6)', hsk: 2, words: 60,
     example: '坐地铁去 (Metroda borish)', desc: 'Metro, avtobus va yo\'l so\'rash',
     image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80',
+  },
+  {
+    id: 20, zh: '日常生活', uz: 'Kundalik hayot', en: 'Daily Life',
+    emoji: '🌅', color: 'from-amber-500 to-orange-700',
+    glow: 'rgba(245,158,11,0.6)', hsk: 2, words: 60,
+    example: '几点起床？(Soat nechada turasiz?)', desc: 'Kun tartibi va odatlar',
+    image: 'https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=1200&q=80',
   },
 ]
 
