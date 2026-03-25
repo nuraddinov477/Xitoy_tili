@@ -4101,256 +4101,274 @@
     },
     {
       "id": 16,
-      "zh": "运动锻炼",
-      "uz": "Sport va mashq",
-      "emoji": "🏃",
+      "zh": "九月去北京旅游最好",
+      "uz": "Pekinni sayr qilish uchun eng yaxshi vaqt",
+      "emoji": "✈️",
       "hsk": 2,
-      "color": "from-green-500 to-emerald-700",
-      "glow": "rgba(16,185,129,0.6)",
-      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+      "color": "from-sky-500 to-blue-700",
+      "glow": "rgba(14,165,233,0.6)",
+      "image": "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?w=800&q=80",
       "vocabulary": [
+        {
+          "zh": "旅游",
+          "pinyin": "lǚyóu",
+          "uz": "Sayohat qilmoq / turizm",
+          "en": "to travel, tourism"
+        },
+        {
+          "zh": "最好",
+          "pinyin": "zuì hǎo",
+          "uz": "Eng yaxshi",
+          "en": "the best"
+        },
+        {
+          "zh": "九月",
+          "pinyin": "jiǔ yuè",
+          "uz": "Sentabr (9-oy)",
+          "en": "September"
+        },
+        {
+          "zh": "北京",
+          "pinyin": "Běijīng",
+          "uz": "Pekin (Xitoy poytaxti)",
+          "en": "Beijing"
+        },
+        {
+          "zh": "三月",
+          "pinyin": "sān yuè",
+          "uz": "Mart (3-oy)",
+          "en": "March"
+        },
+        {
+          "zh": "六月",
+          "pinyin": "liù yuè",
+          "uz": "Iyun (6-oy)",
+          "en": "June"
+        },
+        {
+          "zh": "十二月",
+          "pinyin": "shí'èr yuè",
+          "uz": "Dekabr (12-oy)",
+          "en": "December"
+        },
         {
           "zh": "运动",
           "pinyin": "yùndòng",
-          "uz": "Sport qilmoq / jismoniy mashq",
+          "uz": "Sport / jismoniy mashq",
           "en": "exercise, sport"
         },
         {
-          "zh": "锻炼",
-          "pinyin": "duànliàn",
-          "uz": "Mashq qilmoq, chiniqmoq",
-          "en": "to exercise, to train"
+          "zh": "足球",
+          "pinyin": "zúqiú",
+          "uz": "Futbol",
+          "en": "football, soccer"
         },
         {
-          "zh": "跑步",
-          "pinyin": "pǎobù",
-          "uz": "Yugurmoq",
-          "en": "to run, jogging"
+          "zh": "眼睛",
+          "pinyin": "yǎnjing",
+          "uz": "Ko'z",
+          "en": "eyes"
         },
         {
-          "zh": "游泳",
-          "pinyin": "yóuyǒng",
-          "uz": "Suzmoq",
-          "en": "to swim"
+          "zh": "椅子",
+          "pinyin": "yǐzi",
+          "uz": "Stul",
+          "en": "chair"
         },
         {
-          "zh": "打篮球",
-          "pinyin": "dǎ lánqiú",
-          "uz": "Basketbol o'ynamoq",
-          "en": "to play basketball"
+          "zh": "猫",
+          "pinyin": "māo",
+          "uz": "Mushuk",
+          "en": "cat"
         },
         {
-          "zh": "踢足球",
-          "pinyin": "tī zúqiú",
-          "uz": "Futbol o'ynamoq",
-          "en": "to play football"
+          "zh": "季节",
+          "pinyin": "jìjié",
+          "uz": "Fasl (yil fasli)",
+          "en": "season"
         },
         {
-          "zh": "打太极拳",
-          "pinyin": "dǎ tàijíquán",
-          "uz": "Taychi qilmoq",
-          "en": "to do tai chi"
+          "zh": "天气",
+          "pinyin": "tiānqì",
+          "uz": "Ob-havo",
+          "en": "weather"
         },
         {
-          "zh": "每天",
-          "pinyin": "měitiān",
-          "uz": "Har kuni",
-          "en": "every day"
+          "zh": "凉快",
+          "pinyin": "liángkuai",
+          "uz": "Salqin / seryel",
+          "en": "cool, refreshing"
         },
         {
-          "zh": "早上",
-          "pinyin": "zǎoshang",
-          "uz": "Ertalab",
-          "en": "morning"
+          "zh": "景色",
+          "pinyin": "jǐngsè",
+          "uz": "Manzara / tabiiy ko'rinish",
+          "en": "scenery, landscape"
         },
         {
-          "zh": "小时",
-          "pinyin": "xiǎoshí",
-          "uz": "Soat (vaqt birligi)",
-          "en": "hour"
+          "zh": "地方",
+          "pinyin": "dìfang",
+          "uz": "Joy / makon",
+          "en": "place, location"
         },
         {
-          "zh": "健康",
-          "pinyin": "jiànkāng",
-          "uz": "Sog'liq / sog'lom",
-          "en": "health, healthy"
-        },
-        {
-          "zh": "身体",
-          "pinyin": "shēntǐ",
-          "uz": "Tana, jismoniy holat",
-          "en": "body, health"
-        },
-        {
-          "zh": "重要",
-          "pinyin": "zhòngyào",
-          "uz": "Muhim",
-          "en": "important"
-        },
-        {
-          "zh": "一起",
-          "pinyin": "yīqǐ",
-          "uz": "Birga",
-          "en": "together"
-        },
-        {
-          "zh": "怎么样",
-          "pinyin": "zěnmeyàng",
-          "uz": "Qanday? / Nima deysan?",
-          "en": "how about, what do you think"
+          "zh": "好玩儿",
+          "pinyin": "hǎowánr",
+          "uz": "Qiziqarli / mazali",
+          "en": "fun, interesting"
         }
       ],
       "grammar": [
         {
-          "pattern": "每天 + 动词 + 时间",
-          "explanation": "Har kuni qilingan harakatni ifodalash: 每天 + fe'l + vaqt miqdori",
-          "example_zh": "我每天跑步一个小时。",
-          "example_pinyin": "Wǒ měitiān pǎobù yī gè xiǎoshí.",
-          "example_uz": "Men har kuni bir soat yuguraman."
+          "pattern": "最 + 形容词",
+          "explanation": "Eng darajasini ifodalash: 最 (eng) + sifat. Masalan: 最好 = eng yaxshi, 最大 = eng katta",
+          "example_zh": "九月去北京旅游最好。",
+          "example_pinyin": "Jiǔ yuè qù Běijīng lǚyóu zuì hǎo.",
+          "example_uz": "Sentabrda Pekinga sayohat qilish eng yaxshi."
         },
         {
-          "pattern": "动词 + 得 + 好/不好",
-          "explanation": "Harakat sifatini ifodalash: fe'l + 得 + baho",
-          "example_zh": "她游泳游得很好。",
-          "example_pinyin": "Tā yóuyǒng yóu de hěn hǎo.",
-          "example_uz": "U suzishni juda yaxshi biladi."
+          "pattern": "去 + 地点 + 旅游",
+          "explanation": "Biror joyga sayohat qilishni ifodalash: 去 (bormoq) + joy + 旅游 (sayohat)",
+          "example_zh": "我想去北京旅游。",
+          "example_pinyin": "Wǒ xiǎng qù Běijīng lǚyóu.",
+          "example_uz": "Men Pekinga sayohat qilmoqchiman."
         },
         {
-          "pattern": "对...有好处",
-          "explanation": "Foyda ifodalash: 对 + ob'ekt + 有好处",
-          "example_zh": "运动对身体有好处。",
-          "example_pinyin": "Yùndòng duì shēntǐ yǒu hǎochù.",
-          "example_uz": "Sport sog'liq uchun foydali."
+          "pattern": "时间 + 是 + 最好的时候",
+          "explanation": "Eng yaxshi vaqtni ifodalash: vaqt + 是 + 最好的时候",
+          "example_zh": "秋天是旅游最好的时候。",
+          "example_pinyin": "Qiūtiān shì lǚyóu zuì hǎo de shíhou.",
+          "example_uz": "Kuz sayohat qilish uchun eng yaxshi vaqt."
         },
         {
-          "pattern": "平时 + 习惯",
-          "explanation": "Odatiy holat: 平时 (odatda) + harakat",
-          "example_zh": "你平时怎么锻炼？",
-          "example_pinyin": "Nǐ píngshí zěnme duànliàn?",
-          "example_uz": "Odatda qanday mashq qilasan?"
+          "pattern": "因为...所以...",
+          "explanation": "Sabab-natija ifodalash: 因为 (chunki) + sabab, 所以 (shuning uchun) + natija",
+          "example_zh": "因为九月天气凉快，所以很多人来北京旅游。",
+          "example_pinyin": "Yīnwèi jiǔ yuè tiānqì liángkuai, suǒyǐ hěn duō rén lái Běijīng lǚyóu.",
+          "example_uz": "Sentabrda ob-havo salqin bo'lgani uchun ko'p odamlar Pekinga sayohat qiladi."
         }
       ],
       "dialogues": [
         {
-          "title": "Ertalabki yugurish",
+          "title": "Pekinga sayohat rejasi",
           "lines": [
             {
               "speaker": "A",
-              "zh": "你好，你也来跑步吗？这个公园早上人很多。",
-              "pinyin": "Nǐ hǎo, nǐ yě lái pǎobù ma? Zhège gōngyuán zǎoshang rén hěn duō.",
-              "uz": "Salom, siz ham yugurgani keldingizmi? Bu bog'da ertalab odam juda ko'p."
+              "zh": "你好！我听说北京很好玩儿，你去过吗？",
+              "pinyin": "Nǐ hǎo! Wǒ tīngshuō Běijīng hěn hǎowánr, nǐ qùguò ma?",
+              "uz": "Salom! Eshitdimki Pekin juda qiziqarli ekan, borgan edingizmi?"
             },
             {
               "speaker": "B",
-              "zh": "是啊，我每天早上来这里跑步，已经跑了三年了。你呢？",
-              "pinyin": "Shì a, wǒ měitiān zǎoshang lái zhèlǐ pǎobù, yǐjīng pǎo le sān nián le. Nǐ ne?",
-              "uz": "Ha, men har kuni ertalab shu yerga yugurgani kelaman, allaqachon uch yil bo'ldi. Siz-chi?"
+              "zh": "去过！北京非常漂亮，景色很好。你想去吗？",
+              "pinyin": "Qùguò! Běijīng fēicháng piàoliang, jǐngsè hěn hǎo.",
+              "uz": "Ha, bordim! Pekin juda chiroyli, manzarasi zo'r. Bormoqchimisiz?"
             },
             {
               "speaker": "A",
-              "zh": "我刚开始跑步，才跑了一个月。每天跑多少？",
-              "pinyin": "Wǒ gāng kāishǐ pǎobù, cái pǎo le yī gè yuè. Měitiān pǎo duōshǎo?",
-              "uz": "Men yugura boshlaganim endigina, atigi bir oy bo'ldi. Har kuni qancha yuguraysiz?"
+              "zh": "想！但是我不知道什么时候去最好。",
+              "pinyin": "Xiǎng! Dànshì wǒ bù zhīdào shénme shíhou qù zuì hǎo.",
+              "uz": "Ha, xohlayman! Lekin qachon borish eng yaxshi ekanini bilmayapman."
             },
             {
               "speaker": "B",
-              "zh": "我每天跑五公里，大概需要三十分钟。刚开始的时候你跑多少？",
-              "pinyin": "Wǒ měitiān pǎo wǔ gōnglǐ, dàgài xūyào sānshí fēnzhōng. Gāng kāishǐ de shíhou nǐ pǎo duōshǎo?",
-              "uz": "Men har kuni besh kilometr yuguraman, taxminan o'ttiz daqiqa vaqt ketadi. Boshida qancha yugurdingiz?"
+              "zh": "九月去北京旅游最好！那时候天气凉快，不太热也不太冷。",
+              "pinyin": "Jiǔ yuè qù Běijīng lǚyóu zuì hǎo! Nà shíhou tiānqì liángkuai, bú tài rè yě bú tài lěng.",
+              "uz": "Sentabrda Pekinga borish eng yaxshi! O'shanda ob-havo salqin bo'ladi, na issiq na sovuq."
             },
             {
               "speaker": "A",
-              "zh": "我每次只能跑两公里，有点儿累。怎么才能跑得更多？",
-              "pinyin": "Wǒ měicì zhǐ néng pǎo liǎng gōnglǐ, yǒudiǎnr lèi. Zěnme cái néng pǎo de gèng duō?",
-              "uz": "Har safar faqat ikki kilometr yugura olaman, biroz charchayman. Qanday qilib ko'proq yugura olaman?"
+              "zh": "六月怎么样？",
+              "pinyin": "Liù yuè zěnmeyàng?",
+              "uz": "Iyun qanday?"
             },
             {
               "speaker": "B",
-              "zh": "慢慢来，不要急。每周增加一点点就可以了。运动对身体非常有好处！",
-              "pinyin": "Màn màn lái, bú yào jí. Měi zhōu zēngjiā yīdiǎndiǎn jiù kěyǐ le. Yùndòng duì shēntǐ fēicháng yǒu hǎochù!",
-              "uz": "Asta-sekin, shoshilmang. Har hafta ozgina ko'paytirsa bo'ladi. Sport sog'liq uchun juda foydali!"
+              "zh": "六月太热了，三月有点儿冷。九月景色最美，是最好的季节。",
+              "pinyin": "Liù yuè tài rè le, sān yuè yǒudiǎnr lěng. Jiǔ yuè jǐngsè zuì měi, shì zuì hǎo de jìjié.",
+              "uz": "Iyun juda issiq, mart biroz sovuq. Sentabrda manzara eng chiroyli, bu eng yaxshi fasl."
             }
           ]
         },
         {
-          "title": "Sport tanlash",
+          "title": "Sayohat tayyorgarligi",
           "lines": [
             {
               "speaker": "A",
-              "zh": "周末你一般做什么运动？我想找一个新的运动。",
-              "pinyin": "Zhōumò nǐ yībān zuò shénme yùndòng? Wǒ xiǎng zhǎo yī gè xīn de yùndòng.",
-              "uz": "Dam olish kunlari odatda qanday sport bilan shug'ullanasiz? Men yangi bir sport topmoqchiman."
+              "zh": "我九月要去北京旅游，你有什么建议吗？",
+              "pinyin": "Wǒ jiǔ yuè yào qù Běijīng lǚyóu, nǐ yǒu shénme jiànyì ma?",
+              "uz": "Men sentabrda Pekinga sayohat qilmoqchiman, sizda biron maslahat bormi?"
             },
             {
               "speaker": "B",
-              "zh": "我周末打篮球或者游泳。你喜欢哪种运动？",
-              "pinyin": "Wǒ zhōumò dǎ lánqiú huòzhě yóuyǒng. Nǐ xǐhuān nǎ zhǒng yùndòng?",
-              "uz": "Men dam olish kunlari basketbol o'ynayman yoki suzaman. Qaysi turdagi sportni yoqtirasiz?"
+              "zh": "太好了！北京有很多好玩儿的地方。你想去哪些地方？",
+              "pinyin": "Tài hǎo le! Běijīng yǒu hěn duō hǎowánr de dìfang. Nǐ xiǎng qù nǎxiē dìfang?",
+              "uz": "Juda yaxshi! Pekinda ko'p qiziqarli joylar bor. Qaysi joylarga borishni xohlaysiz?"
             },
             {
               "speaker": "A",
-              "zh": "我以前打网球，但是最近没有时间。游泳怎么样？难不难？",
-              "pinyin": "Wǒ yǐqián dǎ wǎngqiú, dànshì zuìjìn méiyǒu shíjiān. Yóuyǒng zěnmeyàng? Nán bu nán?",
-              "uz": "Men ilgari tennis o'ynardim, lekin so'nggi paytda vaqtim bo'lmadi. Suzish qanday? Qiyin emasmi?"
+              "zh": "我想去长城，还想看看北京的景色。",
+              "pinyin": "Wǒ xiǎng qù Chángchéng, hái xiǎng kànkan Běijīng de jǐngsè.",
+              "uz": "Buyuk devori borishni, Pekin manzarasini ham ko'rishni istayman."
             },
             {
               "speaker": "B",
-              "zh": "游泳不太难，但是你需要先学基本动作。我可以教你，我学了十年了。",
-              "pinyin": "Yóuyǒng bú tài nán, dànshì nǐ xūyào xiān xué jīběn dòngzuò. Wǒ kěyǐ jiāo nǐ, wǒ xué le shí nián le.",
-              "uz": "Suzish unchalik qiyin emas, lekin avval asosiy harakatlarni o'rganishingiz kerak. Men sizga o'rgata olaman, men o'n yildan beri suzaman."
+              "zh": "九月天气凉快，爬长城最合适。带一件外套就够了。",
+              "pinyin": "Jiǔ yuè tiānqì liángkuai, pá Chángchéng zuì héshì. Dài yī jiàn wàitào jiù gòu le.",
+              "uz": "Sentabrda ob-havo salqin, Buyuk devoriga chiqish uchun eng mos vaqt. Bitta kiyim olib borsangiz yetarli."
             },
             {
               "speaker": "A",
-              "zh": "真的吗？太好了！你什么时候有空？我们一起去游泳池吧。",
-              "pinyin": "Zhēn de ma? Tài hǎo le! Nǐ shénme shíhou yǒu kòng? Wǒmen yīqǐ qù yóuyǒngchí ba.",
-              "uz": "Haqiqatanmi? Zo'r! Qachon bo'sh vaqtingiz bor? Keling, birga suzish havzasiga boraylik."
+              "zh": "好的，谢谢你！我很期待这次旅游。",
+              "pinyin": "Hǎo de, xièxiè nǐ! Wǒ hěn qīdài zhè cì lǚyóu.",
+              "uz": "Xop, rahmat! Bu sayohatni juda kutib qolaman."
             },
             {
               "speaker": "B",
-              "zh": "这个周六下午怎么样？我们三点在游泳池门口见面吧。",
-              "pinyin": "Zhège zhōuliù xiàwǔ zěnmeyàng? Wǒmen sān diǎn zài yóuyǒngchí ménkǒu jiànmiàn ba.",
-              "uz": "Bu shanba kuni tushdan keyin qanday? Uchda suzish havzasi oldida uchrashaylik."
+              "zh": "不客气！祝你旅游愉快！",
+              "pinyin": "Bú kèqi! Zhù nǐ lǚyóu yúkuài!",
+              "uz": "Arzimaydi! Yaxshi sayohat tilayman!"
             }
           ]
         },
         {
-          "title": "Sog'liq va sport",
+          "title": "Oy nomlari haqida",
           "lines": [
             {
               "speaker": "A",
-              "zh": "医生说我需要多运动，但是我不知道从哪里开始。",
-              "pinyin": "Yīshēng shuō wǒ xūyào duō yùndòng, dànshì wǒ bù zhīdào cóng nǎlǐ kāishǐ.",
-              "uz": "Doktor ko'proq sport qilishim kerakligini aytdi, lekin qayerdan boshlashni bilmayapman."
+              "zh": "现在几月了？",
+              "pinyin": "Xiànzài jǐ yuè le?",
+              "uz": "Hozir nechinchi oy?"
             },
             {
               "speaker": "B",
-              "zh": "你可以先从散步开始，每天走三十分钟。这对心脏很好。",
-              "pinyin": "Nǐ kěyǐ xiān cóng sànbù kāishǐ, měitiān zǒu sānshí fēnzhōng. Zhè duì xīnzàng hěn hǎo.",
-              "uz": "Avval sayrdan boshlashingiz mumkin, har kuni o'ttiz daqiqa yuring. Bu yurak uchun juda foydali."
+              "zh": "现在是三月。再过六个月就是九月了。",
+              "pinyin": "Xiànzài shì sān yuè. Zài guò liù gè yuè jiù shì jiǔ yuè le.",
+              "uz": "Hozir mart. Yana olti oydan keyin sentabr bo'ladi."
             },
             {
               "speaker": "A",
-              "zh": "散步我可以做，但是我觉得太简单了，没有效果。",
-              "pinyin": "Sànbù wǒ kěyǐ zuò, dànshì wǒ juéde tài jiǎndān le, méiyǒu xiàoguǒ.",
-              "uz": "Sayr qila olaman, lekin bu juda oddiy ko'rinadi, samara yo'qdek."
+              "zh": "那我们可以计划九月去北京！",
+              "pinyin": "Nà wǒmen kěyǐ jìhuà jiǔ yuè qù Běijīng!",
+              "uz": "Unda biz sentabrda Pekinga borishni rejalashtira olamiz!"
             },
             {
               "speaker": "B",
-              "zh": "不是的！研究表明散步能减少很多病。你可以慢慢加上慢跑。",
-              "pinyin": "Bú shì de! Yánjiū biǎomíng sànbù néng jiǎnshǎo hěn duō bìng. Nǐ kěyǐ màn màn jiā shàng màn pǎo.",
-              "uz": "Unday emas! Tadqiqotlar ko'rsatadiki, sayr ko'p kasalliklarni kamaytira oladi. Asta-sekin sekin yugurish qo'shishingiz mumkin."
+              "zh": "好主意！九月的北京景色最美，比六月和十二月好多了。",
+              "pinyin": "Hǎo zhǔyì! Jiǔ yuè de Běijīng jǐngsè zuì měi, bǐ liù yuè hé shí'èr yuè hǎo duō le.",
+              "uz": "Yaxshi fikr! Sentabrdagi Pekin manzarasi eng chiroyli, iyun va dekabr bilan solishtirganda ancha yaxshi."
             },
             {
               "speaker": "A",
-              "zh": "好的，我明白了。每天坚持运动，身体才能好起来。",
-              "pinyin": "Hǎo de, wǒ míngbái le. Měitiān jiānchí yùndòng, shēntǐ cái néng hǎo qǐlái.",
-              "uz": "Xop, tushundim. Har kuni sport qilishni davom etsam, sog'liq yaxshilanadi."
+              "zh": "太好了！我们早点儿买票吧。",
+              "pinyin": "Tài hǎo le! Wǒmen zǎo diǎnr mǎi piào ba.",
+              "uz": "Ajoyib! Chiptan ertaroq sotib olaylik."
             },
             {
               "speaker": "B",
-              "zh": "对！最重要的是坚持。三个月以后你会感觉完全不一样。",
-              "pinyin": "Duì! Zuì zhòngyào de shì jiānchí. Sān gè yuè yǐhòu nǐ huì gǎnjué wánquán bù yīyàng.",
-              "uz": "To'g'ri! Eng muhimi — davom etish. Uch oydan keyin o'zingizni butunlay boshqacha his qilasiz."
+              "zh": "对，早买比较便宜。我们下周就买吧！",
+              "pinyin": "Duì, zǎo mǎi bǐjiào piányí. Wǒmen xià zhōu jiù mǎi ba!",
+              "uz": "Ha, erta sotib olgan arzonroq bo'ladi. Kelasi haftayoq sotib olaylik!"
             }
           ]
         }
