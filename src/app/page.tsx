@@ -320,8 +320,8 @@ export default function Home() {
               <NextImage src="/avatar.jpg" alt="Sarvarbek" width={48} height={48} className="w-full h-full object-cover"/>
             </div>
             <div className="text-left">
-              <p className="text-white font-bold text-base">Nuraddinov Sarvarbek</p>
-              <p className="text-red-400 text-sm">Men haqimda →</p>
+              <p className="text-white font-black text-base uppercase tracking-widest">Nuraddinov Sarvarbek</p>
+              <p className="text-red-400 text-xs tracking-wider">Portfolio →</p>
             </div>
           </motion.button>
         </motion.div>
