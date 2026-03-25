@@ -4376,67 +4376,37 @@
     },
     {
       "id": 17,
-      "zh": "身体健康",
-      "uz": "Sog'liq va kasallik",
-      "emoji": "🏥",
+      "zh": "我每天六点起床",
+      "uz": "Men har kuni soat oltida turaman",
+      "emoji": "⏰",
       "hsk": 2,
-      "color": "from-blue-500 to-cyan-700",
-      "glow": "rgba(59,130,246,0.6)",
-      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+      "color": "from-orange-500 to-amber-700",
+      "glow": "rgba(249,115,22,0.6)",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
       "vocabulary": [
         {
+          "zh": "起床",
+          "pinyin": "qǐ chuáng",
+          "uz": "Turmoq (uxlashdan)",
+          "en": "to get up, to get out of bed"
+        },
+        {
+          "zh": "跑步",
+          "pinyin": "pǎo bù",
+          "uz": "Yugurmoq",
+          "en": "to run, jogging"
+        },
+        {
+          "zh": "吃药",
+          "pinyin": "chī yào",
+          "uz": "Dori ichmoq",
+          "en": "to take medicine"
+        },
+        {
           "zh": "生病",
-          "pinyin": "shēngbìng",
+          "pinyin": "shēng bìng",
           "uz": "Kasal bo'lmoq",
-          "en": "to get sick"
-        },
-        {
-          "zh": "头疼",
-          "pinyin": "tóuténg",
-          "uz": "Bosh og'riq",
-          "en": "headache"
-        },
-        {
-          "zh": "发烧",
-          "pinyin": "fāshāo",
-          "uz": "Isitma",
-          "en": "fever"
-        },
-        {
-          "zh": "肚子疼",
-          "pinyin": "dùzi téng",
-          "uz": "Qorin og'riq",
-          "en": "stomachache"
-        },
-        {
-          "zh": "感冒",
-          "pinyin": "gǎnmào",
-          "uz": "Shamollash",
-          "en": "cold, flu"
-        },
-        {
-          "zh": "咳嗽",
-          "pinyin": "késou",
-          "uz": "Yo'tal",
-          "en": "cough"
-        },
-        {
-          "zh": "医院",
-          "pinyin": "yīyuàn",
-          "uz": "Kasalxona",
-          "en": "hospital"
-        },
-        {
-          "zh": "医生",
-          "pinyin": "yīshēng",
-          "uz": "Shifokor",
-          "en": "doctor"
-        },
-        {
-          "zh": "药",
-          "pinyin": "yào",
-          "uz": "Dori",
-          "en": "medicine"
+          "en": "to get sick, to fall ill"
         },
         {
           "zh": "休息",
@@ -4445,187 +4415,235 @@
           "en": "to rest"
         },
         {
-          "zh": "检查",
-          "pinyin": "jiǎnchá",
-          "uz": "Ko'rik qilmoq, tekshirmoq",
-          "en": "to examine, checkup"
+          "zh": "出院",
+          "pinyin": "chū yuàn",
+          "uz": "Kasalxonadan chiqmoq",
+          "en": "to be discharged from hospital"
         },
         {
-          "zh": "严重",
-          "pinyin": "yánzhòng",
-          "uz": "Jiddiy, og'ir",
-          "en": "serious, severe"
+          "zh": "早上",
+          "pinyin": "zǎoshang",
+          "uz": "Ertalab",
+          "en": "morning"
         },
         {
-          "zh": "好多了",
-          "pinyin": "hǎo duō le",
-          "uz": "Ancha yaxshilashdi",
-          "en": "much better"
+          "zh": "下午",
+          "pinyin": "xiàwǔ",
+          "uz": "Tushdan keyin",
+          "en": "afternoon"
         },
         {
-          "zh": "多喝水",
-          "pinyin": "duō hē shuǐ",
-          "uz": "Ko'p suv ich",
-          "en": "drink more water"
+          "zh": "晚上",
+          "pinyin": "wǎnshang",
+          "uz": "Kechqurun",
+          "en": "evening, night"
         },
         {
-          "zh": "注意",
-          "pinyin": "zhùyì",
-          "uz": "E'tibor bermoq, ehtiyot bo'lmoq",
-          "en": "to pay attention, to be careful"
+          "zh": "星期六",
+          "pinyin": "xīngqīliù",
+          "uz": "Shanba",
+          "en": "Saturday"
+        },
+        {
+          "zh": "星期天",
+          "pinyin": "xīngqītiān",
+          "uz": "Yakshanba",
+          "en": "Sunday"
+        },
+        {
+          "zh": "每天",
+          "pinyin": "měitiān",
+          "uz": "Har kuni",
+          "en": "every day"
+        },
+        {
+          "zh": "睡觉",
+          "pinyin": "shuì jiào",
+          "uz": "Uxlamoq",
+          "en": "to sleep, to go to bed"
+        },
+        {
+          "zh": "刷牙",
+          "pinyin": "shuā yá",
+          "uz": "Tish yuvmoq",
+          "en": "to brush teeth"
+        },
+        {
+          "zh": "洗澡",
+          "pinyin": "xǐ zǎo",
+          "uz": "Cho'milmoq / dush qilmoq",
+          "en": "to take a shower/bath"
+        },
+        {
+          "zh": "上班",
+          "pinyin": "shàng bān",
+          "uz": "Ishga bormoq",
+          "en": "to go to work"
+        },
+        {
+          "zh": "下班",
+          "pinyin": "xià bān",
+          "uz": "Ishdan qaytmoq",
+          "en": "to get off work"
+        },
+        {
+          "zh": "吃饭",
+          "pinyin": "chī fàn",
+          "uz": "Ovqat yemoq",
+          "en": "to eat a meal"
         }
       ],
       "grammar": [
         {
-          "pattern": "哪儿不舒服",
-          "explanation": "Shifokor so'rovi: 哪儿 (qayer) + 不舒服 (noqulay)",
-          "example_zh": "你哪儿不舒服？",
-          "example_pinyin": "Nǐ nǎr bù shūfu?",
-          "example_uz": "Qaering og'riyapti? / Nima og'riyapti?"
+          "pattern": "每天 + 时间点 + 动词",
+          "explanation": "Kundalik odatni ifodalash: 每天 (har kuni) + soat/vaqt + fe'l",
+          "example_zh": "我每天六点起床。",
+          "example_pinyin": "Wǒ měitiān liù diǎn qǐ chuáng.",
+          "example_uz": "Men har kuni soat oltida turaman."
         },
         {
-          "pattern": "已经...了",
-          "explanation": "Davom etayotgan holat: 已经 + harakat + vaqt + 了",
-          "example_zh": "我已经发烧两天了。",
-          "example_pinyin": "Wǒ yǐjīng fāshāo liǎng tiān le.",
-          "example_uz": "Men allaqachon ikki kundan beri isitmada yotibman."
+          "pattern": "先...然后...",
+          "explanation": "Ketma-ket harakatlar: 先 (avval) + fe'l, 然后 (keyin) + fe'l",
+          "example_zh": "我先刷牙，然后洗澡。",
+          "example_pinyin": "Wǒ xiān shuā yá, ránhòu xǐ zǎo.",
+          "example_uz": "Men avval tish yuvaman, keyin cho'milaman."
         },
         {
-          "pattern": "应该 + 动词",
-          "explanation": "Tavsiya/majburiyat: 应该 (kerak) + fe'l",
-          "example_zh": "你应该多休息，少工作。",
-          "example_pinyin": "Nǐ yīnggāi duō xiūxi, shǎo gōngzuò.",
-          "example_uz": "Siz ko'proq dam olishingiz, kamroq ishlashingiz kerak."
+          "pattern": "什么时候 + 做 + 什么",
+          "explanation": "Vaqt so'rash: 什么时候 (qachon) + fe'l + ish",
+          "example_zh": "马丁什么时间做什么事情？",
+          "example_pinyin": "Mǎdīng shénme shíjiān zuò shénme shìqíng?",
+          "example_uz": "Martin qaysi vaqtda nima ish qiladi?"
         },
         {
-          "pattern": "好多了 / 还是...",
-          "explanation": "Holat o'zgarishi: 以后 (keyin) + 好多了 (ancha yaxshi)",
-          "example_zh": "吃了药以后好多了。",
-          "example_pinyin": "Chī le yào yǐhòu hǎo duō le.",
-          "example_uz": "Dori ichgandan keyin ancha yaxshilashdi."
+          "pattern": "时间 + 点 + 动词",
+          "explanation": "Aniq vaqtda harakat: raqam + 点 (soat) + fe'l",
+          "example_zh": "他早上七点上班，晚上六点下班。",
+          "example_pinyin": "Tā zǎoshang qī diǎn shàng bān, wǎnshang liù diǎn xià bān.",
+          "example_uz": "U ertalab soat yettida ishga boradi, kechqurun oltida ishdan qaytadi."
         }
       ],
       "dialogues": [
         {
-          "title": "Shifokorga borish",
+          "title": "Kundalik tartib haqida",
           "lines": [
             {
-              "speaker": "Bemor",
-              "zh": "医生，我不太舒服，已经三天了。头疼，还有点儿发烧。",
-              "pinyin": "Yīshēng, wǒ bú tài shūfu, yǐjīng sān tiān le. Tóuténg, hái yǒudiǎnr fāshāo.",
-              "uz": "Shifokor, o'zim yaxshi emasman, allaqachon uch kun bo'ldi. Boshim og'riyapti, biroz isitmam ham bor."
+              "speaker": "A",
+              "zh": "你每天几点起床？",
+              "pinyin": "Nǐ měitiān jǐ diǎn qǐ chuáng?",
+              "uz": "Siz har kuni soat nechada turasiz?"
             },
             {
-              "speaker": "Shifokor",
-              "zh": "好的，我来检查一下。你还有哪儿不舒服？嗓子疼吗？",
-              "pinyin": "Hǎo de, wǒ lái jiǎnchá yīxià. Nǐ hái nǎr bù shūfu? Sǎngzi téng ma?",
-              "uz": "Xop, ko'rib chiqay. Yana qayeringiz noqulayroq? Tomog'ingiz og'riyaptimi?"
+              "speaker": "B",
+              "zh": "我每天六点起床。先跑步，然后刷牙洗澡，七点吃早饭。",
+              "pinyin": "Wǒ měitiān liù diǎn qǐ chuáng. Xiān pǎo bù, ránhòu shuā yá xǐ zǎo, qī diǎn chī zǎofàn.",
+              "uz": "Men har kuni soat oltida turaman. Avval yuguraman, keyin tish yuvib cho'milaman, yettida nonushta qilaman."
             },
             {
-              "speaker": "Bemor",
-              "zh": "是的，嗓子也有点儿疼，而且还咳嗽。晚上睡不着觉。",
-              "pinyin": "Shì de, sǎngzi yě yǒudiǎnr téng, érqiě hái késou. Wǎnshang shuì bu zháo jiào.",
-              "uz": "Ha, tomog'im ham biroz og'riyapti, bundan tashqari yo'talim ham bor. Kechasi uxlay olmayapman."
+              "speaker": "A",
+              "zh": "六点太早了！我一般七点半才起床。",
+              "pinyin": "Liù diǎn tài zǎo le! Wǒ yībān qī diǎn bàn cái qǐ chuáng.",
+              "uz": "Soat olti juda erta! Men odatda yetti yarimda turaman."
             },
             {
-              "speaker": "Shifokor",
-              "zh": "你这是感冒了，不太严重。我给你开一些药，你回去好好休息。",
-              "pinyin": "Nǐ zhè shì gǎnmào le, bú tài yánzhòng. Wǒ gěi nǐ kāi yīxiē yào, nǐ huíqu hǎohǎo xiūxi.",
-              "uz": "Bu shamollash, unchalik jiddiy emas. Men sizga dori yozib beraman, uyga borib yaxshilab dam oling."
+              "speaker": "B",
+              "zh": "早起很好！早上空气新鲜，跑步很舒服。你几点上班？",
+              "pinyin": "Zǎo qǐ hěn hǎo! Zǎoshang kōngqì xīnxiān, pǎo bù hěn shūfu. Nǐ jǐ diǎn shàng bān?",
+              "uz": "Erta turish yaxshi! Ertalab havo toza, yugurish qulay. Siz soat nechada ishga borasiz?"
             },
             {
-              "speaker": "Bemor",
-              "zh": "谢谢医生。我需要注意什么？需要忌口吗？",
-              "pinyin": "Xièxie yīshēng. Wǒ xūyào zhùyì shénme? Xūyào jì kǒu ma?",
-              "uz": "Rahmat, shifokor. Nimaga e'tibor berishim kerak? Parhezga rioya qilishim kerakmi?"
+              "speaker": "A",
+              "zh": "我八点上班，下午五点下班。晚上我喜欢看电视或者休息。",
+              "pinyin": "Wǒ bā diǎn shàng bān, xiàwǔ wǔ diǎn xià bān. Wǎnshang wǒ xǐhuān kàn diànshì huòzhě xiūxi.",
+              "uz": "Men sakkizda ishga boraman, tushdan keyin beshda ishdan qaytaman. Kechqurun televizor ko'rishni yoki dam olishni yoqtiraman."
             },
             {
-              "speaker": "Shifokor",
-              "zh": "多喝热水，多休息，少吃辛辣食物。三天后如果没好转，再来检查。",
-              "pinyin": "Duō hē rè shuǐ, duō xiūxi, shǎo chī xīnlà shíwù. Sān tiān hòu rúguǒ méi hǎo zhuǎn, zài lái jiǎnchá.",
-              "uz": "Ko'p issiq suv iching, ko'p dam oling, achchiq-o'tkir ovqat kamroq yeng. Uch kundan keyin yaxshilanmasa, qayta keling."
+              "speaker": "B",
+              "zh": "我晚上十点睡觉。早睡早起身体好！",
+              "pinyin": "Wǒ wǎnshang shí diǎn shuì jiào. Zǎo shuì zǎo qǐ shēntǐ hǎo!",
+              "uz": "Men kechqurun o'nda uxlayman. Erta yotib erta turish sog'liq uchun yaxshi!"
             }
           ]
         },
         {
-          "title": "Do'stim bilan suhbat",
+          "title": "Martin ning kuni",
           "lines": [
             {
               "speaker": "A",
-              "zh": "你今天看起来不太好，怎么了？脸色很差。",
-              "pinyin": "Nǐ jīntiān kàn qǐlái bú tài hǎo, zěnme le? Liǎnsè hěn chà.",
-              "uz": "Bugun ko'rinishingiz yaxshi emas, nima bo'ldi? Yuzingiz rangsiz."
+              "zh": "马丁，你早上几点起床？",
+              "pinyin": "Mǎdīng, nǐ zǎoshang jǐ diǎn qǐ chuáng?",
+              "uz": "Martin, siz ertalab soat nechada turasiz?"
             },
             {
               "speaker": "B",
-              "zh": "我昨天晚上开始肚子疼，一晚上没睡好。不知道吃什么坏的了。",
-              "pinyin": "Wǒ zuótiān wǎnshang kāishǐ dùzi téng, yī wǎnshang méi shuì hǎo. Bù zhīdào chī shénme huài de le.",
-              "uz": "Kecha kechqurun qorim og'riy boshladi, bir kecha yaxshi uxlamadim. Nima yegan edim bilmayapman."
+              "zh": "我早上六点起床，然后跑步三十分钟。",
+              "pinyin": "Wǒ zǎoshang liù diǎn qǐ chuáng, ránhòu pǎo bù sānshí fēnzhōng.",
+              "uz": "Men ertalab soat oltida turaman, keyin o'ttiz daqiqa yuguraman."
             },
             {
               "speaker": "A",
-              "zh": "严重吗？你去医院了吗？这种情况应该去看医生。",
-              "pinyin": "Yánzhòng ma? Nǐ qù yīyuàn le ma? Zhè zhǒng qíngkuàng yīnggāi qù kàn yīshēng.",
-              "uz": "Jiddiyroqmi? Kasalxonaga borgansizmi? Bunday holda shifokorga borish kerak."
+              "zh": "下午你做什么？",
+              "pinyin": "Xiàwǔ nǐ zuò shénme?",
+              "uz": "Tushdan keyin nima qilasiz?"
             },
             {
               "speaker": "B",
-              "zh": "还没有。我以为休息一下就好了，但是现在更疼了。",
-              "pinyin": "Hái méiyǒu. Wǒ yǐwéi xiūxi yīxià jiù hǎo le, dànshì xiànzài gèng téng le.",
-              "uz": "Hali yo'q. Dam olsam yaxshilanadi deb o'yladim, lekin hozir yanada ko'proq og'riyapti."
+              "zh": "下午我上班。五点下班以后，我有时候去超市买东西。",
+              "pinyin": "Xiàwǔ wǒ shàng bān. Wǔ diǎn xià bān yǐhòu, wǒ yǒu shíhou qù chāoshì mǎi dōngxi.",
+              "uz": "Tushdan keyin ishlayman. Beshda ishdan chiqqach, ba'zan do'konga boraman."
             },
             {
               "speaker": "A",
-              "zh": "你现在就去医院吧，我陪你去。不要拖太长时间，会更严重的。",
-              "pinyin": "Nǐ xiànzài jiù qù yīyuàn ba, wǒ péi nǐ qù. Bú yào tuō tài cháng shíjiān, huì gèng yánzhòng de.",
-              "uz": "Hoziroq kasalxonaga boring, men sizga hamrohlik qilaman. Uzoq kechiktirmang, yanada yomonlashishi mumkin."
+              "zh": "星期六和星期天呢？",
+              "pinyin": "Xīngqīliù hé xīngqītiān ne?",
+              "uz": "Shanba va yakshanba kunlari-chi?"
             },
             {
               "speaker": "B",
-              "zh": "好的，谢谢你。我去拿一下我的东西就走。真的很感谢你。",
-              "pinyin": "Hǎo de, xièxie nǐ. Wǒ qù ná yīxià wǒ de dōngxi jiù zǒu. Zhēn de hěn gǎnxiè nǐ.",
-              "uz": "Xop, rahmat. Narsalarimni olib, ketaman. Sizga juda minnatdorman."
+              "zh": "星期六我休息，星期天我和家人一起吃饭。",
+              "pinyin": "Xīngqīliù wǒ xiūxi, xīngqītiān wǒ hé jiārén yīqǐ chī fàn.",
+              "uz": "Shanba kuni dam olaman, yakshanba kuni oilam bilan birga ovqat yeyman."
             }
           ]
         },
         {
-          "title": "Sog'lom turmush tarzi",
+          "title": "Kasal bo'lganda",
           "lines": [
             {
               "speaker": "A",
-              "zh": "你看起来很健康，有什么保持健康的秘诀吗？",
-              "pinyin": "Nǐ kàn qǐlái hěn jiànkāng, yǒu shénme bǎochí jiànkāng de mìjué ma?",
-              "uz": "Siz juda sog'lom ko'rinasiz, sog'lom bo'lishning siriga ega bo'lsangiz?"
+              "zh": "你今天怎么没来上班？",
+              "pinyin": "Nǐ jīntiān zěnme méi lái shàng bān?",
+              "uz": "Bugun nima uchun ishga kelmadingiz?"
             },
             {
               "speaker": "B",
-              "zh": "其实很简单。我每天早睡早起，不吸烟不喝酒，经常运动。",
-              "pinyin": "Qíshí hěn jiǎndān. Wǒ měitiān zǎo shuì zǎo qǐ, bù xīyān bù hē jiǔ, jīngcháng yùndòng.",
-              "uz": "Aslida juda oddiy. Men har kuni erta yotib erta turaman, chekmayman, ichmayman, doim sport qilaman."
+              "zh": "我生病了，在家休息。医生让我吃药，多睡觉。",
+              "pinyin": "Wǒ shēng bìng le, zài jiā xiūxi. Yīshēng ràng wǒ chī yào, duō shuì jiào.",
+              "uz": "Kasal bo'ldim, uyda dam olyapman. Shifokor dori ichishni va ko'proq uxlashni buyurdi."
             },
             {
               "speaker": "A",
-              "zh": "我也想健康，但是工作太忙，没有时间运动，经常加班到很晚。",
-              "pinyin": "Wǒ yě xiǎng jiànkāng, dànshì gōngzuò tài máng, méiyǒu shíjiān yùndòng, jīngcháng jiābān dào hěn wǎn.",
-              "uz": "Men ham sog'lom bo'lishni xohlayman, lekin ish juda band, sport qilish uchun vaqt yo'q, ko'pincha kech qolgacha qolaman."
+              "zh": "什么时候能出院？还是在家休息吗？",
+              "pinyin": "Shénme shíhou néng chū yuàn? Háishi zài jiā xiūxi ma?",
+              "uz": "Qachon kasalxonadan chiqasiz? Yoki uyda dam olyapsizmi?"
             },
             {
               "speaker": "B",
-              "zh": "健康比工作更重要。你不注意健康，以后会有很多问题。",
-              "pinyin": "Jiànkāng bǐ gōngzuò gèng zhòngyào. Nǐ bù zhùyì jiànkāng, yǐhòu huì yǒu hěn duō wèntí.",
-              "uz": "Sog'liq ishdan muhimroq. Sog'liqqa e'tibor bermasa, keyinchalik ko'p muammolar bo'ladi."
+              "zh": "我没住院，在家吃药休息。医生说三天后就好了。",
+              "pinyin": "Wǒ méi zhù yuàn, zài jiā chī yào xiūxi. Yīshēng shuō sān tiān hòu jiù hǎo le.",
+              "uz": "Men kasalxonada yotmayapman, uyda dori ichib dam olyapman. Shifokor uch kundan keyin tuzalishini aytdi."
             },
             {
               "speaker": "A",
-              "zh": "你说得对。我应该改变生活方式，从明天开始少加班，多休息。",
-              "pinyin": "Nǐ shuō de duì. Wǒ yīnggāi gǎibiàn shēnghuó fāngshì, cóng míngtiān kāishǐ shǎo jiābān, duō xiūxi.",
-              "uz": "To'g'ri aytasiz. Hayot tarzimni o'zgartirishim kerak, ertadan boshlab kamroq qolaman, ko'proq dam olaman."
+              "zh": "好好休息吧！明天你能来上班吗？",
+              "pinyin": "Hǎohǎo xiūxi ba! Míngtiān nǐ néng lái shàng bān ma?",
+              "uz": "Yaxshilab dam oling! Ertaga ishga kela olasizmi?"
             },
             {
               "speaker": "B",
-              "zh": "好！另外，每天多喝水也很重要，至少喝八杯水。",
-              "pinyin": "Hǎo! Lìngwài, měitiān duō hē shuǐ yě hěn zhòngyào, zhìshǎo hē bā bēi shuǐ.",
-              "uz": "Yaxshi! Bundan tashqari, har kuni ko'proq suv ichish ham juda muhim, kamida sakkiz stakan."
+              "zh": "不知道。看情况吧，如果好一点儿就来。",
+              "pinyin": "Bù zhīdào. Kàn qíngkuàng ba, rúguǒ hǎo yīdiǎnr jiù lái.",
+              "uz": "Bilmayapman. Holatga qarab, biroz yaxshilansa kelaman."
             }
           ]
         }
