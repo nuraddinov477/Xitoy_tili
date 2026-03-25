@@ -259,11 +259,11 @@ export default function Home() {
           <h1 className="chinese-font text-6xl md:text-8xl font-black mb-4 shimmer-text">
             中文学习
           </h1>
-          <p className="text-2xl md:text-3xl text-white font-bold mb-2">
-            Xitoy tili HSK Mavzulari
+          <p className="text-2xl md:text-4xl text-white font-black mb-2 uppercase tracking-widest">
+            Nuraddinov Sarvarbek
           </p>
-          <p className="text-gray-400 text-lg">
-            15 ta asosiy mavzu • Interaktiv o&apos;rganish
+          <p className="text-red-400 text-lg font-semibold tracking-wider">
+            Portfolio
           </p>
 
           {/* Stats bar */}
