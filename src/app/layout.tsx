@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import ChatWidget from './components/ChatWidget'
 
 export const metadata: Metadata = {
   title: 'Xitoy tili - HSK Mavzulari',
@@ -16,7 +17,10 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ChatWidget />
+      </body>
     </html>
   )
 }
