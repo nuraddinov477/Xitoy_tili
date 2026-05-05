@@ -113,7 +113,7 @@ export default function ChatWidget() {
 
       {/* Chat panel - full height on right */}
       <div
-        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-[420px] lg:w-[28rem] flex flex-col shadow-2xl shadow-black/60 border-l border-white/10 bg-gray-950 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-[420px] lg:w-[32rem] 2xl:w-[36rem] flex flex-col shadow-2xl shadow-black/60 border-l border-white/10 bg-gray-950 transition-transform duration-300 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -136,71 +136,77 @@ export default function ChatWidget() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-3 space-y-3 bg-gray-950">
-            {messages.map((msg, i) => (
+        <div className="flex-1 overflow-y-auto px-4 py-5 space-y-4 bg-gray-950">
+          {messages.map((msg, i) => (
+            <div
+              key={i}
+              className={`flex gap-2.5 ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
+            >
               <div
-                key={i}
-                className={`flex gap-2 ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
+                className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${
+                  msg.role === 'user'
+                    ? 'bg-violet-600'
+                    : 'bg-gradient-to-br from-purple-700 to-violet-900'
+                }`}
               >
-                <div
-                  className={`w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center ${
-                    msg.role === 'user'
-                      ? 'bg-violet-600'
-                      : 'bg-gradient-to-br from-purple-700 to-violet-900'
-                  }`}
-                >
-                  {msg.role === 'user' ? (
-                    <User className="w-3.5 h-3.5 text-white" />
-                  ) : (
-                    <Bot className="w-3.5 h-3.5 text-white" />
-                  )}
-                </div>
-                <div
-                  className={`max-w-[75%] rounded-2xl px-3 py-2 text-sm whitespace-pre-wrap leading-relaxed ${
-                    msg.role === 'user'
-                      ? 'bg-violet-600 text-white rounded-tr-sm'
-                      : 'bg-gray-800 text-gray-100 rounded-tl-sm'
-                  }`}
-                >
-                  {msg.content}
-                  {msg.role === 'assistant' && loading && i === messages.length - 1 && msg.content === '' && (
-                    <span className="inline-flex gap-1">
-                      <span className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce [animation-delay:0ms]" />
-                      <span className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce [animation-delay:150ms]" />
-                      <span className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce [animation-delay:300ms]" />
-                    </span>
-                  )}
-                </div>
+                {msg.role === 'user' ? (
+                  <User className="w-4 h-4 text-white" />
+                ) : (
+                  <Bot className="w-4 h-4 text-white" />
+                )}
               </div>
-            ))}
-            <div ref={bottomRef} />
-          </div>
+              <div
+                className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] whitespace-pre-wrap leading-relaxed ${
+                  msg.role === 'user'
+                    ? 'bg-violet-600 text-white rounded-tr-md'
+                    : 'bg-gray-800/80 text-gray-100 rounded-tl-md border border-white/5'
+                }`}
+              >
+                {msg.content}
+                {msg.role === 'assistant' && loading && i === messages.length - 1 && msg.content === '' && (
+                  <span className="inline-flex gap-1.5 items-center">
+                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:0ms]" />
+                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:150ms]" />
+                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:300ms]" />
+                  </span>
+                )}
+              </div>
+            </div>
+          ))}
+          <div ref={bottomRef} />
+        </div>
 
         {/* Input */}
-        <div className="flex items-end gap-2 px-3 py-3 bg-gray-900 border-t border-white/5">
-          <textarea
-            ref={inputRef}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKey}
-            placeholder="Savol bering... (Enter = yuborish)"
-            rows={1}
-            disabled={loading}
-            className="flex-1 resize-none bg-gray-800 text-white text-sm rounded-xl px-3 py-2 outline-none border border-white/10 focus:border-violet-500 placeholder-gray-500 transition-colors max-h-32 overflow-y-auto disabled:opacity-50"
-            style={{ lineHeight: '1.4' }}
-            onInput={(e) => {
-              const el = e.currentTarget
-              el.style.height = 'auto'
-              el.style.height = Math.min(el.scrollHeight, 128) + 'px'
-            }}
-          />
-          <button
-            onClick={sendMessage}
-            disabled={!input.trim() || loading}
-            className="w-10 h-10 rounded-xl bg-violet-600 hover:bg-violet-500 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center transition-colors flex-shrink-0"
-          >
-            <Send className="w-4 h-4 text-white" />
-          </button>
+        <div className="px-4 py-4 bg-gray-950 border-t border-white/5">
+          <div className="relative bg-gray-900 rounded-3xl border border-white/10 focus-within:border-violet-500/60 focus-within:shadow-lg focus-within:shadow-violet-900/20 transition-all">
+            <textarea
+              ref={inputRef}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKey}
+              placeholder="Xitoy tili haqida savol bering..."
+              rows={1}
+              disabled={loading}
+              className="w-full resize-none bg-transparent text-white text-[15px] rounded-3xl pl-5 pr-14 py-4 outline-none placeholder-gray-500 max-h-48 overflow-y-auto disabled:opacity-50"
+              style={{ lineHeight: '1.5', minHeight: '56px' }}
+              onInput={(e) => {
+                const el = e.currentTarget
+                el.style.height = 'auto'
+                el.style.height = Math.min(el.scrollHeight, 192) + 'px'
+              }}
+            />
+            <button
+              onClick={sendMessage}
+              disabled={!input.trim() || loading}
+              className="absolute bottom-2.5 right-2.5 w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 disabled:from-gray-700 disabled:to-gray-700 disabled:cursor-not-allowed flex items-center justify-center transition-all shadow-md"
+              aria-label="Yuborish"
+            >
+              <Send className="w-4 h-4 text-white -translate-x-px translate-y-px" />
+            </button>
+          </div>
+          <p className="text-[11px] text-gray-600 mt-2 text-center">
+            Enter — yuborish · Shift+Enter — yangi qator
+          </p>
         </div>
       </div>
     </>

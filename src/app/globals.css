@@ -15,7 +15,13 @@ body {
 
 @media (min-width: 1024px) {
   body.chat-open {
-    padding-right: 28rem;
+    padding-right: 32rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body.chat-open {
+    padding-right: 36rem;
   }
 }
 
