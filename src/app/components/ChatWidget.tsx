@@ -11,7 +11,7 @@ type Message = {
 const WELCOME_MSG: Message = {
   role: 'assistant',
   content:
-    'Salom! 你好 (nǐ hǎo) 👋\n\nMen xitoy tili yordamchisiman. Menga savol bering:\n• So\'z tarjimasi 📖\n• Grammatika 📝\n• Quiz/Test 🎯\n• Talaffuz 🔊',
+    '你好！(nǐ hǎo) Salom! 👋\n\nMen sizning xitoy tili o\'qituvchingizman 老师 (lǎoshī).\n\nNimadan boshlaymiz?\n\n🌱 "Birinchi dars" — boshlang\'ich so\'zlar\n📖 "Tarjima qil: ..." — so\'z/gap tarjimasi\n🎯 "Quiz boshla" — bilimingizni sinab ko\'ring\n💬 "Dialog mashqi" — real vaziyatda gap tuzish\n📝 "Grammatika: ..." — qoidalarni o\'rganing\n🔤 Yoki shunchaki savol bering!\n\nQaysi biri qiziq? 😊',
 }
 
 export default function ChatWidget() {
