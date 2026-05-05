@@ -55,7 +55,10 @@ export default function ChatWidget() {
         body: JSON.stringify({ messages: apiMessages }),
       })
 
-      if (!res.ok) throw new Error('Server xatosi')
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({ error: 'Server xatosi' }))
+        throw new Error(errData.error || 'Server xatosi')
+      }
 
       const reader = res.body!.getReader()
       const decoder = new TextDecoder()
@@ -67,10 +70,11 @@ export default function ChatWidget() {
         fullText += decoder.decode(value, { stream: true })
         setMessages([...history, { role: 'assistant', content: fullText }])
       }
-    } catch {
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Xato yuz berdi'
       setMessages([
         ...history,
-        { role: 'assistant', content: 'Xato yuz berdi. Qayta urinib ko\'ring.' },
+        { role: 'assistant', content: `⚠️ ${msg}. Qayta urinib ko'ring.` },
       ])
     } finally {
       setLoading(false)
@@ -99,28 +103,32 @@ export default function ChatWidget() {
         )}
       </button>
 
-      {/* Chat window */}
-      {open && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 flex flex-col rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border border-white/10 bg-gray-950">
-          {/* Header */}
-          <div className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-violet-700 to-purple-800">
-            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-              <Bot className="w-4 h-4 text-white" />
-            </div>
-            <div>
-              <p className="text-white text-sm font-semibold leading-tight">Xitoy tili yordamchisi</p>
-              <p className="text-purple-200 text-xs">中文助手 · AI</p>
-            </div>
-            <button
-              onClick={() => setOpen(false)}
-              className="ml-auto text-white/60 hover:text-white transition-colors"
-            >
-              <X className="w-4 h-4" />
-            </button>
+      {/* Chat panel - full height on right */}
+      <div
+        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-96 flex flex-col shadow-2xl shadow-black/60 border-l border-white/10 bg-gray-950 transition-transform duration-300 ${
+          open ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {/* Header */}
+        <div className="flex items-center gap-3 px-4 py-4 bg-gradient-to-r from-violet-700 to-purple-800">
+          <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+            <Bot className="w-5 h-5 text-white" />
           </div>
+          <div>
+            <p className="text-white text-sm font-semibold leading-tight">Xitoy tili yordamchisi</p>
+            <p className="text-purple-200 text-xs">中文助手 · AI</p>
+          </div>
+          <button
+            onClick={() => setOpen(false)}
+            className="ml-auto text-white/70 hover:text-white transition-colors p-1"
+            aria-label="Yopish"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
-          {/* Messages */}
-          <div className="flex-1 h-80 overflow-y-auto p-3 space-y-3 bg-gray-950">
+        {/* Messages */}
+        <div className="flex-1 overflow-y-auto p-3 space-y-3 bg-gray-950">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -160,34 +168,33 @@ export default function ChatWidget() {
             <div ref={bottomRef} />
           </div>
 
-          {/* Input */}
-          <div className="flex items-end gap-2 px-3 py-3 bg-gray-900 border-t border-white/5">
-            <textarea
-              ref={inputRef}
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKey}
-              placeholder="Savol bering... (Enter = yuborish)"
-              rows={1}
-              disabled={loading}
-              className="flex-1 resize-none bg-gray-800 text-white text-sm rounded-xl px-3 py-2 outline-none border border-white/10 focus:border-violet-500 placeholder-gray-500 transition-colors max-h-24 overflow-y-auto disabled:opacity-50"
-              style={{ lineHeight: '1.4' }}
-              onInput={(e) => {
-                const el = e.currentTarget
-                el.style.height = 'auto'
-                el.style.height = Math.min(el.scrollHeight, 96) + 'px'
-              }}
-            />
-            <button
-              onClick={sendMessage}
-              disabled={!input.trim() || loading}
-              className="w-9 h-9 rounded-xl bg-violet-600 hover:bg-violet-500 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center transition-colors flex-shrink-0"
-            >
-              <Send className="w-4 h-4 text-white" />
-            </button>
-          </div>
+        {/* Input */}
+        <div className="flex items-end gap-2 px-3 py-3 bg-gray-900 border-t border-white/5">
+          <textarea
+            ref={inputRef}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKey}
+            placeholder="Savol bering... (Enter = yuborish)"
+            rows={1}
+            disabled={loading}
+            className="flex-1 resize-none bg-gray-800 text-white text-sm rounded-xl px-3 py-2 outline-none border border-white/10 focus:border-violet-500 placeholder-gray-500 transition-colors max-h-32 overflow-y-auto disabled:opacity-50"
+            style={{ lineHeight: '1.4' }}
+            onInput={(e) => {
+              const el = e.currentTarget
+              el.style.height = 'auto'
+              el.style.height = Math.min(el.scrollHeight, 128) + 'px'
+            }}
+          />
+          <button
+            onClick={sendMessage}
+            disabled={!input.trim() || loading}
+            className="w-10 h-10 rounded-xl bg-violet-600 hover:bg-violet-500 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center transition-colors flex-shrink-0"
+          >
+            <Send className="w-4 h-4 text-white" />
+          </button>
         </div>
-      )}
+      </div>
     </>
   )
 }

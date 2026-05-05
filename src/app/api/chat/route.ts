@@ -1,7 +1,5 @@
-import Anthropic from '@anthropic-ai/sdk'
+import { GoogleGenerativeAI } from '@google/generative-ai'
 import { NextRequest, NextResponse } from 'next/server'
-
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const SYSTEM_PROMPT = `Siz "Xitoy tili yordamchisi" — o'zbek tilini biladigan xitoy tili o'qituvchisisiz.
 
@@ -18,32 +16,38 @@ Misol javob formati:
 - Misol: 我吃苹果 (Wǒ chī píngguǒ) — Men olma yeyman
 - Grammatika izohini o'zbek tilida bering`
 
+type ChatMessage = { role: 'user' | 'assistant'; content: string }
+
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json()
+    const { messages } = (await req.json()) as { messages: ChatMessage[] }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
-      return NextResponse.json({ error: 'API kalit topilmadi' }, { status: 500 })
+    if (!process.env.GEMINI_API_KEY) {
+      return NextResponse.json({ error: 'GEMINI_API_KEY topilmadi' }, { status: 500 })
     }
 
-    const stream = client.messages.stream({
-      model: 'claude-opus-4-6',
-      max_tokens: 1024,
-      system: SYSTEM_PROMPT,
-      messages,
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.5-flash',
+      systemInstruction: SYSTEM_PROMPT,
     })
+
+    const history = messages.slice(0, -1).map((m) => ({
+      role: m.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: m.content }],
+    }))
+    const lastMessage = messages[messages.length - 1]?.content ?? ''
+
+    const chat = model.startChat({ history })
+    const result = await chat.sendMessageStream(lastMessage)
 
     const encoder = new TextEncoder()
     const readable = new ReadableStream({
       async start(controller) {
         try {
-          for await (const event of stream) {
-            if (
-              event.type === 'content_block_delta' &&
-              event.delta.type === 'text_delta'
-            ) {
-              controller.enqueue(encoder.encode(event.delta.text))
-            }
+          for await (const chunk of result.stream) {
+            const text = chunk.text()
+            if (text) controller.enqueue(encoder.encode(text))
           }
         } finally {
           controller.close()
@@ -59,6 +63,7 @@ export async function POST(req: NextRequest) {
     })
   } catch (error) {
     console.error('Chat API xatosi:', error)
-    return NextResponse.json({ error: 'Xato yuz berdi' }, { status: 500 })
+    const msg = error instanceof Error ? error.message : 'Xato yuz berdi'
+    return NextResponse.json({ error: msg }, { status: 500 })
   }
 }
