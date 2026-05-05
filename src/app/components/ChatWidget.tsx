@@ -201,7 +201,7 @@ export default function ChatWidget() {
               className="absolute bottom-2.5 right-2.5 w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 disabled:from-gray-700 disabled:to-gray-700 disabled:cursor-not-allowed flex items-center justify-center transition-all shadow-md"
               aria-label="Yuborish"
             >
-              <Send className="w-4 h-4 text-white -translate-x-px translate-y-px" />
+              <Send className="w-4 h-4 text-white" />
             </button>
           </div>
           <p className="text-[11px] text-gray-600 mt-2 text-center">

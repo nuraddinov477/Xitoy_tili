@@ -13,6 +13,13 @@ body {
   transition: padding-right 300ms ease;
 }
 
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
 @media (min-width: 1024px) {
   body.chat-open {
     padding-right: 32rem;
