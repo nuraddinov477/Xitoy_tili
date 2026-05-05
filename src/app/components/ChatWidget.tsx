@@ -28,6 +28,14 @@ export default function ChatWidget() {
 
   useEffect(() => {
     if (open) inputRef.current?.focus()
+    if (typeof document !== 'undefined') {
+      document.body.classList.toggle('chat-open', open)
+    }
+    return () => {
+      if (typeof document !== 'undefined') {
+        document.body.classList.remove('chat-open')
+      }
+    }
   }, [open])
 
   const sendMessage = useCallback(async () => {
@@ -105,7 +113,7 @@ export default function ChatWidget() {
 
       {/* Chat panel - full height on right */}
       <div
-        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-96 flex flex-col shadow-2xl shadow-black/60 border-l border-white/10 bg-gray-950 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-[420px] lg:w-[28rem] flex flex-col shadow-2xl shadow-black/60 border-l border-white/10 bg-gray-950 transition-transform duration-300 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
