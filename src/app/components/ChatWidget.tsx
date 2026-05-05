@@ -44,8 +44,9 @@ export default function ChatWidget() {
     setMessages([...history, assistantMsg])
 
     try {
+      const firstUserIdx = history.findIndex((m) => m.role === 'user')
       const apiMessages = history
-        .filter((m) => m.role === 'user' || m.role === 'assistant')
+        .slice(firstUserIdx)
         .map((m) => ({ role: m.role, content: m.content }))
 
       const res = await fetch('/api/chat', {
