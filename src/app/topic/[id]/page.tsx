@@ -71,7 +71,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
   ]
   const ch = dialogChars[(topic.id - 1) % dialogChars.length]
 
-  const imgUrl = topicImages[topic.id]
+  const imgUrl = topicImages[topic.id] ?? topic.image
 
   const panels = [
     {
