@@ -25,6 +25,21 @@ const topicImages: Record<number, string> = {
   13: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&q=80',
   14: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=1200&q=80',
   15: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+  16: 'https://images.unsplash.com/photo-1508804052814-cd3ba865a116?w=1200&q=80',
+  17: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+  18: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80',
+  19: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80',
+  20: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80',
+  21: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80',
+  22: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1200&q=80',
+  23: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+  24: 'https://images.unsplash.com/photo-1569959220744-ff553533f492?w=1200&q=80',
+  25: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&q=80',
+  26: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=1200&q=80',
+  27: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&q=80',
+  28: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&q=80',
+  29: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200&q=80',
+  30: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=1200&q=80',
 }
 
 export default function TopicPage({ params }: { params: Promise<{ id: string }> }) {

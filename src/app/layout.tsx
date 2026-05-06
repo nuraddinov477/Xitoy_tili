@@ -4,7 +4,7 @@ import ChatWidget from './components/ChatWidget'
 
 export const metadata: Metadata = {
   title: 'Xitoy tili - HSK Mavzulari',
-  description: '15 ta HSK mavzusi - Xitoy tilini o\'rganish',
+  description: '30 ta HSK mavzusi - Xitoy tilini o\'rganish',
 }
 
 export default function RootLayout({
